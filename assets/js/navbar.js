@@ -4,22 +4,16 @@ async function cargarComponente(selector, ruta) {
 
   try {
     const respuesta = await fetch(ruta);
-    if (!respuesta.ok) {
-      throw new Error(`No se pudo cargar ${ruta}`);
-    }
-
-    const html = await respuesta.text();
-    contenedor.innerHTML = html;
+    if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta}`);
+    contenedor.innerHTML = await respuesta.text();
   } catch (error) {
     console.error(error);
   }
 }
 
 function obtenerRutaBase() {
-  const profundidad = window.location.pathname
-    .split("/")
-    .filter(Boolean)
-    .length - 1;
+  const segmentos = window.location.pathname.split("/").filter(Boolean);
+  const profundidad = segmentos.length - 1;
 
   if (profundidad <= 0) return ".";
   return "../".repeat(profundidad).slice(0, -1);
@@ -31,7 +25,9 @@ async function cargarLayout() {
   await cargarComponente("#navbar-container", `${base}/components/navbar.html`);
   await cargarComponente("#footer-container", `${base}/components/footer.html`);
 
-  inicializarNavbar();
+  if (typeof inicializarNavbar === "function") {
+    inicializarNavbar();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", cargarLayout);

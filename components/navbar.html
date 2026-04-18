@@ -1,13 +1,12 @@
 <header id="site-header" class="fixed top-0 w-full z-50 bg-[#faf8ff]/70 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,27,34,0.04)] transition-all duration-300">
-  <nav class="flex justify-between items-center w-full px-6 md:px-8 py-4 max-w-7xl mx-auto">
+  <nav class="flex justify-between items-center w-full px-4 sm:px-6 md:px-8 py-4 max-w-7xl mx-auto">
     
-    <a href="/index.html" class="flex items-center gap-2">
+    <a href="/index.html" class="flex items-center gap-2 shrink-0">
       <span class="material-symbols-outlined text-[#0056d2]" style="font-variation-settings: 'FILL' 1;">shield_person</span>
-      <span class="text-2xl font-bold text-[#0056d2] tracking-tighter font-headline">CyberGuardian</span>
+      <span class="text-xl sm:text-2xl font-bold text-[#0056d2] tracking-tighter font-headline">CyberGuardian</span>
     </a>
 
-    <!-- NAV DESKTOP -->
-    <div class="hidden md:flex items-center gap-8">
+    <div class="hidden xl:flex items-center gap-6 2xl:gap-8">
       <a class="nav-link font-semibold text-[#191b22]/80 hover:text-[#0056d2] transition-all relative pb-1" href="/index.html">Inicio</a>
       <a class="nav-link font-semibold text-[#191b22]/80 hover:text-[#0056d2] transition-all relative pb-1" href="/pages/riesgos/index.html">Riesgos</a>
       <a class="nav-link font-semibold text-[#191b22]/80 hover:text-[#0056d2] transition-all relative pb-1" href="/pages/control-parental/android/index.html">Control Android</a>
@@ -17,21 +16,19 @@
       <a class="nav-link font-semibold text-[#191b22]/80 hover:text-[#0056d2] transition-all relative pb-1" href="/pages/actualidad/index.html">Actualidad</a>
     </div>
 
-    <!-- BOTONES -->
-    <div class="flex items-center gap-3">
-      <button id="panic-button" class="hidden md:inline-flex bg-gradient-to-br from-[#0040a1] to-[#0056d2] text-white px-6 py-2.5 rounded-xl font-semibold scale-95 active:scale-90 transition-transform duration-200 shadow-lg">
+    <div class="flex items-center gap-3 shrink-0">
+      <button id="panic-button" class="hidden xl:inline-flex bg-gradient-to-br from-[#0040a1] to-[#0056d2] text-white px-5 2xl:px-6 py-2.5 rounded-xl font-semibold scale-95 active:scale-90 transition-transform duration-200 shadow-lg">
         Botón de Pánico
       </button>
 
-      <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center rounded-xl p-2 text-[#0056d2]" aria-label="Abrir menú">
+      <button id="menu-toggle" class="xl:hidden inline-flex items-center justify-center rounded-xl p-2 text-[#0056d2]" aria-label="Abrir menú">
         <span class="material-symbols-outlined">menu</span>
       </button>
     </div>
 
   </nav>
 
-  <!-- MENU MOVIL -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 max-w-7xl mx-auto">
+  <div id="mobile-menu" class="xl:hidden hidden px-4 sm:px-6 pb-4 max-w-7xl mx-auto">
     <div class="bg-white/90 backdrop-blur-xl rounded-2xl shadow-lg p-4 flex flex-col gap-3">
       <a class="nav-link mobile-link font-semibold" href="/index.html">Inicio</a>
       <a class="nav-link mobile-link font-semibold" href="/pages/riesgos/index.html">Riesgos</a>
