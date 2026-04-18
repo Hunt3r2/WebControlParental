@@ -1,62 +1,296 @@
 <!DOCTYPE html>
 <html class="light" lang="es">
+
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>CyberGuardian | Educar es más eficaz que prohibir</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CyberGuardian | Educar es más eficaz que prohibir</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#3b0900",
+                        "inverse-surface": "#2e3038",
+                        "inverse-primary": "#b2c5ff",
+                        "on-tertiary-fixed-variant": "#872100",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-surface": "#191b22",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#faf8ff",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#0056d2",
+                        "on-error": "#ffffff",
+                        "primary": "#0040a1",
+                        "secondary": "#006a6a",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-primary-fixed-variant": "#0040a1",
+                        "secondary-fixed": "#8cf3f3",
+                        "tertiary-container": "#b12f00",
+                        "inverse-on-surface": "#f0f0fa",
+                        "on-primary-container": "#ccd8ff",
+                        "surface-variant": "#e1e2ec",
+                        "on-tertiary-container": "#ffcfc1",
+                        "secondary-fixed-dim": "#6fd7d6",
+                        "on-primary-fixed": "#001847",
+                        "surface-container-high": "#e7e7f1",
+                        "surface-tint": "#0056d2",
+                        "on-background": "#191b22",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#004f4f",
+                        "on-secondary-fixed": "#002020",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "tertiary": "#882200",
+                        "surface-container": "#ededf7",
+                        "surface-container-low": "#f2f3fd",
+                        "surface-dim": "#d9d9e3",
+                        "background": "#faf8ff",
+                        "surface-container-highest": "#e1e2ec",
+                        "error": "#ba1a1a",
+                        "surface": "#faf8ff",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#737785",
+                        "outline-variant": "#c3c6d6",
+                        "on-surface-variant": "#424654",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#8cf3f3",
+                        "on-secondary-container": "#007070"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Manrope"],
+                        body: ["Public Sans"],
+                        label: ["Public Sans"]
+                    }
+                }
+            }
+        };
+    </script>
 
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#0040a1",
-            "primary-container": "#0056d2",
-            secondary: "#006a6a",
-            tertiary: "#882200",
-            surface: "#faf8ff",
-            "surface-container-low": "#f2f3fd",
-            "surface-container-lowest": "#ffffff",
-            "surface-container-high": "#e7e7f1",
-            "surface-container-highest": "#e1e2ec",
-            "on-surface": "#191b22",
-            "on-surface-variant": "#424654",
-            "secondary-container": "#8cf3f3",
-            "on-secondary-container": "#007070",
-            "tertiary-container": "#b12f00",
-            "on-tertiary-fixed": "#3b0900",
-            "on-primary-fixed-variant": "#0040a1"
-          },
-          fontFamily: {
-            headline: ["Manrope"],
-            body: ["Public Sans"],
-            label: ["Public Sans"]
-          }
-        }
-      }
-    };
-  </script>
-
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
+
 <body class="bg-surface font-body text-on-surface">
-  <div id="navbar-container"></div>
+    <div id="navbar-container"></div>
 
-  <main class="pt-24">
-    <!-- aquí dejas tu contenido actual -->
-  </main>
+    <main class="pt-24">
+        <section class="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto overflow-hidden">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <span
+                        class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-[0.75rem] font-bold uppercase tracking-[0.05em] mb-6 inline-block">
+                        Misión Digital
+                    </span>
 
-  <div id="footer-container"></div>
+                    <h1
+                        class="font-headline text-[3.5rem] leading-[1.1] font-extrabold text-on-surface tracking-[-0.02em] mb-8">
+                        Educar es más eficaz <br />
+                        <span class="text-primary">que prohibir</span>
+                    </h1>
 
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/navbar.js"></script>
+                    <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+                        Convertimos el entorno digital en un santuario para menores. No levantamos muros; construimos
+                        brújulas para que naveguen con autonomía y seguridad.
+                    </p>
+
+                    <div class="flex gap-4 flex-wrap">
+                        <button
+                            class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-xl transition-all hover:scale-[1.02]">
+                            Comenzar ahora
+                        </button>
+
+                        <button
+                            class="bg-surface-container-highest text-on-primary-fixed-variant px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-high">
+                            Guía para padres
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-primary-container/10 rounded-[2rem] p-8 relative overflow-hidden">
+                        <img alt="Professional technical visualization" class="rounded-xl shadow-2xl relative z-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcgW6bbxo3SU1Y8ztD8a2u2OPjYC3h4-Vo8i_rlPSU4qpcZFR2sfgRy9q6HNdRU4AkDDuQoJO0htFZvW20tdgh5WnTgUNNM4J-vrhiG9eIXloIgAUUZQ5H21D2oqmF36L6po7Qx4C4SWJ6P7RQQobKSgeemC5WNJnl8G5oPLymWn5LruxUb4uKK39mDxN4Fpqja8W_WgyoPRGV1Hhbh-KwSqMt7-awEk58LPW2NhwP3RusQUnp-rYtRCU2AKhflah9fk-VEs803F6W" />
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-fixed/30 blur-3xl rounded-full">
+                        </div>
+                        <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/20 blur-3xl rounded-full"></div>
+                    </div>
+
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(25,27,34,0.06)] z-20 max-w-[240px]">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                            <span class="font-bold text-sm">Protección Activa</span>
+                        </div>
+                        <p class="text-xs text-on-surface-variant">
+                            Monitoreo inteligente sin invasión de la privacidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-tertiary-container/5 py-12">
+            <div class="max-w-7xl mx-auto px-8">
+                <div
+                    class="bg-surface-container-lowest border-l-4 border-tertiary-container p-8 rounded-xl flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm">
+                    <div class="flex items-center gap-6">
+                        <div class="bg-tertiary-container p-4 rounded-full text-white">
+                            <span class="material-symbols-outlined text-3xl">emergency</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline text-xl font-bold text-on-tertiary-fixed">¿Necesitas ayuda
+                                inmediata?</h3>
+                            <p class="text-on-surface-variant">
+                                Llama gratis al 017, la línea de ayuda de INCIBE para resolver cualquier duda o problema
+                                de seguridad en internet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a class="bg-tertiary-container text-white px-10 py-3 rounded-full font-extrabold text-2xl tracking-tighter transition-transform hover:scale-105 active:scale-95"
+                        href="tel:017">
+                        017
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-surface-container-low py-24">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="text-center max-w-2xl mx-auto mb-20">
+                    <h2 class="font-headline text-3xl font-bold mb-4">Un santuario digital</h2>
+                    <p class="text-on-surface-variant">
+                        Nuestra misión es empoderar a la próxima generación con las herramientas técnicas y éticas
+                        necesarias para habitar internet de forma saludable.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="md:col-span-2 bg-surface-container-lowest p-10 rounded-[2rem] shadow-sm relative overflow-hidden group">
+                        <div class="relative z-10 flex flex-col justify-between h-full">
+                            <div>
+                                <span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+                                <h3 class="font-headline text-2xl font-bold mb-4">Educación Técnica</h3>
+                                <p class="text-on-surface-variant max-w-md">
+                                    No solo configuramos dispositivos; enseñamos cómo funcionan los algoritmos y la
+                                    ingeniería social para crear conciencia crítica.
+                                </p>
+                            </div>
+
+                            <div class="mt-8">
+                                <button
+                                    class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                                    Ver metodologías
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="absolute right-0 bottom-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[12rem]">code_blocks</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-primary-container text-white p-10 rounded-[2rem] shadow-lg flex flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined text-4xl mb-6"
+                                style="font-variation-settings: 'FILL' 1;">encrypted</span>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Privacidad por Diseño</h3>
+                            <p class="opacity-80">
+                                Implementamos capas de seguridad que respetan el espacio personal de los menores
+                                mientras mantienen informados a los tutores.
+                            </p>
+                        </div>
+
+                        <img alt="Clean modern server room" class="rounded-xl mt-6 opacity-60 mix-blend-overlay"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6HEyDFyx1gFvfVZhUS9abBsT8rNqaIvRoOS_zVsTscyB3XZ1h8nGy7ejMA4gtTDTVBTxr6LrohVDIm2aLJKWF40Ehf_KqO_tFi1M00GdlaH8QN1vdEkIHCrncdPWx4AZPyhMC4klztGLviH3zNa0FnOvapfiefqgoTkNP0ozvoY3BQkI7-7ZxCp4UPALXuo_zuldgQyAry3XpIvLBXPenBAbHOxsnZXGUV60xZg3NIjm4kXNsgcOjRjS5BQCdLiZe1m662jIAKVbq" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 max-w-7xl mx-auto px-8">
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-4 sticky top-32">
+                    <h2 class="font-headline text-4xl font-extrabold tracking-tight mb-6">Los Tres Pilares</h2>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Nuestro framework de protección se basa en el equilibrio perfecto entre restricción técnica y
+                        libertad de aprendizaje.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-8 space-y-12">
+                    <div
+                        class="group bg-surface-container-low hover:bg-surface-container-high p-8 rounded-2xl tonal-transition flex gap-8 items-start">
+                        <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-primary">
+                            <span class="material-symbols-outlined text-3xl">policy</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl font-bold mb-2">Seguridad Absoluta</h4>
+                            <p class="text-on-surface-variant">
+                                Protocolos de encriptación de grado militar y filtros inteligentes que bloquean el
+                                contenido nocivo antes de que llegue a la pantalla.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-surface-container-low hover:bg-surface-container-high p-8 rounded-2xl tonal-transition flex gap-8 items-start">
+                        <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-secondary">
+                            <span class="material-symbols-outlined text-3xl">visibility_off</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl font-bold mb-2">Privacidad Íntegra</h4>
+                            <p class="text-on-surface-variant">
+                                Limitamos la huella digital desde el primer día. Los datos de tus hijos no son
+                                mercancía; son su identidad soberana.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-surface-container-low hover:bg-surface-container-high p-8 rounded-2xl tonal-transition flex gap-8 items-start">
+                        <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-tertiary">
+                            <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl font-bold mb-2">Libertad Guiada</h4>
+                            <p class="text-on-surface-variant">
+                                Fomentamos la exploración en entornos controlados, permitiendo el error educativo en
+                                lugar de la prohibición ciega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 </body>
+
 </html>
