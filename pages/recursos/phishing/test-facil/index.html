@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Guardian’s Path | Ejercicio de Phishing</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "on-surface": "#191b22",
+                        "on-secondary-container": "#007070",
+                        "on-secondary-fixed-variant": "#004f4f",
+                        "surface-container-highest": "#e1e2ec",
+                        "primary-container": "#0056d2",
+                        "error": "#ba1a1a",
+                        "background": "#faf8ff",
+                        "surface-container": "#ededf7",
+                        "inverse-primary": "#b2c5ff",
+                        "inverse-on-surface": "#f0f0fa",
+                        "tertiary-fixed": "#ffdbd1",
+                        "tertiary-container": "#b12f00",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2e3038",
+                        "secondary-fixed-dim": "#6fd7d6",
+                        "surface-container-high": "#e7e7f1",
+                        "on-primary-fixed": "#001847",
+                        "surface-dim": "#d9d9e3",
+                        "outline": "#737785",
+                        "on-tertiary-fixed": "#3b0900",
+                        "tertiary": "#882200",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#8cf3f3",
+                        "on-tertiary-container": "#ffcfc1",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#0056d2",
+                        "secondary-container": "#8cf3f3",
+                        "on-tertiary-fixed-variant": "#872100",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-secondary-fixed": "#002020",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#ccd8ff",
+                        "surface-variant": "#e1e2ec",
+                        "surface-container-low": "#f2f3fd",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "secondary": "#006a6a",
+                        "primary": "#0040a1",
+                        "on-background": "#191b22",
+                        "on-surface-variant": "#424654",
+                        "surface-bright": "#faf8ff",
+                        "outline-variant": "#c3c6d6",
+                        "on-primary": "#ffffff",
+                        "surface": "#faf8ff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#0040a1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-shadow {
+            box-shadow: 0px 12px 32px rgba(25, 27, 34, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-xl shadow-slate-900/5 flex items-center w-full px-8 py-4 max-w-full">
+        <div class="text-2xl font-black text-blue-800 font-headline tracking-tight mr-12">The Guardian’s Path</div>
+        <div class="flex items-center space-x-8">
+            <a class="text-slate-600 hover:text-blue-600 transition-all duration-300 font-headline tracking-tight font-semibold"
+                href="#">Inicio</a>
+            <a class="text-blue-700 border-b-2 border-blue-600 pb-1 font-headline tracking-tight font-semibold"
+                href="#">Prueba de seguridad</a>
+        </div>
+    </nav>
+    <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+        <!-- Header Section -->
+        <header class="mb-12">
+            <div class="flex items-center space-x-4 mb-4">
+                <span
+                    class="bg-primary-fixed text-on-primary-fixed px-4 py-1 rounded-full text-xs font-label tracking-widest font-bold">NIVEL:
+                    FÁCIL</span>
+                <span
+                    class="bg-surface-container-high text-on-surface-variant px-4 py-1 rounded-full text-xs font-label tracking-widest font-bold uppercase">Detective
+                    de Internet</span>
+            </div>
+            <h1 class="text-5xl font-black font-headline text-on-surface tracking-tight leading-tight max-w-3xl">
+                ¿Es un premio de verdad o un engaño?
+            </h1>
+            <p class="mt-6 text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+                Mira bien este mensaje que te ha llegado al chat. ¿Crees que es seguro hacer clic o hay algo que te
+                parece raro?
+            </p>
+        </header>
+        <!-- Bento Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- App Message Emulator (Left Column) -->
+            <div class="lg:col-span-8 bg-surface-container-low rounded-[2rem] p-1 overflow-hidden editorial-shadow">
+                <div class="bg-surface-container-lowest rounded-[1.9rem] overflow-hidden">
+                    <!-- Message Header -->
+                    <div
+                        class="p-8 border-b border-outline-variant/20 bg-gradient-to-r from-secondary-container/10 to-transparent">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center space-x-3">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white">
+                                    <span class="material-symbols-outlined">account_circle</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-headline font-bold text-on-surface">premios-gratis-123</h3>
+                                    <p class="text-xs font-label text-outline uppercase tracking-tighter">Mensaje de Red
+                                        Social</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs text-outline font-label uppercase">Ahora mismo</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h2 class="text-xl font-headline font-extrabold text-on-surface">¡FELICIDADES! HAS GANADO 🎁
+                            </h2>
+                        </div>
+                    </div>
+                    <!-- Message Body -->
+                    <div class="p-10 space-y-6">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-20 h-20 rounded-3xl bg-yellow-400/20 flex items-center justify-center">
+                                <span class="text-5xl">⭐</span>
+                            </div>
+                        </div>
+                        <p class="text-lg leading-relaxed text-on-surface-variant font-body">
+                            ¡Hola! Eres el ganador número 1.000 de hoy. Por ser un usuario genial, te regalamos <b>5.000
+                                monedas para tu juego favorito</b> y una tarjeta de regalo.
+                        </p>
+                        <div class="bg-surface-container-low p-8 rounded-2xl border-2 border-dashed border-secondary">
+                            <p class="text-on-surface-variant font-bold mb-6 text-center">
+                                ¡Solo tienes 5 minutos para pedirlas antes de que se las demos a otro!
+                            </p>
+                            <div class="flex flex-col items-center space-y-4">
+                                <button
+                                    class="w-full max-w-xs bg-secondary text-white px-8 py-4 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-lg shadow-secondary/30">
+                                    ¡RECLAMAR MIS MONEDAS!
+                                </button>
+                                <p class="text-xs text-outline italic">Se te pedirán tus datos de acceso y nombre real.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="text-on-surface-variant leading-relaxed text-sm opacity-70 text-center">
+                            Enviado desde el sistema central de premios no oficiales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Analysis Tools (Right Column) -->
+            <div class="lg:col-span-4 space-y-8">
+                <!-- Game/Visual Context -->
+                <div class="relative h-64 rounded-[2rem] overflow-hidden editorial-shadow group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-secondary to-primary-container opacity-20">
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-secondary/30 text-8xl">redeem</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-white font-headline font-bold text-lg">Pista de Detective</span>
+                    </div>
+                </div>
+                <!-- Decision Panel -->
+                <div class="bg-surface-container-high rounded-[2rem] p-8 editorial-shadow">
+                    <h4 class="font-headline font-bold text-xl mb-6 flex items-center">
+                        <span class="material-symbols-outlined mr-2">psychology</span>
+                        ¿Qué vas a hacer?
+                    </h4>
+                    <div class="space-y-4">
+                        <button
+                            class="w-full bg-surface-container-lowest text-error font-headline font-extrabold py-4 rounded-xl border border-error/10 hover:bg-error-container transition-colors flex items-center justify-center space-x-2">
+                            <span class="material-symbols-outlined">block</span>
+                            <span>¡Es un engaño!</span>
+                        </button>
+                        <button
+                            class="w-full bg-gradient-to-br from-secondary to-on-secondary-container text-white font-headline font-extrabold py-4 rounded-xl shadow-lg shadow-secondary/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center space-x-2">
+                            <span class="material-symbols-outlined">celebration</span>
+                            <span>¡Quiero el premio!</span>
+                        </button>
+                    </div>
+                    <div class="mt-8 p-5 bg-primary-container/10 rounded-2xl">
+                        <p class="text-sm text-on-primary-fixed-variant leading-relaxed">
+                            <strong>Pista para expertos:</strong> Fíjate en el nombre de quien envía el mensaje. ¿Te
+                            suena de algo 'premios-gratis-123' o parece inventado? Además, ¡nadie regala cosas así de
+                            rápido pidiéndote tus datos personales!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full border-t border-slate-200/50 bg-slate-50 flex flex-col md:flex-row justify-between items-center px-12 py-12">
+        <div class="mb-6 md:mb-0">
+            <span class="font-headline font-bold text-slate-900 text-lg">The Guardian’s Path</span>
+            <p class="font-body text-sm leading-relaxed text-slate-500 mt-2">© 2024 The Guardian’s Path. Educación en
+                Ciberseguridad para Menores.</p>
+        </div>
+        <div class="flex space-x-8">
+            <a class="text-slate-500 hover:text-blue-600 transition-colors font-body text-sm leading-relaxed"
+                href="#">Privacidad</a>
+            <a class="text-slate-500 hover:text-blue-600 transition-colors font-body text-sm leading-relaxed"
+                href="#">Contacto</a>
+            <a class="text-slate-500 hover:text-blue-600 transition-colors font-body text-sm leading-relaxed"
+                href="#">Términos</a>
+            <a class="text-slate-500 hover:text-blue-600 transition-colors font-body text-sm leading-relaxed"
+                href="#">Seguridad</a>
+        </div>
+    </footer>
+</body>
+
+</html>
