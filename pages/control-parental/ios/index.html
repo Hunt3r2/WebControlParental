@@ -8,80 +8,13 @@
     <title>CyberGuardian - Control Parental iOS</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public+Sans:wght@300;400;600;700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-tertiary-fixed": "#3b0900",
-                        "inverse-surface": "#2e3038",
-                        "inverse-primary": "#b2c5ff",
-                        "on-tertiary-fixed-variant": "#872100",
-                        "tertiary-fixed": "#ffdbd1",
-                        "on-surface": "#191b22",
-                        "on-primary": "#ffffff",
-                        "surface-bright": "#faf8ff",
-                        "on-error-container": "#93000a",
-                        "primary-container": "#0056d2",
-                        "on-error": "#ffffff",
-                        "primary": "#0040a1",
-                        "secondary": "#006a6a",
-                        "surface-container-lowest": "#ffffff",
-                        "primary-fixed": "#dae2ff",
-                        "primary-fixed-dim": "#b2c5ff",
-                        "on-primary-fixed-variant": "#0040a1",
-                        "secondary-fixed": "#8cf3f3",
-                        "tertiary-container": "#b12f00",
-                        "inverse-on-surface": "#f0f0fa",
-                        "on-primary-container": "#ccd8ff",
-                        "surface-variant": "#e1e2ec",
-                        "on-tertiary-container": "#ffcfc1",
-                        "secondary-fixed-dim": "#6fd7d6",
-                        "on-primary-fixed": "#001847",
-                        "surface-container-high": "#e7e7f1",
-                        "surface-tint": "#0056d2",
-                        "on-background": "#191b22",
-                        "on-secondary": "#ffffff",
-                        "on-secondary-fixed-variant": "#004f4f",
-                        "on-secondary-fixed": "#002020",
-                        "tertiary-fixed-dim": "#ffb5a0",
-                        "tertiary": "#882200",
-                        "surface-container": "#ededf7",
-                        "surface-container-low": "#f2f3fd",
-                        "surface-dim": "#d9d9e3",
-                        "background": "#faf8ff",
-                        "surface-container-highest": "#e1e2ec",
-                        "error": "#ba1a1a",
-                        "surface": "#faf8ff",
-                        "on-tertiary": "#ffffff",
-                        "outline": "#737785",
-                        "outline-variant": "#c3c6d6",
-                        "on-surface-variant": "#424654",
-                        "error-container": "#ffdad6",
-                        "secondary-container": "#8cf3f3",
-                        "on-secondary-container": "#007070"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Public Sans"],
-                        "label": ["Public Sans"]
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/tailwind-config.js"></script>
     <style>
         body {
             font-family: 'Public Sans', sans-serif;
@@ -313,26 +246,6 @@
             </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="bg-[#f2f3fd] w-full py-12 mt-auto font-['Public_Sans'] text-sm leading-relaxed">
-        <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
-            <div class="flex flex-col items-center md:items-start gap-4">
-                <div class="font-['Manrope'] font-bold text-[#191b22] text-xl">CyberGuardian</div>
-                <p class="text-[#191b22]/60 max-w-xs text-center md:text-left">
-                    Protegiendo a la próxima generación en el vasto universo digital.
-                </p>
-            </div>
-            <div class="flex gap-8">
-                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Privacidad</a>
-                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Términos</a>
-                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Seguridad</a>
-                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Contacto</a>
-            </div>
-            <div class="text-[#191b22]/60">
-                © 2024 CyberGuardian. El Santuario Digital.
-            </div>
-        </div>
-    </footer>
     <div id="footer-container"></div>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
