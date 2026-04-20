@@ -13,74 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-secondary": "#ffffff",
-                        "primary-fixed": "#dae2ff",
-                        "on-surface": "#191b22",
-                        "on-secondary-container": "#007070",
-                        "on-secondary-fixed-variant": "#004f4f",
-                        "surface-container-highest": "#e1e2ec",
-                        "primary-container": "#0056d2",
-                        "error": "#ba1a1a",
-                        "background": "#faf8ff",
-                        "surface-container": "#ededf7",
-                        "inverse-primary": "#b2c5ff",
-                        "inverse-on-surface": "#f0f0fa",
-                        "tertiary-fixed": "#ffdbd1",
-                        "tertiary-container": "#b12f00",
-                        "surface-container-lowest": "#ffffff",
-                        "inverse-surface": "#2e3038",
-                        "secondary-fixed-dim": "#6fd7d6",
-                        "surface-container-high": "#e7e7f1",
-                        "on-primary-fixed": "#001847",
-                        "surface-dim": "#d9d9e3",
-                        "outline": "#737785",
-                        "on-tertiary-fixed": "#3b0900",
-                        "tertiary": "#882200",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed": "#8cf3f3",
-                        "on-tertiary-container": "#ffcfc1",
-                        "on-error-container": "#93000a",
-                        "surface-tint": "#0056d2",
-                        "secondary-container": "#8cf3f3",
-                        "on-tertiary-fixed-variant": "#872100",
-                        "primary-fixed-dim": "#b2c5ff",
-                        "on-secondary-fixed": "#002020",
-                        "on-error": "#ffffff",
-                        "on-primary-container": "#ccd8ff",
-                        "surface-variant": "#e1e2ec",
-                        "surface-container-low": "#f2f3fd",
-                        "tertiary-fixed-dim": "#ffb5a0",
-                        "secondary": "#006a6a",
-                        "primary": "#0040a1",
-                        "on-background": "#191b22",
-                        "on-surface-variant": "#424654",
-                        "surface-bright": "#faf8ff",
-                        "outline-variant": "#c3c6d6",
-                        "on-primary": "#ffffff",
-                        "surface": "#faf8ff",
-                        "error-container": "#ffdad6",
-                        "on-primary-fixed-variant": "#0040a1"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Public Sans"],
-                        "label": ["Public Sans"]
-                    }
-                },
-            },
-        }
+    <script src="/assets/js/tailwind-config.js">
     </script>
     <style>
         .material-symbols-outlined {
@@ -99,18 +32,7 @@
 </head>
 
 <body class="bg-surface font-body text-on-surface">
-    <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-xl shadow-slate-900/5 flex items-center px-8 py-4 max-w-full justify-start gap-12">
-        <div class="text-2xl font-black text-blue-800 dark:text-blue-200 font-manrope tracking-tight">The Guardian’s
-            Path</div>
-        <div class="hidden md:flex items-center space-x-8">
-            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-all duration-300 font-manrope tracking-tight font-semibold"
-                href="#">Inicio</a>
-            <a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-600 pb-1 font-manrope tracking-tight font-semibold"
-                href="#">Prueba de seguridad</a>
-        </div>
-    </nav>
+    <div id="navbar-container"></div>
     <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
         <!-- Header Section -->
         <header class="mb-12">
@@ -225,25 +147,9 @@
             </div>
         </div>
     </main>
-    <!-- Footer -->
-    <footer
-        class="w-full border-t border-slate-200/50 dark:border-slate-800/50 bg-slate-50 dark:bg-slate-950 flex flex-col md:flex-row justify-between items-center px-12 py-12">
-        <div class="mb-6 md:mb-0">
-            <span class="font-manrope font-bold text-slate-900 dark:text-slate-100 text-lg">The Guardian’s Path</span>
-            <p class="font-public-sans text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-2">© 2024 The
-                Guardian’s Path. Digital Sanctuary for Minors.</p>
-        </div>
-        <div class="flex space-x-8">
-            <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-public-sans text-sm leading-relaxed"
-                href="#">Privacidad</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-public-sans text-sm leading-relaxed"
-                href="#">Contacto</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-public-sans text-sm leading-relaxed"
-                href="#">Términos</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-public-sans text-sm leading-relaxed"
-                href="#">Seguridad</a>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
+    <script src="../../../../assets/js/main.js"></script>
+    <script src="../../../../assets/js/navbar.js"></script>
 </body>
 
 </html>
