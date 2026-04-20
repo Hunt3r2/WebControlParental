@@ -1,41 +1,341 @@
 <!DOCTYPE html>
+
 <html class="light" lang="es">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>CyberGuardian | Riesgos</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
-
+    <title>CyberGuardian - Control Parental iOS</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="/assets/js/tailwind-config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public+Sans:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#3b0900",
+                        "inverse-surface": "#2e3038",
+                        "inverse-primary": "#b2c5ff",
+                        "on-tertiary-fixed-variant": "#872100",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-surface": "#191b22",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#faf8ff",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#0056d2",
+                        "on-error": "#ffffff",
+                        "primary": "#0040a1",
+                        "secondary": "#006a6a",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-primary-fixed-variant": "#0040a1",
+                        "secondary-fixed": "#8cf3f3",
+                        "tertiary-container": "#b12f00",
+                        "inverse-on-surface": "#f0f0fa",
+                        "on-primary-container": "#ccd8ff",
+                        "surface-variant": "#e1e2ec",
+                        "on-tertiary-container": "#ffcfc1",
+                        "secondary-fixed-dim": "#6fd7d6",
+                        "on-primary-fixed": "#001847",
+                        "surface-container-high": "#e7e7f1",
+                        "surface-tint": "#0056d2",
+                        "on-background": "#191b22",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#004f4f",
+                        "on-secondary-fixed": "#002020",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "tertiary": "#882200",
+                        "surface-container": "#ededf7",
+                        "surface-container-low": "#f2f3fd",
+                        "surface-dim": "#d9d9e3",
+                        "background": "#faf8ff",
+                        "surface-container-highest": "#e1e2ec",
+                        "error": "#ba1a1a",
+                        "surface": "#faf8ff",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#737785",
+                        "outline-variant": "#c3c6d6",
+                        "on-surface-variant": "#424654",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#8cf3f3",
+                        "on-secondary-container": "#007070"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
 
+        h1,
+        h2,
+        h3 {
+            font-family: 'Manrope', sans-serif;
+        }
 
-    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0040a1 0%, #0056d2 100%);
+        }
+    </style>
 </head>
 
-<body class="bg-surface font-body text-on-surface">
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
     <div id="navbar-container"></div>
-
-    <main class="pt-24 max-w-7xl mx-auto px-8 py-16">
-        <h1 class="text-4xl font-headline font-extrabold mb-6">Riesgos digitales</h1>
-        <p class="text-on-surface-variant">
-            Aquí irá el contenido de la sección de riesgos.
-        </p>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="px-8 max-w-7xl mx-auto py-16 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">
+                    <span class="material-symbols-outlined text-sm" data-icon="apple">apple</span> Guía Técnica iOS
+                </div>
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">Control Parental <span
+                        class="text-primary">iOS</span></h1>
+                <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">Apple Tiempo de Uso (Screen Time) es
+                    una herramienta nativa que permite a los padres gestionar el uso de iPhone y iPad, estableciendo
+                    límites de tiempo para apps, filtrando contenido web y programando periodos de inactividad para un
+                    entorno digital seguro.</p>
+                <div class="flex gap-4 pt-4">
+                    <button
+                        class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-xl transition-all">
+                        Comenzar Guía <span class="material-symbols-outlined"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl">
+                </div>
+                <div
+                    class="relative z-10 bg-slate-900 rounded-[3.5rem] p-3 shadow-2xl transform rotate-3 border-[8px] border-slate-800">
+                    <img alt="Premium iOS device mockup showing abstract security visual"
+                        class="rounded-[3rem] w-full aspect-[9/19.5] object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuABNwOnK3YHQLlrpxnXZ6rXRVLMhlGoY2rHn3TxBB8ixuJqRspXPswlGpSYdp9U2v8VowoIEcn5vRBBIV5W_Cs238RLikmmlFsrZnGOh1NaqZ6_OALaTIOKggKO7yJ6dH2t5CjuqTkrKHd8JVkB3Nyt8gxk8ZoQ2XQh4vuy0S_mNz6XHrAoVpvM4Re_wXQmRqlZVp-9dbHxRkDGeNZ5-LhZawreGLLIPJk5J4uwWK2GOCnWniQa1nm51fX8tdKtn-w01qfTrO021XCW" />
+                </div>
+                <div
+                    class="absolute -bottom-6 -left-6 z-20 bg-surface-container-high/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-outline-variant/30 max-w-[200px]">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="material-symbols-outlined text-primary"
+                            data-icon="verified_user">verified_user</span>
+                        <span class="font-bold text-sm">Privacidad iOS</span>
+                    </div>
+                    <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+                        <div class="bg-primary w-full h-full"></div>
+                    </div>
+                    <p class="text-[10px] mt-2 opacity-70">Protección nativa activada</p>
+                </div>
+            </div>
+        </section>
+        <!-- Configuration Section -->
+        <section class="bg-surface-container-low py-24">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-16">
+                    <h2 class="text-4xl font-extrabold mb-4">Configuración del Santuario Digital</h2>
+                    <p class="text-on-surface-variant max-w-2xl">Sigue estos pasos en el dispositivo de tu hijo para
+                        establecer el control parental mediante Tiempo de Uso.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">01</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-primary-container/10 rounded-2xl flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined text-3xl" data-icon="settings">settings</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Ajustes</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Abre la aplicación de
+                            <strong>Configuración</strong> o Ajustes en el dispositivo del menor.
+                        </p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">02</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-secondary-container/10 rounded-2xl flex items-center justify-center mb-6 text-secondary">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="hourglass_empty">hourglass_empty</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Tiempo de Uso</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Selecciona la opción <strong>Tiempo
+                                de Uso</strong> y pulsa en Activar si no lo está.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">03</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-tertiary-fixed/30 rounded-2xl flex items-center justify-center mb-6 text-tertiary">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="family_restroom">family_restroom</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Para la Familia</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Elige <strong>"Configurar para la
+                                familia"</strong> para vincularlo a tu ID de Apple.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">04</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined text-3xl" data-icon="lock">lock</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Código Seguro</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Establece un código de 4 dígitos para
+                            que solo tú puedas cambiar las restricciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Advantages Section -->
+        <section class="py-24 bg-surface overflow-hidden">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-16 text-center md:text-left">
+                    <h2 class="text-4xl font-extrabold mb-4">Ventajas de utilizar Tiempo de Uso de Apple</h2>
+                    <p class="text-on-surface-variant max-w-2xl">Descubre cómo esta herramienta fortalece la seguridad y
+                        el bienestar de tu entorno familiar en iOS.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Advantage 1 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-primary/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-primary text-on-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="app_registration">app_registration</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Control de Aplicaciones</h3>
+                            <p class="text-on-surface-variant">Establece límites diarios para apps específicas como
+                                redes sociales o juegos, asegurando un uso equilibrado.</p>
+                        </div>
+                    </div>
+                    <!-- Advantage 2 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-secondary/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-secondary text-on-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl" data-icon="block">block</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Restricciones de Contenido</h3>
+                            <p class="text-on-surface-variant">Bloquea automáticamente contenido web para adultos y
+                                compras no autorizadas en el App Store.</p>
+                        </div>
+                    </div>
+                    <!-- Advantage 3 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-primary-container/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-primary-container text-on-primary-container rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl" data-icon="bedtime">bedtime</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Tiempo de Desactividad</h3>
+                            <p class="text-on-surface-variant">Programa horarios (como la hora de dormir) donde solo las
+                                apps que tú permitas funcionen en el terminal.</p>
+                        </div>
+                    </div>
+                    <!-- Advantage 4 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-tertiary/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-tertiary text-on-tertiary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="admin_panel_settings">admin_panel_settings</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Privacidad Reforzada</h3>
+                            <p class="text-on-surface-variant">Controla qué apps tienen acceso a la ubicación, contactos
+                                o fotos del menor, evitando cambios sin autorización.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- iOS CTA Section -->
+        <section class="max-w-7xl mx-auto px-8 mb-24">
+            <div
+                class="bg-gradient-to-r from-primary to-primary-container rounded-[3rem] p-12 md:p-20 text-center text-on-primary relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                    <img alt="Abstract digital security network pattern" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMkYmTxxXSQcj--dX4dxkmIOnOrnZfbFyqQlDtOrq54TkpIMgI_Qriam9uvetDG1dgS8wVrxhGnb6Z2t4kTV8tSY2zZuruaPS5veN6vkj25_aVeqryJJjwzWWlnHycruegF5a8QDM02dsKodrM_3JFlKjxMDH6TjpQgAXH7ebqmsrrgt5BR7FS04BpwlccuWpj1j6u6mC9MrGmetHgJ2vPfWV65zpFkrYsQn15S-J9DWcg3TMWCqEdVB-KlrsSAyp8oMZ5ra-IcwA2" />
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8">¿Listo para asegurar su futuro digital en iOS?
+                    </h2>
+                    <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">Protege a tus hijos con las herramientas
+                        nativas de Apple y conviértete en el guardián digital que tu familia necesita.</p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button
+                            class="bg-surface-container-lowest text-primary px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-transform">Descargar
+                            Tiempo de Uso</button>
+                        <button
+                            class="bg-transparent border-2 border-on-primary px-10 py-5 rounded-2xl font-bold hover:bg-on-primary hover:text-primary transition-all">
+                            Ver Tutorial Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-      <div id="footer-container"></div>
-
-    <script src="../../../assets/js/main.js"></script>
-    <script src="../../../assets/js/navbar.js"></script>
+    <!-- Footer -->
+    <footer class="bg-[#f2f3fd] w-full py-12 mt-auto font-['Public_Sans'] text-sm leading-relaxed">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="font-['Manrope'] font-bold text-[#191b22] text-xl">CyberGuardian</div>
+                <p class="text-[#191b22]/60 max-w-xs text-center md:text-left">
+                    Protegiendo a la próxima generación en el vasto universo digital.
+                </p>
+            </div>
+            <div class="flex gap-8">
+                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Privacidad</a>
+                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Términos</a>
+                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Seguridad</a>
+                <a class="text-[#191b22]/60 hover:text-[#0056d2] transition-colors" href="#">Contacto</a>
+            </div>
+            <div class="text-[#191b22]/60">
+                © 2024 CyberGuardian. El Santuario Digital.
+            </div>
+        </div>
+    </footer>
+    <div id="footer-container"></div>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/navbar.js"></script>
 </body>
 
 </html>
