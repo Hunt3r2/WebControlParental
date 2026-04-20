@@ -10,16 +10,21 @@ function normalizarRuta(ruta) {
   return ruta.replace(/\/+$/, "") || "/index.html";
 }
 
+function limpiarRuta(ruta) {
+  return ruta
+    .replace(/index\.html$/, "")
+    .replace(/\/$/, "");
+}
+
 function activarEnlaceActual() {
-  const rutaActual = normalizarRuta(window.location.pathname);
+  const rutaActual = limpiarRuta(window.location.pathname);
   const enlaces = document.querySelectorAll(".nav-link");
 
   enlaces.forEach((enlace) => {
     const href = enlace.getAttribute("href");
     if (!href) return;
 
-    const url = new URL(href, window.location.origin);
-    const rutaEnlace = normalizarRuta(url.pathname);
+    const rutaEnlace = limpiarRuta(new URL(href, window.location.origin).pathname);
 
     if (rutaEnlace === rutaActual) {
       enlace.classList.add("nav-link-active");

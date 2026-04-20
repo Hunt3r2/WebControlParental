@@ -1,41 +1,248 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
+
+<html class="scroll-smooth" lang="es">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>CyberGuardian | Riesgos</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Test de Madurez Digital | The Guardian</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="/assets/js/tailwind-config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
 
+        .custom-shadow {
+            box-shadow: 0px 12px 32px rgba(25, 27, 34, 0.04);
+        }
 
-    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
 </head>
 
-<body class="bg-surface font-body text-on-surface">
-    <div id="navbar-container"></div>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+        <div id="navbar-container"></div>
 
-    <main class="pt-24 max-w-7xl mx-auto px-8 py-16">
-        <h1 class="text-4xl font-headline font-extrabold mb-6">Riesgos digitales</h1>
-        <p class="text-on-surface-variant">
-            Aquí irá el contenido de la sección de riesgos.
-        </p>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="px-8 max-w-7xl mx-auto py-16 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">
+                    <span class="material-symbols-outlined text-sm" data-icon="android">android</span> Guía Técnica
+                    Android
+                </div>
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">Control Parental <span
+                        class="text-primary">Android</span> en Dispositivos Android</h1>
+                <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">Google Family Link es una
+                    herramienta diseñada para ayudar a los padres a supervisar el uso que sus hijos hacen de los
+                    dispositivos Android, permitiendo establecer límites de tiempo, gestionar aplicaciones y garantizar
+                    una navegación segura.</p>
+                <div class="flex gap-4 pt-4">
+                    <button
+                        class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-xl transition-all">
+                        Comenzar Guía <span class="material-symbols-outlined"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl">
+                </div>
+                <div
+                    class="relative z-10 bg-surface-container-lowest rounded-[3rem] p-4 shadow-2xl transform rotate-3 border border-outline-variant/20">
+                    <img alt="Fidelity Android smartphone interface with abstract security elements"
+                        class="rounded-[2.5rem] w-full aspect-[9/19] object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOpI9qaHJWRKzsiEXQJjRs2KQjFLX2RiZEdvS--MsHaTDEVoMNsP6lmTXC8jrlQxPr8ta6CPOgwUzYx2-NlZ8QMUnFLhCUARw_rPbrz9ae6QxbT8uSb6a__FqM3Wm2lDF5-4Xq5M9Gs521PUKAk2bSn6PRfUSdTkY7zwcfZXhxk0MhB0BjJKDvW5YC_6rvPy_2KeUdwN71RUPQOqJcsvFlEGh6YWCe7QMNlYmj9mMht62ZYrVunYnCViDLdFMxyVmVXVQEdENwLTkI" />
+                </div>
+                <div
+                    class="absolute -bottom-6 -left-6 z-20 bg-surface-container-high/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-outline-variant/30 max-w-[200px]">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="material-symbols-outlined text-secondary" data-icon="security">security</span>
+                        <span class="font-bold text-sm">Estado Seguro</span>
+                    </div>
+                    <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+                        <div class="bg-secondary w-full h-full"></div>
+                    </div>
+                    <p class="text-[10px] mt-2 opacity-70">Sincronización activa con CyberGuardian</p>
+                </div>
+            </div>
+        </section>
+        <!-- Step-by-Step Guide Section -->
+        <section class="bg-surface-container-low py-24">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-16">
+                    <h2 class="text-4xl font-extrabold mb-4">Configuración del Santuario Digital</h2>
+                    <p class="text-on-surface-variant max-w-2xl">Sigue estos cuatro pilares fundamentales para
+                        establecer un control parental robusto y educativo.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">01</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-primary-container/10 rounded-2xl flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined text-3xl" data-icon="download">download</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Descarga</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Instala <strong>Google Family
+                                Link</strong> en tu dispositivo y en el del menor desde la Play Store.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">02</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-secondary-container/10 rounded-2xl flex items-center justify-center mb-6 text-secondary">
+                            <span class="material-symbols-outlined text-3xl" data-icon="person_add">person_add</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Cuenta del Menor</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Crea o vincula la cuenta de Google
+                            del menor. Google permite gestionar cuentas para menores de 13 años.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">03</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-tertiary-fixed/30 rounded-2xl flex items-center justify-center mb-6 text-tertiary">
+                            <span class="material-symbols-outlined text-3xl" data-icon="link">link</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Vinculación</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Sigue los pasos en pantalla para
+                            emparejar ambos dispositivos mediante el código de acceso proporcionado.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">04</span>
+                        </div>
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="settings_suggest">settings_suggest</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Control Total</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Establece horarios de descanso,
+                            límites de aplicaciones y filtros de contenido web desde tu propio móvil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Advantages Section -->
+        <section class="py-24 bg-surface overflow-hidden">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-16 text-center md:text-left">
+                    <h2 class="text-4xl font-extrabold mb-4">Ventajas de utilizar Google Family Link</h2>
+                    <p class="text-on-surface-variant max-w-2xl">Descubre cómo esta herramienta fortalece la seguridad y
+                        el bienestar de tu entorno familiar.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Advantage 1 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-primary/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-primary text-on-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl" data-icon="shield_lock">shield_lock</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Seguridad Proactiva</h3>
+                            <p class="text-on-surface-variant">Previene el acceso a contenido inapropiado o peligroso
+                                mediante filtros inteligentes que actúan antes de que ocurra la exposición.</p>
+                        </div>
+                    </div>
+                    <!-- Advantage 2 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-secondary/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-secondary text-on-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="hourglass_top">hourglass_top</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Hábitos Saludables</h3>
+                            <p class="text-on-surface-variant">Establece límites de tiempo de pantalla diarios y
+                                horarios de sueño para fomentar un equilibrio saludable entre la vida digital y física.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Advantage 3 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-primary-container/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-primary-container text-on-primary-container rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="family_restroom">family_restroom</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Tranquilidad Familiar</h3>
+                            <p class="text-on-surface-variant">Mantente informado sobre qué aplicaciones utilizan y con
+                                quién interactúan, permitiéndote supervisar su actividad social de forma segura.</p>
+                        </div>
+                    </div>
+                    <!-- Advantage 4 -->
+                    <div
+                        class="flex gap-6 p-8 bg-surface-container rounded-3xl border border-outline-variant/10 hover:border-tertiary/30 transition-all group">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-tertiary text-on-tertiary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl" data-icon="school">school</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Acompañamiento Digital</h3>
+                            <p class="text-on-surface-variant">Transforma la supervisión en educación, guiando el viaje
+                                digital de tus hijos y ayudándoles a tomar decisiones responsables en la red.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Android CTA Section -->
+        <section class="max-w-7xl mx-auto px-8 mb-24">
+            <div
+                class="bg-gradient-to-r from-primary to-primary-container rounded-[3rem] p-12 md:p-20 text-center text-on-primary relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                    <img alt="Abstract safe digital network pattern" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHt9A2-S2JvVC7dexSoP1E9_w4Iyx7JF53dPrziQHwZfJByeIba7HMhdpMtd9DgQ0Pun-_KlyUnAs1sSa63-H-ARm3YX2rXI2RDVrgTq7WCbwSCTe1tYI-eIF9x9umtz7Lwy5htDkaYDFSD1JYGI0qeIp-5WqK4yJCBGYLddf0fJdpmKTDMYpaHVT9ke3tvBnG8MKFJiMQl9B31Oc-0Qekj3WMuBKwMsoKw044DEDof42mbrN5mNuedJg4xwIK0rjZvNEDmeBOZ1Vd" />
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8">¿Listo para asegurar su futuro digital?</h2>
+                    <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">Comienza hoy mismo la configuración en Android
+                        y conviértete en el guardián digital que tu familia necesita.</p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button
+                            class="bg-surface-container-lowest text-primary px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-transform">
+                            Descargar Family Link
+                        </button>
+                        <button
+                            class="bg-transparent border-2 border-on-primary px-10 py-5 rounded-2xl font-bold hover:bg-on-primary hover:text-primary transition-all">
+                            Ver Tutorial Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-      <div id="footer-container"></div>
-
-    <script src="../../../assets/js/main.js"></script>
-    <script src="../../../assets/js/navbar.js"></script>
+    <div id="footer-container"></div>
+    <script src="/assets/js/"></script>
+    <script src="/assets/js/navbar.js"></script>
 </body>
 
 </html>
