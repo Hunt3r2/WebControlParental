@@ -31,7 +31,7 @@
 </head>
 
 <body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
-        <div id="navbar-container"></div>
+    <div id="navbar-container"></div>
 
     <main class="pt-24">
         <!-- Hero Section -->
@@ -49,10 +49,10 @@
                     dispositivos Android, permitiendo establecer límites de tiempo, gestionar aplicaciones y garantizar
                     una navegación segura.</p>
                 <div class="flex gap-4 pt-4">
-                    <button
+                    <button id="btn-comenzar-guia"
                         class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-xl transition-all">
-                        Comenzar Guía <span class="material-symbols-outlined"
-                            data-icon="arrow_forward">arrow_forward</span>
+                        Comenzar Guía
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
                     </button>
                 </div>
             </div>
@@ -79,7 +79,7 @@
             </div>
         </section>
         <!-- Step-by-Step Guide Section -->
-        <section class="bg-surface-container-low py-24">
+        <section id="configuracion-santuario" class="bg-surface-container-low py-24">
             <div class="max-w-7xl mx-auto px-8">
                 <div class="mb-16">
                     <h2 class="text-4xl font-extrabold mb-4">Configuración del Santuario Digital</h2>
@@ -243,6 +243,21 @@
     <div id="footer-container"></div>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
+    <script>
+        document.getElementById("btn-comenzar-guia").addEventListener("click", function () {
+            const destino = document.getElementById("configuracion-santuario");
+
+            const offset = 120; // altura aproximada navbar
+            const posicion = destino.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: posicion,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

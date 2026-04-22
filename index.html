@@ -8,8 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="/assets/js/tailwind-config.js">
@@ -19,13 +22,16 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .glass-nav {
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
         }
+
         .asymmetric-offset {
             transform: translateY(-40px);
         }
+
         .tonal-transition {
             transition: background-color 0.3s ease;
         }
@@ -57,10 +63,11 @@
                     </p>
 
                     <div class="flex gap-4 flex-wrap">
-                        <button
+                        <button id="btn-comenzar"
                             class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-xl transition-all hover:scale-[1.02]">
                             Comenzar ahora
                         </button>
+
 
                         <button
                             class="bg-surface-container-highest text-on-primary-fixed-variant px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-high">
@@ -175,7 +182,7 @@
             </div>
         </section>
 
-        <section class="py-24 max-w-7xl mx-auto px-8">
+        <section id="tres-pilares" class="py-24 max-w-7xl mx-auto px-8">
             <div class="grid lg:grid-cols-12 gap-8 items-start">
                 <div class="lg:col-span-4 sticky top-32">
                     <h2 class="font-headline text-4xl font-extrabold tracking-tight mb-6">Los Tres Pilares</h2>
@@ -236,6 +243,19 @@
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/navbar.js"></script>
+
+    <script>
+        document.getElementById("btn-comenzar").addEventListener("click", () => {
+            const target = document.getElementById("tres-pilares");
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 120;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
 </body>
 
 </html>

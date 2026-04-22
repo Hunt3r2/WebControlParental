@@ -53,10 +53,10 @@
                     límites de tiempo para apps, filtrando contenido web y programando periodos de inactividad para un
                     entorno digital seguro.</p>
                 <div class="flex gap-4 pt-4">
-                    <button
+                    <button id="btn-comenzar-guia-ios"
                         class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-xl transition-all">
-                        Comenzar Guía <span class="material-symbols-outlined"
-                            data-icon="arrow_forward">arrow_forward</span>
+                        Comenzar Guía
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
                     </button>
                 </div>
             </div>
@@ -84,7 +84,7 @@
             </div>
         </section>
         <!-- Configuration Section -->
-        <section class="bg-surface-container-low py-24">
+        <section id="configuracion-santuario-ios" class="bg-surface-container-low py-24">
             <div class="max-w-7xl mx-auto px-8">
                 <div class="mb-16">
                     <h2 class="text-4xl font-extrabold mb-4">Configuración del Santuario Digital</h2>
@@ -249,6 +249,21 @@
     <div id="footer-container"></div>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
+    <script>
+        document.getElementById("btn-comenzar-guia-ios").addEventListener("click", function () {
+            const destino = document.getElementById("configuracion-santuario-ios");
+
+            const offset = 120; // altura aproximada de la navbar fija
+            const posicion = destino.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: posicion,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
