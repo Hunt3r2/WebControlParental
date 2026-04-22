@@ -19,6 +19,27 @@ function obtenerRutaBase() {
   return "../".repeat(profundidad).slice(0, -1);
 }
 
+function normalizarRuta(ruta) {
+  if (!ruta) return "/";
+  return ruta.replace(/index\.html$/, "").replace(/\/+$/, "") || "/";
+}
+
+function marcarLinkActivo() {
+  const rutaActual = normalizarRuta(window.location.pathname);
+  const enlaces = document.querySelectorAll(".nav-link");
+
+  enlaces.forEach((enlace) => {
+    const href = enlace.getAttribute("href");
+    if (!href) return;
+
+    const rutaEnlace = normalizarRuta(new URL(href, window.location.origin).pathname);
+
+    if (rutaActual === rutaEnlace) {
+      enlace.classList.add("nav-link-active");
+    }
+  });
+}
+
 async function cargarLayout() {
   const base = obtenerRutaBase();
 
@@ -28,6 +49,8 @@ async function cargarLayout() {
   if (typeof inicializarNavbar === "function") {
     inicializarNavbar();
   }
+
+  marcarLinkActivo();
 }
 
 document.addEventListener("DOMContentLoaded", cargarLayout);
