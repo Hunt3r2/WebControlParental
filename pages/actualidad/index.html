@@ -4,38 +4,301 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>CyberGuardian | Riesgos</title>
+    <title>CyberGuardian | Riesgos digitales</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="/assets/js/tailwind-config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
 
-    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #faf8ff;
+            color: #191b22;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
 </head>
 
-<body class="bg-surface font-body text-on-surface">
+<body class="bg-surface text-on-surface">
     <div id="navbar-container"></div>
 
-    <main class="pt-24 max-w-7xl mx-auto px-8 py-16">
-        <h1 class="text-4xl font-headline font-extrabold mb-6">Riesgos digitales</h1>
-        <p class="text-on-surface-variant">
-            Aquí irá el contenido de la sección de riesgos.
-        </p>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative px-8 py-20 max-w-7xl mx-auto overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <span
+                        class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block">
+                        Perspectiva Digital
+                    </span>
+
+                    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter text-on-surface mb-6 leading-tight">
+                        Mantente al día con las <span class="text-primary">Tendencias Digitales</span>
+                    </h1>
+
+                    <p class="text-lg text-on-surface-variant leading-relaxed mb-8 max-w-xl">
+                        El panorama de la ciberseguridad y las redes sociales evoluciona cada hora. Proporcionamos un
+                        análisis editorial profundo sobre lo que realmente importa para la seguridad de los menores.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <button id="btn-explorar-boletines" type="button"
+                            class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:opacity-90 transition-all flex items-center gap-2">
+                            Explorar Boletines
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img alt="Digital Security Abstract" class="w-full h-[450px] object-cover"
+                            data-alt="3D abstract render of interconnected glowing digital nodes and cryptographic structures on a deep blue background, futuristic cybersecurity aesthetic"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb40I3CzcsOO3GlLom8jStVR8cgVOVqcx6bRrjkj9bX51jZrA9HPCALkgShC80tUOPd8nv_pMn09C8XTJBYIdguGopSTYnROaGOrYg9n_p3AmgdbrJT-WEbgSz3AygkzZjhXukBqbKKXPuj2ZVIL3rAOhCyCUb5xt7WchKGndaEx9qPmu4VHHxbPmizM3s-YWyBRqNrHSlZFLVZdKRExX7tMGDZjgm3-s5GWmmU5wUVT6UJJUCDlwnxea9mHK7eZ3VvtGfVDnYLaT7" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+                    </div>
+
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/20 max-w-[200px]">
+                        <p class="text-primary font-bold text-3xl mb-1">+240</p>
+                        <p class="text-on-surface-variant text-sm font-medium leading-tight">
+                            Alertas de seguridad analizadas este mes
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Bento Grid -->
+        <section id="seccion-boletines" class="bg-surface-container-low py-24 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight mb-2">Información de Impacto</h2>
+                        <p class="text-on-surface-variant">
+                            Análisis técnico y guías prácticas sobre la actualidad digital.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-2 flex-wrap" id="filtros-noticias">
+                        <button type="button" data-filter="todos"
+                            class="filtro-btn bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                            Todos
+                        </button>
+                        <button type="button" data-filter="seguridad"
+                            class="filtro-btn bg-surface-container-highest px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary-fixed transition-colors">
+                            Seguridad
+                        </button>
+                        <button type="button" data-filter="ia"
+                            class="filtro-btn bg-surface-container-highest px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary-fixed transition-colors">
+                            IA
+                        </button>
+                        <button type="button" data-filter="leyes"
+                            class="filtro-btn bg-surface-container-highest px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary-fixed transition-colors">
+                            Leyes
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    <!-- Card 1 -->
+                    <div class="md:col-span-8 group cursor-pointer news-card"
+                        data-category="seguridad"
+                        data-link="/pages/articulos/retos-virales.html">
+                        <div
+                            class="bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row h-full border border-outline-variant/10">
+                            <div class="md:w-1/2 overflow-hidden">
+                                <img alt="Viral Challenges Concept"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="Abstract 3D rendering of glass spheres reacting to a central energy force, representing viral movement and digital interaction, clean minimalist style"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaGLdsoJzAAYTz9yff1Zs_ck4cxQGOulNSLgzep8Q3um_dTg_uhV8xZIzpIFotvFFb0CX2m343UV1xzyiOItxsO5Ce7yqChZPnem6nqOfbCeQ3Vhce3UvwskKy_z5RwV4Q5B0xMIatk-nXnr8_Mc9EeKmhXq1lg5itm87DijIhxQrGf8k4UPqWwhFAjQO1p58TyoAEZLI5NAqch2mG5_Kz-TAuMdjFJYqvNPdZkkQFxFNd0FSpY3ztN4mHT3GxJ8TZ0_a24BoUpzqT" />
+                            </div>
+                            <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                                <div class="flex items-center gap-2 mb-4">
+                                    <span class="material-symbols-outlined text-tertiary text-lg"
+                                        style="font-variation-settings: 'FILL' 1;">warning</span>
+                                    <span class="text-tertiary font-bold text-xs uppercase tracking-widest">
+                                        Guía de Seguridad
+                                    </span>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
+                                    Retos Virales: El Manual para Familias
+                                </h3>
+                                <p class="text-on-surface-variant leading-relaxed mb-6">
+                                    Aprende a diferenciar entre la diversión creativa y el riesgo físico. Una guía
+                                    estructurada para dialogar con los menores sobre la presión de grupo digital.
+                                </p>
+                                <div class="mt-auto">
+                                    <span class="text-primary font-bold flex items-center gap-2">
+                                        Leer análisis
+                                        <span class="material-symbols-outlined">chevron_right</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="md:col-span-4 group cursor-pointer news-card"
+                        data-category="ia"
+                        data-link="/pages/articulos/deepfakes.html">
+                        <div
+                            class="bg-surface-container-lowest rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-outline-variant/10 flex flex-col">
+                            <div class="rounded-2xl overflow-hidden mb-6 h-48">
+                                <img alt="Neural Network Concept"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 bg-surface-container-high"
+                                    data-alt="Abstract 3D rendering of glowing neural network paths and data nodes on a dark background"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0stsrgmrHnrq7pjQxXFIwik9nKo9ZsGRsjlhAsUYhGMvMuC3MsT39vUW2PP2NVzvvm0B1THQfJ9iBTa7Dm9Im0yl0GT5b4ABSRhk703nSAJef8wvR-e8uo2AEbjeaWMFqMSmEBMWkH2xXxuMSvMNqbHasNt24KBmCGJx8yO2bCx4e5xABwrpel8Kb33hkM2ofC8waYH-zXmDlAG3Vo58pykuTERDIygzZhgO76wG4xu1hkcCblIyVABTevqGfj8O9Vi2UQ16Yf13r" />
+                            </div>
+                            <span class="text-secondary font-bold text-xs uppercase tracking-widest mb-3">
+                                Inteligencia Artificial
+                            </span>
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                                Deepfakes y Desinformación
+                            </h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                Herramientas técnicas para identificar contenido generado por IA y proteger la identidad
+                                digital de los más jóvenes.
+                            </p>
+                            <div class="mt-auto pt-4 border-t border-surface-container-high">
+                                <span class="text-on-surface-variant text-xs">5 min de lectura</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="md:col-span-4 group cursor-pointer news-card"
+                        data-category="leyes"
+                        data-link="/pages/articulos/privacidad-europa.html">
+                        <div
+                            class="bg-surface-container-lowest rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-outline-variant/10 flex flex-col">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                                <span class="material-symbols-outlined text-3xl">gavel</span>
+                            </div>
+                            <span class="text-primary font-bold text-xs uppercase tracking-widest mb-3">
+                                Legislación Europea
+                            </span>
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                                Nuevas Leyes en Europa: Tu Privacidad
+                            </h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed">
+                                Entiende cómo el nuevo marco regulatorio protege el rastro digital de los menores y qué
+                                derechos puedes ejercer hoy.
+                            </p>
+                            <div class="mt-auto pt-6">
+                                <img alt="Digital Shield Security"
+                                    class="w-full h-32 object-cover rounded-xl group-hover:grayscale-0 transition-all bg-surface-container-high"
+                                    data-alt="Macro shot of a glowing digital circuit board with a central hexagonal shield node, representating cybersecurity legislation"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAppUGbordnda9XAJksTpbh5d9mGy5G77HIwl5Loz1y1m8r7pgHv9TL5I5Ha7jNbUjpT1vb_9pbRNchyUHoXT-xFhuC_9LmE7llHukSEWNWnksF55zQLYFwFqUVHk9_mkLa0GdOllVdaYop5EwJAOxm3pbEB-VtugsB0HB_6hOy_1b1vhNn9H1v_j14X3DHTtJFs-NvWakkuZNJD0Cx0NEOXinZ_z2SjVDtnXuCp2pDeZ12TCZFM6nw7KIZwNhZlkPYZKZtYCyIXpeL" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="md:col-span-8 group cursor-pointer news-card"
+                        data-category="seguridad"
+                        data-link="/pages/articulos/tendencias-redes.html">
+                        <div
+                            class="relative bg-primary-container text-on-primary-container rounded-[2rem] p-10 overflow-hidden shadow-lg h-full border border-primary/20">
+                            <div
+                                class="absolute right-0 top-0 bottom-0 w-1/3 opacity-20 pointer-events-none overflow-hidden hidden md:block">
+                                <img alt="Digital Matrix" class="h-full object-cover"
+                                    data-alt="Digital server room with glowing green and blue lights, close-up on hardware detail with abstract data lines flowing through"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4C47jwF8WNZ0GyC7ao4EoaQff2jXBbm6_JTTcWp4qsIjyomPWJTFl2hffTvQWFMc7tYd9KKauuoqL8VuJhd2_Uc6BEj7DGHcXfGEH3EWcPtOmchbxFLtOyYMHymvYH8rukEV_8DMTIHWiIoz2dkKQTHI3PjpJcf-YY5MQprzSnfuDdKqCg2PyAiNX5D2vOecfgNEoUkeobqWArcbVlNw19hu3sy9SSlHjL5zgV3TW1Km6UA8UlZt_2zlg_ESEr77qTspWHrcPifaC" />
+                            </div>
+                            <div class="relative z-10 md:w-2/3">
+                                <span
+                                    class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 inline-block">
+                                    Flash Informativo
+                                </span>
+                                <h3 class="text-3xl font-bold mb-4 text-white">Tendencias en Redes Sociales</h3>
+                                <p class="text-on-primary-container/90 text-lg leading-relaxed mb-8">
+                                    Análisis del cambio en algoritmos y comportamientos emergentes. ¿Cómo están
+                                    interactuando los menores con las nuevas plataformas de micro-contenido?
+                                </p>
+                                <button id="btn-ver-informe" type="button"
+                                    class="bg-surface-container-lowest text-primary px-6 py-3 rounded-xl font-bold hover:bg-primary hover:text-white transition-all flex items-center gap-2">
+                                    Ver Informe Completo
+                                    <span class="material-symbols-outlined">open_in_new</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="py-24 px-8 overflow-hidden">
+            <div
+                class="max-w-5xl mx-auto bg-surface-container-high rounded-[3rem] p-12 md:p-20 relative border border-outline-variant/10">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <span class="material-symbols-outlined text-[120px]">shield_person</span>
+                </div>
+
+                <div class="relative z-10 text-center max-w-2xl mx-auto">
+                    <h2 class="text-4xl font-extrabold mb-6 tracking-tight">Recibe el Resumen del Santuario</h2>
+                    <p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
+                        Cada viernes, enviamos un análisis curado de los 3 riesgos emergentes más importantes y cómo
+                        mitigarlos desde el hogar. Sin ruido, solo seguridad.
+                    </p>
+
+                   <form id="newsletter-form" class="flex flex-col md:flex-row gap-4" novalidate>
+    <input id="newsletter-email" name="email"
+        class="flex-grow px-6 py-4 rounded-2xl bg-surface-container-lowest border-none ring-1 ring-outline-variant/20 focus:ring-2 focus:ring-primary outline-none text-on-surface font-medium transition-all"
+        placeholder="Tu correo electrónico institucional o personal" type="email" />
+    <button id="btn-suscribirme" type="submit"
+        class="bg-primary text-white px-10 py-4 rounded-2xl font-bold hover:shadow-lg transition-all active:scale-95 whitespace-nowrap">
+        Suscribirme Ahora
+    </button>
+</form>
+
+<p id="newsletter-message" class="mt-4 text-sm font-medium hidden"></p>
+
+                    <p id="newsletter-message" class="mt-4 text-sm font-medium hidden"></p>
+
+                    <p class="mt-6 text-xs text-on-surface-variant opacity-70">
+                        Respetamos tu privacidad. Sin spam, solo actualizaciones críticas de seguridad.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
-      <div id="footer-container"></div>
+    <div id="footer-container"></div>
 
-    <script src="../../../assets/js/main.js"></script>
-    <script src="../../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+
+    
 </body>
 
 </html>
