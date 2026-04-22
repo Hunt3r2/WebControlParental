@@ -227,15 +227,16 @@
                     <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">Comienza hoy mismo la configuración en Android
                         y conviértete en el guardián digital que tu familia necesita.</p>
                     <div class="flex flex-col md:flex-row gap-4 justify-center">
-                        <button
+                        <button id="btn-descargar-family-link"
                             class="bg-surface-container-lowest text-primary px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-transform">
                             Descargar Family Link
                         </button>
-                        <button
+                        <button id="btn-ver-tutorial"
                             class="bg-transparent border-2 border-on-primary px-10 py-5 rounded-2xl font-bold hover:bg-on-primary hover:text-primary transition-all">
                             Ver Tutorial Video
                         </button>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -256,7 +257,17 @@
             });
         });
     </script>
+    <script>
+        // Descargar Google Family Link (enlace oficial)
+        document.getElementById("btn-descargar-family-link").addEventListener("click", function () {
+            window.open("https://families.google.com/familylink/", "_blank");
+        });
 
+        // Ver tutorial oficial en YouTube
+        document.getElementById("btn-ver-tutorial").addEventListener("click", function () {
+            window.open("https://support.google.com/families/answer/7103338", "_blank");
+        });
+    </script>
 
 </body>
 

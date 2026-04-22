@@ -234,10 +234,11 @@
                     <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">Protege a tus hijos con las herramientas
                         nativas de Apple y conviértete en el guardián digital que tu familia necesita.</p>
                     <div class="flex flex-col md:flex-row gap-4 justify-center">
-                        <button
-                            class="bg-surface-container-lowest text-primary px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-transform">Descargar
-                            Tiempo de Uso</button>
-                        <button
+                        <button id="btn-descargar-tiempo-uso"
+                            class="bg-surface-container-lowest text-primary px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-transform">
+                            Descargar Tiempo de Uso
+                        </button>
+                        <button id="btn-ver-tutorial-ios"
                             class="bg-transparent border-2 border-on-primary px-10 py-5 rounded-2xl font-bold hover:bg-on-primary hover:text-primary transition-all">
                             Ver Tutorial Video
                         </button>
@@ -260,6 +261,17 @@
                 top: posicion,
                 behavior: "smooth"
             });
+        });
+    </script>
+    <script>
+        // Enlace oficial Apple - Tiempo de Uso (Screen Time)
+        document.getElementById("btn-descargar-tiempo-uso").addEventListener("click", function () {
+            window.open("https://support.apple.com/es-es/HT208982", "_blank");
+        });
+
+        // Tutorial oficial Apple en YouTube
+        document.getElementById("btn-ver-tutorial-ios").addEventListener("click", function () {
+            window.open("https://support.apple.com/es-es/guide/iphone/iphbfa595995/ios", "_blank");
         });
     </script>
 
