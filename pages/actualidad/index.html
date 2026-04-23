@@ -129,8 +129,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
                     <!-- Card 1 -->
-                    <div class="md:col-span-8 group cursor-pointer news-card"
-                        data-category="seguridad"
+                    <div class="md:col-span-8 group cursor-pointer news-card" data-category="seguridad"
                         data-link="/pages/articulos/retos-virales.html">
                         <div
                             class="bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row h-full border border-outline-variant/10">
@@ -148,26 +147,30 @@
                                         Guía de Seguridad
                                     </span>
                                 </div>
-                                <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
-                                    Retos Virales: El Manual para Familias
+                                <h3 class="text-2xl font-bold mb-4 transition-colors">
+                                    <a href="/pages/actualidad/retos-virales/index.html"
+                                        class="group-hover:text-primary hover:underline focus:outline-none">
+                                        Retos Virales: El Manual para Familias
+                                    </a>
                                 </h3>
                                 <p class="text-on-surface-variant leading-relaxed mb-6">
                                     Aprende a diferenciar entre la diversión creativa y el riesgo físico. Una guía
                                     estructurada para dialogar con los menores sobre la presión de grupo digital.
                                 </p>
                                 <div class="mt-auto">
-                                    <span class="text-primary font-bold flex items-center gap-2">
+                                    <a href="/pages/actualidad/retos-virales/index.html"
+                                        class="text-primary font-bold flex items-center gap-2 hover:underline">
                                         Leer análisis
                                         <span class="material-symbols-outlined">chevron_right</span>
-                                    </span>
+                                    </a>
                                 </div>
+
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="md:col-span-4 group cursor-pointer news-card"
-                        data-category="ia"
+                    <div class="md:col-span-4 group cursor-pointer news-card" data-category="ia"
                         data-link="/pages/articulos/deepfakes.html">
                         <div
                             class="bg-surface-container-lowest rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-outline-variant/10 flex flex-col">
@@ -180,8 +183,11 @@
                             <span class="text-secondary font-bold text-xs uppercase tracking-widest mb-3">
                                 Inteligencia Artificial
                             </span>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                                Deepfakes y Desinformación
+                            <h3 class="text-xl font-bold mb-3 transition-colors">
+                                <a href="/pages/actualidad/deepfake/index.html"
+                                    class="group-hover:text-primary hover:underline focus:outline-none">
+                                    Deepfakes y Desinformación
+                                </a>
                             </h3>
                             <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
                                 Herramientas técnicas para identificar contenido generado por IA y proteger la identidad
@@ -194,8 +200,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="md:col-span-4 group cursor-pointer news-card"
-                        data-category="leyes"
+                    <div class="md:col-span-4 group cursor-pointer news-card" data-category="leyes"
                         data-link="/pages/articulos/privacidad-europa.html">
                         <div
                             class="bg-surface-container-lowest rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-outline-variant/10 flex flex-col">
@@ -206,8 +211,11 @@
                             <span class="text-primary font-bold text-xs uppercase tracking-widest mb-3">
                                 Legislación Europea
                             </span>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                                Nuevas Leyes en Europa: Tu Privacidad
+                            <h3 class="text-xl font-bold mb-3 transition-colors">
+                                <a href="/pages/actualidad/nuevas-leyes/index.html"
+                                    class="group-hover:text-primary hover:underline focus:outline-none">
+                                    Nuevas Leyes en Europa: Tu Privacidad
+                                </a>
                             </h3>
                             <p class="text-on-surface-variant text-sm leading-relaxed">
                                 Entiende cómo el nuevo marco regulatorio protege el rastro digital de los menores y qué
@@ -223,8 +231,7 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="md:col-span-8 group cursor-pointer news-card"
-                        data-category="seguridad"
+                    <div class="md:col-span-8 group cursor-pointer news-card" data-category="seguridad"
                         data-link="/pages/articulos/tendencias-redes.html">
                         <div
                             class="relative bg-primary-container text-on-primary-container rounded-[2rem] p-10 overflow-hidden shadow-lg h-full border border-primary/20">
@@ -244,11 +251,11 @@
                                     Análisis del cambio en algoritmos y comportamientos emergentes. ¿Cómo están
                                     interactuando los menores con las nuevas plataformas de micro-contenido?
                                 </p>
-                                <button id="btn-ver-informe" type="button"
-                                    class="bg-surface-container-lowest text-primary px-6 py-3 rounded-xl font-bold hover:bg-primary hover:text-white transition-all flex items-center gap-2">
+                                <a href="/pages/actualidad/tendencias/index.html"
+                                    class="bg-surface-container-lowest text-primary px-6 py-3 rounded-xl font-bold hover:bg-primary hover:text-white transition-all flex items-center gap-2 inline-flex">
                                     Ver Informe Completo
                                     <span class="material-symbols-outlined">open_in_new</span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -271,17 +278,17 @@
                         mitigarlos desde el hogar. Sin ruido, solo seguridad.
                     </p>
 
-                   <form id="newsletter-form" class="flex flex-col md:flex-row gap-4" novalidate>
-    <input id="newsletter-email" name="email"
-        class="flex-grow px-6 py-4 rounded-2xl bg-surface-container-lowest border-none ring-1 ring-outline-variant/20 focus:ring-2 focus:ring-primary outline-none text-on-surface font-medium transition-all"
-        placeholder="Tu correo electrónico institucional o personal" type="email" />
-    <button id="btn-suscribirme" type="submit"
-        class="bg-primary text-white px-10 py-4 rounded-2xl font-bold hover:shadow-lg transition-all active:scale-95 whitespace-nowrap">
-        Suscribirme Ahora
-    </button>
-</form>
+                    <form id="newsletter-form" class="flex flex-col md:flex-row gap-4" novalidate>
+                        <input id="newsletter-email" name="email"
+                            class="flex-grow px-6 py-4 rounded-2xl bg-surface-container-lowest border-none ring-1 ring-outline-variant/20 focus:ring-2 focus:ring-primary outline-none text-on-surface font-medium transition-all"
+                            placeholder="Tu correo electrónico institucional o personal" type="email" />
+                        <button id="btn-suscribirme" type="submit"
+                            class="bg-primary text-white px-10 py-4 rounded-2xl font-bold hover:shadow-lg transition-all active:scale-95 whitespace-nowrap">
+                            Suscribirme Ahora
+                        </button>
+                    </form>
 
-<p id="newsletter-message" class="mt-4 text-sm font-medium hidden"></p>
+                    <p id="newsletter-message" class="mt-4 text-sm font-medium hidden"></p>
 
                     <p id="newsletter-message" class="mt-4 text-sm font-medium hidden"></p>
 
@@ -298,7 +305,7 @@
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/navbar.js"></script>
 
-    
+
 </body>
 
 </html>
