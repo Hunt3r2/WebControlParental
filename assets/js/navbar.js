@@ -54,3 +54,42 @@ async function cargarLayout() {
 }
 
 document.addEventListener("DOMContentLoaded", cargarLayout);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/index.html";
+    const navLinks = document.querySelectorAll(".nav-link");
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const siteHeader = document.getElementById("site-header");
+
+    function normalizePath(path) {
+        if (!path) return "";
+        let cleanPath = path.replace(window.location.origin, "").replace(/\/+$/, "");
+        return cleanPath === "" ? "/index.html" : cleanPath;
+    }
+
+    navLinks.forEach(link => {
+        const linkPath = normalizePath(link.getAttribute("href"));
+
+        if (linkPath === currentPath) {
+            link.classList.add("nav-link-active");
+        }
+    });
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            mobileMenu.classList.toggle("menu-open");
+        });
+    }
+
+    window.addEventListener("scroll", () => {
+        if (!siteHeader) return;
+
+        if (window.scrollY > 12) {
+            siteHeader.classList.add("scrolled");
+        } else {
+            siteHeader.classList.remove("scrolled");
+        }
+    });
+});
