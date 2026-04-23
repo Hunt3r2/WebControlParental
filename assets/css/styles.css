@@ -66,6 +66,7 @@
   padding: 0.5rem 0.75rem;
 }
 
+<<<<<<< HEAD
 /* =========================
    NAVBAR LINKS
 ========================= */
@@ -187,4 +188,19 @@
         opacity: 1;
         transform: translateY(0);
     }
+=======
+/* ===== Indicador animado del navbar ===== */
+#nav-indicator {
+  position: absolute;
+  bottom: -6px;
+  height: 3px;
+  background-color: #0056d2;
+  border-radius: 999px;
+
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+  will-change: transform, width;
+>>>>>>> e27195be34c4e2924d5260bc0549c626518b341a
 }
