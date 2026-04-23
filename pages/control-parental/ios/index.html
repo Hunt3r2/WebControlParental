@@ -26,46 +26,52 @@
     <div id="navbar-container"></div>
     <main class="pt-24">
         <!-- Hero Section -->
-        <section class="px-8 max-w-7xl mx-auto py-16 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">
-                    <span class="material-symbols-outlined text-sm" data-icon="apple">apple</span> Guía Técnica iOS
-                </div>
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">Control Parental <span
-                        class="text-primary">iOS</span></h1>
-                <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">Apple Tiempo de Uso (Screen Time) es
-                    una herramienta nativa que permite a los padres gestionar el uso de iPhone y iPad, estableciendo
-                    límites de tiempo para apps, filtrando contenido web y programando periodos de inactividad para un
-                    entorno digital seguro.</p>
-                <div class="flex gap-4 pt-4">
-                    <button id="btn-comenzar-guia-ios"
-                        class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-xl transition-all">
-                        Comenzar Guía
-                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-                    </button>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl">
-                </div>
-                <div
-                    class="relative z-10 bg-slate-900 rounded-[3.5rem] p-3 shadow-2xl transform rotate-3 border-[8px] border-slate-800">
-                    <img alt="Premium iOS device mockup showing abstract security visual"
-                        class="rounded-[3rem] w-full aspect-[9/19.5] object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuABNwOnK3YHQLlrpxnXZ6rXRVLMhlGoY2rHn3TxBB8ixuJqRspXPswlGpSYdp9U2v8VowoIEcn5vRBBIV5W_Cs238RLikmmlFsrZnGOh1NaqZ6_OALaTIOKggKO7yJ6dH2t5CjuqTkrKHd8JVkB3Nyt8gxk8ZoQ2XQh4vuy0S_mNz6XHrAoVpvM4Re_wXQmRqlZVp-9dbHxRkDGeNZ5-LhZawreGLLIPJk5J4uwWK2GOCnWniQa1nm51fX8tdKtn-w01qfTrO021XCW" />
-                </div>
-                <div
-                    class="absolute -bottom-6 -left-6 z-20 bg-surface-container-high/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-outline-variant/30 max-w-[200px]">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-symbols-outlined text-primary"
-                            data-icon="verified_user">verified_user</span>
-                        <span class="font-bold text-sm">Privacidad iOS</span>
+        <section class="px-8 max-w-7xl mx-auto min-h-[calc(100vh-96px)] py-10 md:py-12 flex items-center">
+            <div class="w-full grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-sm" data-icon="apple">apple</span> Guía Técnica iOS
                     </div>
-                    <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
-                        <div class="bg-primary w-full h-full"></div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                        Control Parental <span class="text-primary">iOS</span>
+                    </h1>
+                    <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">
+                        Apple Tiempo de Uso (Screen Time) es una herramienta nativa que permite a los padres gestionar
+                        el uso de iPhone y iPad, estableciendo límites de tiempo para apps, filtrando contenido web y
+                        programando periodos de inactividad para un entorno digital seguro.
+                    </p>
+                    <div class="flex gap-4 pt-4">
+                        <button id="btn-comenzar-guia-ios"
+                            class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-xl transition-all">
+                            Comenzar Guía
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                        </button>
                     </div>
-                    <p class="text-[10px] mt-2 opacity-70">Protección nativa activada</p>
+                </div>
+                <div class="relative flex justify-center md:justify-end">
+                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl">
+                    </div>
+
+                    <div
+                        class="relative z-10 bg-slate-900 rounded-[3.5rem] p-3 shadow-2xl transform rotate-3 border-[8px] border-slate-800 w-full max-w-[320px] xl:max-w-[280px]">
+                        <img alt="Premium iOS device mockup showing abstract security visual"
+                            class="rounded-[3rem] w-full aspect-[9/19.5] object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuABNwOnK3YHQLlrpxnXZ6rXRVLMhlGoY2rHn3TxBB8ixuJqRspXPswlGpSYdp9U2v8VowoIEcn5vRBBIV5W_Cs238RLikmmlFsrZnGOh1NaqZ6_OALaTIOKggKO7yJ6dH2t5CjuqTkrKHd8JVkB3Nyt8gxk8ZoQ2XQh4vuy0S_mNz6XHrAoVpvM4Re_wXQmRqlZVp-9dbHxRkDGeNZ5-LhZawreGLLIPJk5J4uwWK2GOCnWniQa1nm51fX8tdKtn-w01qfTrO021XCW" />
+                    </div>
+
+                    <div
+                        class="absolute -bottom-6 left-0 md:left-auto md:-left-6 z-20 bg-surface-container-high/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-outline-variant/30 max-w-[200px]">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-symbols-outlined text-primary"
+                                data-icon="verified_user">verified_user</span>
+                            <span class="font-bold text-sm">Privacidad iOS</span>
+                        </div>
+                        <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+                            <div class="bg-primary w-full h-full"></div>
+                        </div>
+                        <p class="text-[10px] mt-2 opacity-70">Protección nativa activada</p>
+                    </div>
                 </div>
             </div>
         </section>
