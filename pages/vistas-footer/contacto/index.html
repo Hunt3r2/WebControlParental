@@ -16,6 +16,12 @@
     <script src="/assets/js/tailwind-config.js"></script>
     </script>
     <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #faf8ff;
+            color: #191b22;
+        }
+
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -25,10 +31,36 @@
         }
 
         .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0.75rem 0.5rem 1rem;
+            border-left: 4px solid transparent;
+            border-radius: 0 12px 12px 0;
+            color: #5f6673;
+            font-weight: 500;
+            transition: all 0.28s ease;
+            transform: translateX(0);
+        }
+
+        .toc-link:hover {
+            color: #0b57d0;
+            background: rgba(11, 87, 208, 0.06);
+            transform: translateX(4px);
+        }
+
+        .toc-link.active {
+            color: #0b57d0;
+            font-weight: 700;
+            border-left-color: #0b57d0;
+            background: rgba(11, 87, 208, 0.08);
+            transform: translateX(6px);
         }
     </style>
+        <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 
 <body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
@@ -194,7 +226,6 @@
         </section>
     </main>
     <div id="footer-container"></div>
-    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
 </body>
 

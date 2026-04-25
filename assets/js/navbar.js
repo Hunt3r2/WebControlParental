@@ -21,7 +21,11 @@ function obtenerRutaBase() {
 
 function normalizarRuta(ruta) {
   if (!ruta) return "/";
-  return ruta.replace(/index\.html$/, "").replace(/\/+$/, "") || "/";
+
+  return ruta
+    .replace(window.location.origin, "")
+    .replace(/\/index\.html$/, "")
+    .replace(/\/+$/, "") || "/";
 }
 
 function marcarLinkActivo() {
@@ -29,14 +33,41 @@ function marcarLinkActivo() {
   const enlaces = document.querySelectorAll(".nav-link");
 
   enlaces.forEach((enlace) => {
+    enlace.classList.remove("nav-link-active");
+
     const href = enlace.getAttribute("href");
     if (!href) return;
 
-    const rutaEnlace = normalizarRuta(new URL(href, window.location.origin).pathname);
+    const rutaEnlace = normalizarRuta(
+      new URL(href, window.location.origin).pathname
+    );
 
-    if (rutaActual === rutaEnlace) {
+    const esInicio = rutaEnlace === "/";
+    const esActivo =
+      rutaActual === rutaEnlace ||
+      (!esInicio && rutaActual.startsWith(rutaEnlace + "/"));
+
+    if (esActivo) {
       enlace.classList.add("nav-link-active");
     }
+  });
+}
+
+function inicializarNavbar() {
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const siteHeader = document.getElementById("site-header");
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      mobileMenu.classList.toggle("menu-open");
+    });
+  }
+
+  window.addEventListener("scroll", () => {
+    if (!siteHeader) return;
+    siteHeader.classList.toggle("scrolled", window.scrollY > 12);
   });
 }
 
@@ -46,50 +77,56 @@ async function cargarLayout() {
   await cargarComponente("#navbar-container", `${base}/components/navbar.html`);
   await cargarComponente("#footer-container", `${base}/components/footer.html`);
 
-  if (typeof inicializarNavbar === "function") {
-    inicializarNavbar();
-  }
-
-  marcarLinkActivo();
+marcarLinkActivo();
+inicializarNavbar();
+inicializarIndicadorNavbar();
 }
 
 document.addEventListener("DOMContentLoaded", cargarLayout);
 
-document.addEventListener("DOMContentLoaded", () => {
-    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/index.html";
-    const navLinks = document.querySelectorAll(".nav-link");
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const siteHeader = document.getElementById("site-header");
+function inicializarIndicadorNavbar() {
+  const nav = document.getElementById("desktop-nav");
+  if (!nav) return;
 
-    function normalizePath(path) {
-        if (!path) return "";
-        let cleanPath = path.replace(window.location.origin, "").replace(/\/+$/, "");
-        return cleanPath === "" ? "/index.html" : cleanPath;
+  let indicador = nav.querySelector(".nav-indicator");
+
+  if (!indicador) {
+    indicador = document.createElement("span");
+    indicador.className = "nav-indicator";
+    nav.appendChild(indicador);
+  }
+
+  const enlaces = Array.from(nav.querySelectorAll(":scope > .nav-link"));
+
+  function moverIndicador(link) {
+    const navRect = nav.getBoundingClientRect();
+    const linkRect = link.getBoundingClientRect();
+
+    indicador.style.width = `${linkRect.width}px`;
+    indicador.style.transform = `translateX(${linkRect.left - navRect.left}px)`;
+    indicador.style.opacity = "1";
+  }
+
+  function ocultarOVolverActivo() {
+    const activo = enlaces.find((link) =>
+      link.classList.contains("nav-link-active")
+    );
+
+    if (activo) {
+      moverIndicador(activo);
+    } else {
+      indicador.style.opacity = "0";
+      indicador.style.width = "0px";
     }
+  }
 
-    navLinks.forEach(link => {
-        const linkPath = normalizePath(link.getAttribute("href"));
+  enlaces.forEach((link) => {
+    link.addEventListener("mouseenter", () => moverIndicador(link));
+  });
 
-        if (linkPath === currentPath) {
-            link.classList.add("nav-link-active");
-        }
-    });
+  nav.addEventListener("mouseleave", ocultarOVolverActivo);
 
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            mobileMenu.classList.toggle("menu-open");
-        });
-    }
+  window.addEventListener("resize", ocultarOVolverActivo);
 
-    window.addEventListener("scroll", () => {
-        if (!siteHeader) return;
-
-        if (window.scrollY > 12) {
-            siteHeader.classList.add("scrolled");
-        } else {
-            siteHeader.classList.remove("scrolled");
-        }
-    });
-});
+  requestAnimationFrame(ocultarOVolverActivo);
+}

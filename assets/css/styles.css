@@ -1,206 +1,177 @@
+.page-container {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-container {
+    padding-inline: 4rem;
+  }
+}
+
+/* =========================
+   ICONOS
+========================= */
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
+
+
+/* =========================
+   NAVBAR GENERAL
+========================= */
 
 .glass-nav {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
-.tonal-transition {
-  transition: background-color 0.3s ease;
+#site-header.scrolled {
+  background: rgba(250, 248, 255, 0.88) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 16px 40px rgba(25, 27, 34, 0.08) !important;
 }
 
-.nav-link-active {
-  color: #0056d2 !important;
-  opacity: 1 !important;
-}
 
-.nav-link-active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #0056d2;
-  border-radius: 2px;
-}
-
-.mobile-link {
-  color: #191b22;
-  padding: 0.75rem 0.5rem;
-  border-radius: 0.75rem;
-  transition: all 0.2s ease;
-}
-
-.mobile-link:hover {
-  background-color: #f2f3fd;
-  color: #0056d2;
-}
-
-.nav-scrolled {
-  background: rgba(250, 248, 255, 0.92) !important;
-  box-shadow: 0 12px 32px rgba(25, 27, 34, 0.08) !important;
-}
-
-.nav-link-active {
-  color: #0056d2 !important;
-}
-
-.nav-link-active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 100%;
-  height: 2px;
-  background-color: #0056d2;
-  border-radius: 9999px;
-}
-
-.mobile-link-active {
-  color: #0056d2 !important;
-  background-color: rgba(0, 86, 210, 0.08);
-  border-radius: 0.75rem;
-  padding: 0.5rem 0.75rem;
-}
-
-<<<<<<< HEAD
 /* =========================
-   NAVBAR LINKS
+   LINKS ESCRITORIO
 ========================= */
 
 .nav-link {
-    position: relative;
-    color: rgba(25, 27, 34, 0.8);
-    transition: color 0.28s ease, transform 0.28s ease, opacity 0.28s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: rgba(25, 27, 34, 0.8);
+  transition: color 0.25s ease;
+  white-space: nowrap;
 }
 
-.nav-link:hover {
-    color: #0056d2;
+.nav-link:hover,
+.nav-link.nav-link-active {
+  color: #0056d2;
 }
 
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.15rem;
-    width: 100%;
-    height: 3px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, #0040a1, #0056d2);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.28s ease;
-    opacity: 0.95;
+#desktop-nav .nav-link::after {
+  display: none;
 }
 
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-.nav-link-active {
-    color: #0056d2 !important;
-}
-
-.nav-link-active::after {
-    transform: scaleX(1);
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 3px;
+  border-radius: 999px;
+  background: #0056d2;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 0.28s ease,
+    width 0.28s ease,
+    opacity 0.2s ease;
 }
 
 
 /* =========================
-   MOBILE LINKS
+   MENÚ MÓVIL
 ========================= */
 
 .mobile-link {
-    padding: 0.85rem 1rem;
-    border-radius: 0.9rem;
-    color: rgba(25, 27, 34, 0.85);
-    transition: all 0.25s ease;
+  padding: 0.85rem 1rem;
+  border-radius: 0.9rem;
+  color: rgba(25, 27, 34, 0.85);
+  transition: all 0.25s ease;
 }
 
 .mobile-link::after {
-    display: none;
+  display: none;
 }
 
 .mobile-link:hover {
-    background-color: rgba(0, 86, 210, 0.08);
-    color: #0056d2;
-    transform: translateX(4px);
+  background-color: rgba(0, 86, 210, 0.08);
+  color: #0056d2;
+  transform: translateX(4px);
 }
 
 .mobile-link.nav-link-active {
-    background: linear-gradient(90deg, rgba(0, 86, 210, 0.12), rgba(0, 86, 210, 0.04));
-    color: #0056d2 !important;
-    box-shadow: inset 3px 0 0 #0056d2;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 86, 210, 0.12),
+    rgba(0, 86, 210, 0.04)
+  );
+  color: #0056d2;
+  box-shadow: inset 3px 0 0 #0056d2;
 }
 
 
 /* =========================
-   MENU BUTTON
+   BOTÓN MENÚ MÓVIL
 ========================= */
 
 #menu-toggle {
-    transition: background-color 0.25s ease, transform 0.2s ease;
+  transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
 #menu-toggle:hover {
-    background-color: rgba(0, 86, 210, 0.08);
+  background-color: rgba(0, 86, 210, 0.08);
 }
 
 #menu-toggle:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 
 /* =========================
-   HEADER SCROLLED EFFECT
-========================= */
-
-#site-header.scrolled {
-    background: rgba(250, 248, 255, 0.88);
-    backdrop-filter: blur(24px);
-    box-shadow: 0px 16px 40px rgba(25, 27, 34, 0.08);
-}
-
-
-/* =========================
-   MOBILE MENU ANIMATION
+   ANIMACIÓN MENÚ MÓVIL
 ========================= */
 
 #mobile-menu {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #mobile-menu.menu-open {
-    display: block;
-    animation: fadeSlideDown 0.28s ease;
+  display: block;
+  animation: fadeSlideDown 0.28s ease;
 }
 
 @keyframes fadeSlideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-=======
-/* ===== Indicador animado del navbar ===== */
-#nav-indicator {
-  position: absolute;
-  bottom: -6px;
-  height: 3px;
-  background-color: #0056d2;
-  border-radius: 999px;
 
-  transition:
-    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-    width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+/* =========================
+   BOTÓN PÁNICO
+========================= */
 
-  will-change: transform, width;
->>>>>>> e27195be34c4e2924d5260bc0549c626518b341a
+#panic-button,
+#panic-button-mobile {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+#panic-button:hover,
+#panic-button-mobile:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 28px rgba(220, 38, 38, 0.35);
+  filter: brightness(1.05);
+}
+
+#panic-button:active,
+#panic-button-mobile:active {
+  transform: scale(0.94);
 }
