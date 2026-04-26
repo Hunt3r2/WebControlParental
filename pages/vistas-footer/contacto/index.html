@@ -60,7 +60,7 @@
             transform: translateX(6px);
         }
     </style>
-        <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 
 <body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
@@ -169,30 +169,33 @@
             <div
                 class="lg:col-span-7 bg-surface-container-lowest p-10 md:p-14 rounded-[3rem] editorial-shadow relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
-                <form class="space-y-8 relative z-10">
+                <form action="https://formspree.io/f/xgorbedk" method="POST" class="space-y-8 relative z-10">
+
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="space-y-2">
                             <label
-                                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Nombre
-                                Completo</label>
-                            <input
-                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none"
-                                placeholder="Ej. Alex Guardian" type="text" />
+                                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
+                                Nombre Completo
+                            </label>
+                            <input name="nombre" type="text" placeholder="Ej. Alex Guardian" required
+                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
                         </div>
+
                         <div class="space-y-2">
                             <label
-                                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Correo
-                                Electrónico</label>
-                            <input
-                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none"
-                                placeholder="alex@guardian.com" type="email" />
+                                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
+                                Correo Electrónico
+                            </label>
+                            <input name="email" type="email" placeholder="alex@guardian.com" required
+                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
                         </div>
                     </div>
+
                     <div class="space-y-2">
-                        <label
-                            class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Asunto
-                            de la Consulta</label>
-                        <select
+                        <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
+                            Asunto de la Consulta
+                        </label>
+                        <select name="asunto" required
                             class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none">
                             <option>Control Parental Android</option>
                             <option>Seguridad en iOS</option>
@@ -201,26 +204,33 @@
                             <option>Otros Asuntos Técnicos</option>
                         </select>
                     </div>
+
                     <div class="space-y-2">
-                        <label
-                            class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Detalles
-                            de la Consulta</label>
-                        <textarea
-                            class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none resize-none"
+                        <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
+                            Detalles de la Consulta
+                        </label>
+                        <textarea name="mensaje" rows="5" required
                             placeholder="Describe tu consulta técnica con el mayor detalle posible..."
-                            rows="5"></textarea>
+                            class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none resize-none"></textarea>
                     </div>
+
                     <div class="flex items-center space-x-3 text-sm text-on-surface-variant">
-                        <input class="rounded-md border-outline-variant text-primary focus:ring-primary"
-                            type="checkbox" />
-                        <span>Acepto la <a class="text-primary underline" href="#">Política de Privacidad</a> y el
-                            tratamiento de mis datos.</span>
+                        <input name="privacidad" value="aceptada" type="checkbox" required
+                            class="rounded-md border-outline-variant text-primary focus:ring-primary" />
+                        <span>
+                            Acepto la <a class="text-primary underline" href="#">Política de Privacidad</a> y el
+                            tratamiento de mis datos.
+                        </span>
                     </div>
-                    <button
-                        class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 rounded-2xl font-bold text-lg shadow-xl hover:shadow-primary-container/30 transition-all active:scale-[0.98]"
-                        type="submit">
+
+                    <!-- Redirección después de enviar -->
+                    <input type="hidden" name="_next" value="https://formspree.io/thanks" />
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 rounded-2xl font-bold text-lg shadow-xl hover:shadow-primary-container/30 transition-all active:scale-[0.98]">
                         Enviar Consulta Técnica
                     </button>
+
                 </form>
             </div>
         </section>
