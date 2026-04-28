@@ -1,292 +1,309 @@
 <!DOCTYPE html>
+
 <html class="light" lang="es">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>CyberGuardian | Nuevas leyes</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-    rel="stylesheet" />
-
+  <title>CyberGuardian | Tendencias en Redes Sociales</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script src="/assets/js/tailwind-config.js"></script>
-
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed-dim": "#ffb5a0",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#007070",
+            "on-error-container": "#93000a",
+            "tertiary": "#882200",
+            "surface-bright": "#faf8ff",
+            "on-background": "#191b22",
+            "surface": "#faf8ff",
+            "on-secondary-fixed": "#002020",
+            "on-tertiary-fixed": "#3b0900",
+            "surface-container-low": "#f2f3fd",
+            "on-primary-fixed": "#001847",
+            "error": "#ba1a1a",
+            "on-surface": "#191b22",
+            "tertiary-fixed": "#ffdbd1",
+            "surface-container-high": "#e7e7f1",
+            "primary-fixed-dim": "#b2c5ff",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#ffcfc1",
+            "on-secondary-fixed-variant": "#004f4f",
+            "surface-variant": "#e1e2ec",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#dae2ff",
+            "inverse-on-surface": "#f0f0fa",
+            "on-tertiary-fixed-variant": "#872100",
+            "surface-tint": "#0056d2",
+            "on-primary-fixed-variant": "#0040a1",
+            "secondary-fixed-dim": "#6fd7d6",
+            "tertiary-container": "#b12f00",
+            "inverse-primary": "#b2c5ff",
+            "on-error": "#ffffff",
+            "outline": "#737785",
+            "primary-container": "#0056d2",
+            "secondary-fixed": "#8cf3f3",
+            "surface-container": "#ededf7",
+            "on-secondary": "#ffffff",
+            "secondary": "#006a6a",
+            "surface-dim": "#d9d9e3",
+            "on-tertiary": "#ffffff",
+            "background": "#faf8ff",
+            "surface-container-highest": "#e1e2ec",
+            "secondary-container": "#8cf3f3",
+            "on-primary-container": "#ccd8ff",
+            "primary": "#0040a1",
+            "outline-variant": "#c3c6d6",
+            "on-surface-variant": "#424654",
+            "inverse-surface": "#2e3038"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "display": ["Manrope"],
+            "body": ["Public Sans"],
+            "label": ["Public Sans"]
+          }
+        }
+      }
+    }
+  </script>
   <style>
+    body {
+      font-family: 'Public Sans', sans-serif;
+    }
+
+    .font-headline {
+      font-family: 'Manrope', sans-serif;
+    }
+
     .glass-nav {
       backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
     }
 
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
-
-    .gradient-button {
-      background: linear-gradient(135deg, #0040a1 0%, #0056d2 100%);
-    }
-
-    .text-editorial {
-      letter-spacing: -0.02em;
-    }
-
-    .label-caps {
-      letter-spacing: 0.05em;
-    }
   </style>
 </head>
 
-<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<body class="bg-surface text-on-surface antialiased">
   <div id="navbar-container"></div>
-
-  <main class="pt-24">
-    <!-- Hero Section -->
-    <section class="relative px-8 py-20 overflow-hidden bg-surface">
+  <main class="pt-24 pb-20">
+    <!-- Hero Section: Editorial Style -->
+    <section class="relative px-8 md:px-20 py-24 overflow-hidden">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 z-10">
           <span
-            class="inline-block bg-primary-fixed text-on-primary-fixed-variant px-4 py-1 rounded-full text-xs font-bold label-caps mb-6">
-            ACTUALIDAD LEGISLATIVA
+            class="bg-tertiary-container text-on-tertiary-fixed text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase mb-6 inline-block">
+            INFORME DE TENDENCIAS 2024
           </span>
-
-          <h1 class="font-display text-5xl md:text-7xl font-extrabold text-editorial text-on-surface leading-tight mb-8">
-            Nuevas Leyes en Europa: <span class="text-primary">El Santuario Digital</span>
+          <h1
+            class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+            El Laberinto <span class="text-primary italic">Algorítmico</span>
           </h1>
-
-          <p class="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl">
-            Un análisis técnico sobre el GDPR-K y las nuevas directivas de la Unión Europea diseñadas para
-            blindar la integridad de los menores en el ecosistema digital.
+          <p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed text-lg mb-10">
+            Análisis técnico sobre la evolución de las plataformas sociales, la reingeniería de la atención y los nuevos
+            vectores de riesgo para menores en entornos digitales hiperconectados.
           </p>
-
-          <div class="flex flex-wrap gap-4">
-            <a href="#recursos-legales"
-              class="gradient-button text-on-primary px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:scale-105 active:scale-95 inline-flex">
-              Descargar Guía Técnica
-            </a>
-
-            <a href="#directivas-ue"
-              class="bg-surface-container-highest text-on-primary-fixed-variant px-8 py-4 rounded-xl font-bold hover:bg-surface-variant transition-all hover:scale-105 active:scale-95 inline-flex">
-              Directivas UE
-            </a>
-          </div>
-        </div>
-
-        <div class="lg:col-span-5 relative">
-          <div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
-
-          <div
-            class="relative rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
-            <img alt="Seguridad Digital" class="w-full h-[500px] object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzkOyZuXTS4hDizRGwbsfZooNJkz6DA3g13zk8FnM0z_jFuCTcDJR6-OpzffTjMZSHHmMwYnf2r8H3TFBR8UiJz4zsKE-Fn0uhO91ewIXJDlDX1uc3E4_SaSRc428U3MWleX65HHA2dg3xwz3Nv10UCNdlpxsR9O_PTzOvNklSHcAN9rEjawbvMkDBOzJWIQTrlVghxVrOyyU2N3FKmopSOJO-NPW-mo8Ttj-4OLshsiQwyJd1uXjkYn5hpD8-KLQV0Vc-Kr8AJpgZ" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bento Grid: Core Regulations -->
-    <section id="directivas-ue" class="bg-surface-container-low py-24 px-8 scroll-mt-28">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="font-display text-3xl font-bold mb-16 border-l-4 border-primary pl-6">
-          Pilares de la Protección Institucional
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-3xl shadow-sm relative overflow-hidden group">
-            <div class="relative z-10">
-              <span class="material-symbols-outlined text-primary text-4xl mb-6">policy</span>
-              <h3 class="font-display text-2xl font-bold mb-4">GDPR-K: El Estándar de Oro</h3>
-              <p class="text-on-surface-variant leading-relaxed mb-6 max-w-xl">
-                La adaptación del Reglamento General de Protección de Datos para menores establece la obligatoriedad
-                del consentimiento verificado y el derecho al olvido inmediato.
-              </p>
-
-              <ul class="space-y-4">
-                <li class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span class="text-sm font-medium">Restricción de Perfilado Comercial</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span class="text-sm font-medium">Portabilidad de Datos Protegida</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 group-hover:opacity-20 transition-opacity">
-              <img alt="Transparencia" class="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy5BVUaUgbBzBHL_yTE2txl0ZzukJlyecz4EWVIzO9t6CajNKzZfeP1oDpOoqZYTUKrum52eqspciUGMxdv1qsqzSZRnvbP0tL-1z248tXS903J5FLNp_Hlyeik1adxgU89dFxGa1tO9TdfeFPRdXcJ98EbpjVMUr_eiSnszuSCqB1nCKHWMGTCPwJeAd_l4Kdkq2IvkORjF9cHLMPSbwFeoa2G4bc7YL3Q5fVlYTA3OlVIoJ0GMYe7ESzz-lJxIdaVPiUdxQqiqkZ" />
-            </div>
-          </div>
-
-          <div class="bg-tertiary-container text-on-tertiary px-8 py-10 rounded-3xl flex flex-col justify-between">
-            <div>
-              <span class="material-symbols-outlined text-5xl mb-6">gavel</span>
-              <h3 class="font-display text-xl font-bold mb-4">Implicaciones Legales</h3>
-              <p class="text-sm opacity-90 leading-relaxed">
-                El incumplimiento de las nuevas normativas de protección de menores conlleva sanciones de hasta el 4%
-                de la facturación global anual de las plataformas.
-              </p>
-            </div>
-
-            <a class="mt-8 text-sm font-bold underline-offset-4 hover:underline inline-flex items-center gap-2"
-              href="#cuadro-sanciones">
-              Ver cuadro de sanciones
-              <span class="material-symbols-outlined text-xs">arrow_forward</span>
-            </a>
-          </div>
-
-          <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-shadow">
-            <span class="material-symbols-outlined text-primary text-3xl mb-4">vpn_lock</span>
-            <h4 class="font-display text-lg font-bold mb-3">Derechos de Privacidad</h4>
-            <p class="text-sm text-on-surface-variant">
-              Protocolos de cifrado de extremo a extremo obligatorios para comunicaciones que involucren a usuarios
-              menores de 16 años.
-            </p>
-          </div>
-
-          <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-shadow">
-            <span class="material-symbols-outlined text-primary text-3xl mb-4">account_balance</span>
-            <h4 class="font-display text-lg font-bold mb-3">Marco Institucional</h4>
-            <p class="text-sm text-on-surface-variant">
-              Creación de la Agencia de Supervisión Digital con potestad para auditar algoritmos de recomendación en
-              redes sociales.
-            </p>
-          </div>
-
-          <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-shadow">
-            <span class="material-symbols-outlined text-primary text-3xl mb-4">verified_user</span>
-            <h4 class="font-display text-lg font-bold mb-3">Verificación de Edad</h4>
-            <p class="text-sm text-on-surface-variant">
-              Nuevos métodos de estimación de edad basados en IA que respetan el anonimato sin requerir documentos de
-              identidad.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Informative Content Section -->
-    <section id="cuadro-sanciones" class="py-24 px-8 bg-surface scroll-mt-28">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
-          <div>
-            <h2 class="font-display text-4xl font-extrabold text-editorial mb-8">
-              Transparencia y Algoritmos
-            </h2>
-
-            <div class="space-y-6 text-on-surface-variant leading-relaxed">
-              <p>
-                Las nuevas leyes europeas exigen que las plataformas tecnológicas expliquen, en un lenguaje adaptado a
-                menores, cómo funcionan sus sistemas de recomendación. Se prohíbe el uso de patrones oscuros que
-                fomenten el uso compulsivo.
-              </p>
-
-              <div class="p-6 bg-surface-container-low rounded-2xl border-l-4 border-secondary">
-                <p class="text-sm italic font-medium text-on-secondary-fixed-variant">
-                  "El diseño de la interfaz debe priorizar la salud mental y la seguridad por encima de las métricas de
-                  retención."
-                </p>
-              </div>
-
-              <p>
-                Las instituciones nacionales de protección de datos ahora cuentan con herramientas de intervención
-                inmediata para suspender servicios que representen un riesgo sistémico para el desarrollo cognitivo de
-                los menores.
-              </p>
-            </div>
-          </div>
-
-          <div class="relative">
-            <div class="bg-primary-container rounded-[2rem] p-4 transform -rotate-3">
-              <img alt="Red de Datos" class="rounded-2xl w-full h-[400px] object-cover shadow-xl"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3g2eDwxgw-C5KLydoAhJoTjFm-i52E-fmZaHmvKSeAVPefbptulJIzcIv98WXJe8UCvYSu9kJNIVh730sDDGkD2zpz0zERcRHsVXL83zNqd8XlX_tTDs_d5fI2H26qMDqPLSF18ctjzBGqlPuekRe7lZiHiRVHEHyPQi-Vqiy3r8bPW7pU9OPcICQtR2UQq_Tr5YF_lPMyCDxlb7H0ANmxaSBJSQ45GmL7x2irxwR71ntdwGAed2Qklpr05nw6kHmbqoMF6iQdWe6" />
-            </div>
-
-            <div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-6 rounded-2xl shadow-xl max-w-xs">
-              <div class="flex items-center gap-4 mb-3">
-                <span class="material-symbols-outlined text-secondary">shield</span>
-                <span class="font-bold text-sm">Protección Activa</span>
-              </div>
-              <p class="text-xs text-on-surface-variant">
-                Auditado por la Comisión Europea bajo el nuevo Acta de Servicios Digitales.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resources / Call to Action -->
-    <section id="recursos-legales" class="py-24 px-8 scroll-mt-28">
-      <div class="max-w-7xl mx-auto bg-primary text-on-primary rounded-[3rem] p-12 md:p-20 relative overflow-hidden text-center">
-        <div class="relative z-10">
-          <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
-            Manténgase Informado
-          </h2>
-
-          <p class="text-lg opacity-80 mb-10 max-w-2xl mx-auto">
-            Suscríbase a nuestro boletín técnico para recibir actualizaciones semanales sobre regulaciones digitales y
-            ciberseguridad para familias.
-          </p>
-
-          <form id="newsletter-form" class="flex flex-col md:flex-row gap-4 justify-center items-center" novalidate>
-            <input id="newsletter-email"
-              class="w-full md:w-96 px-6 py-4 rounded-xl bg-white/10 border-transparent focus:bg-white/20 focus:ring-2 focus:ring-white/50 text-white placeholder:text-white/50 outline-none transition-all"
-              placeholder="Su correo institucional o personal" type="email" />
-
-            <button id="newsletter-btn" type="submit"
-              class="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary-fixed transition-all active:scale-95">
-              Suscribirme Ahora
+          <div class="flex gap-4">
+            <button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold transition-all hover:shadow-lg">
+              Descargar Informe Completo
             </button>
-          </form>
-
-          <p id="newsletter-msg" class="text-sm font-semibold mt-4 hidden"></p>
+            <button
+              class="bg-surface-container-highest text-on-primary-fixed-variant px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-high">
+              Ver Métricas
+            </button>
+          </div>
         </div>
-
-        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-          <img alt="Infraestructura" class="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCldHc0gkGKCQ55SQ_312wwYlhJmNrgm_kqpgez6SsuY23DiKRAwm982WjFwl2v3k9UJQJs8z7YatiRXCHrwEBONmrEwBkhxvbpkTIYGU3-ThEMwbkDHSJpY_o3LFIrsz6568a15gRjr56OdA_slTUWJzuW51dY3rP_27omR07DpZHobQMNBtKXug7uLzad77QXQScQ6hYIj4ZuS9PTCx52VKn34bmQbXPH90NoganjFYA_oWkOqRpB4PXIFMVHAAmH4qPmLKc0Aqg0" />
+        <div class="lg:col-span-5 relative">
+          <div
+            class="relative rounded-3xl overflow-hidden shadow-2xl aspect-square rotate-3 hover:rotate-0 transition-transform duration-700">
+            <img class="w-full h-full object-cover"
+              data-alt="Abstract 3D digital network of glowing nodes and blue fiber optic lines representing complex data flow in a dark void"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbQI4ezkpjlise2HfVaYlNubgzXoZSZ7jg6JMiDottjD-DguET_T2p_jY5sUH3GhkZDRW6pd9VdJusfdAgv-hkVIOKLYdKHlfUfl2iQfliCwP4Doy-IHi2uyjJNxWdOA957eSDgWVvCqgEpRIsnrVuekMzMdc2a8StucEFNXQ_BFaJGLWBAjaGMpNggDaFjL-A2v8DAKf1SH23c8RjDEJP5MlpT6IISUiPYBSZkjzzweNHPujJ4xUXeCeBf5BxJXT4ZD5qoRL_PDjm" />
+            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+          </div>
+          <!-- Overlapping element for asymmetry -->
+          <div
+            class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/20 max-w-[200px]">
+            <p class="text-xs font-bold text-primary mb-2">DATO CLAVE</p>
+            <p class="text-sm font-medium leading-tight text-on-surface">El 84% de los algoritmos priorizan el
+              "engagement" sobre la seguridad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bento Grid: Platform Evolution -->
+    <section class="px-8 md:px-20 py-20 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col mb-16">
+          <h2 class="font-headline text-3xl font-bold text-on-surface mb-4">Evolución del Ecosistema Digital</h2>
+          <div class="w-20 h-1.5 bg-primary rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
+          <!-- Large Feature -->
+          <div
+            class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-3xl p-10 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div>
+              <span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="hub">hub</span>
+              <h3 class="font-headline text-2xl font-bold mb-4">De "Redes" a "Canales de Consumo"</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                Las plataformas han transicionado de conectar personas a ser motores de recomendación de contenido
+                infinito. Esta mutación elimina la barrera del "círculo social", exponiendo a menores a flujos globales
+                de información sin filtros humanos.
+              </p>
+            </div>
+            <div class="mt-8 rounded-xl overflow-hidden h-48">
+              <img class="w-full h-full object-cover"
+                data-alt="Digital representation of earth with glowing blue global communication lines and satellite data points on a dark background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCawjt8tFGaEFRecf41Y4Pyv5qF24Q_jdaFcn7PaZoFSN6UZitdsaMBqfq3FdtUS46EjO8ZN1dZkBteRX5QW1Z4MKtT8r4jJUK44_cWSoFSAzcarHISYy_lmZjyNYDUm4JeglEizfLHb52Cayh-FjVHbZA43Yycmj4llfUZmqavht8W4gjoeex5UtTj15P3LuyNKmQE-eJkZSH72LPhtyQ6kwGn1v3oPDNDVq3k7JUHrjEoFa2bEu5PErf3iBPb43S_Hf-q5esYEUdf" />
+            </div>
+          </div>
+          <!-- Medium Feature -->
+          <div
+            class="md:col-span-2 bg-primary-container text-on-primary-container rounded-3xl p-8 flex items-center gap-8 relative overflow-hidden">
+            <div class="z-10">
+              <h3 class="font-headline text-xl font-bold mb-2">Micro-segmentación 2.0</h3>
+              <p class="text-sm opacity-90">Los nuevos modelos de IA detectan cambios sutiles en el estado de ánimo para
+                ajustar el contenido en tiempo real.</p>
+            </div>
+            <span class="material-symbols-outlined text-8xl opacity-10 absolute -right-4 -bottom-4"
+              data-icon="psychology">psychology</span>
+          </div>
+          <!-- Small Feature 1 -->
+          <div class="bg-secondary-container text-on-secondary-container rounded-3xl p-8 flex flex-col justify-center">
+            <span class="material-symbols-outlined text-3xl mb-3" data-icon="speed">speed</span>
+            <h4 class="font-bold">Velocidad de Viralización</h4>
+            <p class="text-xs mt-2">Ciclos de vida de tendencias reducidos de semanas a horas.</p>
+          </div>
+          <!-- Small Feature 2 -->
+          <div
+            class="bg-surface-container-highest rounded-3xl p-8 flex flex-col justify-center border border-outline-variant/10">
+            <span class="material-symbols-outlined text-3xl text-on-surface-variant mb-3"
+              data-icon="visibility_off">visibility_off</span>
+            <h4 class="font-bold">Dark Patterns</h4>
+            <p class="text-xs mt-2">Arquitecturas diseñadas para dificultar el cierre de la aplicación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Risk Matrix: No Borders, Color Shifts -->
+    <section class="px-8 md:px-20 py-24">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+          <div>
+            <h2 class="font-headline text-4xl font-extrabold mb-8">Riesgos Algorítmicos Emergentes</h2>
+            <div class="space-y-8">
+              <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-error">
+                <h4 class="font-bold text-lg mb-2">Cámaras de Eco Radicales</h4>
+                <p class="text-on-surface-variant">Algoritmos que refuerzan sesgos cognitivos, aislando a los jóvenes en
+                  burbujas informativas extremas.</p>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-primary">
+                <h4 class="font-bold text-lg mb-2">Hiper-recompensa Dopaminérgica</h4>
+                <p class="text-on-surface-variant">Sistemas de notificación "intermitentes" que imitan la mecánica de
+                  las máquinas tragamonedas.</p>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-secondary">
+                <h4 class="font-bold text-lg mb-2">Sintéticos y Deepfakes</h4>
+                <p class="text-on-surface-variant">La proliferación de contenido generado por IA que desdibuja la
+                  frontera entre realidad y ficción.</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative bg-surface-container-high rounded-[2.5rem] p-4">
+            <div class="bg-surface rounded-[2rem] p-10 shadow-inner">
+              <img
+                class="rounded-2xl w-full h-64 object-cover mb-8 grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Abstract blue and purple geometric shapes and lines representing encrypted data blocks and cybersecurity infrastructure"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZsY4D4EFgA7j8iB0dtDXviYnZY0DSUU4bwmUStM41Ks2MxfUJXroxrAbJEqZDnbDwnf6hBh-0fij7sL7_t8bbGUbspX18nLAcFsUaxaQIqOItCOnFXyASU39-iu7gBlCCjkdyTwtR2x1xY4f0WDLdwLcwTKlHHIKFhYvTQb0D4A63cIdFpQIvVqETOe0fBzwGhjExq71OOgf-mYXm8uZfnFrhiNQW9YHQBe2e2Iq3_Qa2QR8bnt3PjDID4i4C6ktUCz18KyMj0BS9" />
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center">
+                  <span class="material-symbols-outlined text-error" data-icon="warning">warning</span>
+                </div>
+                <h3 class="font-headline text-xl font-bold">Protocolo de Alerta</h3>
+              </div>
+              <p class="text-on-surface-variant mb-6 leading-relaxed">
+                CyberGuardian monitorea constantemente las APIs de las principales redes para identificar patrones de
+                riesgo antes de que se vuelvan virales.
+              </p>
+              <a class="text-primary font-bold inline-flex items-center gap-2 group" href="#">
+                Leer documentación técnica
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                  data-icon="arrow_forward">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Healthy Habits: Floating Glass Cards -->
+    <section class="px-8 md:px-20 py-24 bg-primary text-on-primary relative overflow-hidden">
+      <!-- Decorative background circles -->
+      <div class="absolute -top-20 -right-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+      <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <h2 class="font-headline text-4xl font-bold mb-6">Arquitectura de un Hábito Saludable</h2>
+          <p class="opacity-80 text-lg">La protección no es solo restricción, es el desarrollo de una conciencia técnica
+            sobre nuestras herramientas digitales.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined" data-icon="timer">timer</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Ayuno de Notificaciones</h3>
+            <p class="opacity-70 text-sm leading-relaxed">Configuración de perfiles de enfoque que eliminan el ruido
+              visual durante las horas de descanso y estudio profundo.</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Curación Activa</h3>
+            <p class="opacity-70 text-sm leading-relaxed">Entrenar activamente al algoritmo marcando contenido como "No
+              me interesa" para romper burbujas de ocio improductivo.</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Verificación Cruzada</h3>
+            <p class="opacity-70 text-sm leading-relaxed">Fomentar el hábito de no consumir información de una sola
+              fuente algorítmica, validando datos en bibliotecas digitales.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
-
   <div id="footer-container"></div>
 
+  <script src="/assets/js/main.js"></script>
   <script src="/assets/js/navbar.js"></script>
 
-  <script>
-    const newsletterForm = document.getElementById("newsletter-form");
-    const emailInput = document.getElementById("newsletter-email");
-    const newsletterMsg = document.getElementById("newsletter-msg");
-
-    newsletterForm?.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const email = emailInput.value.trim();
-      const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-      newsletterMsg.classList.remove("hidden", "text-red-200", "text-green-100");
-
-      if (!emailValido) {
-        newsletterMsg.textContent = "Introduce un correo electrónico válido.";
-        newsletterMsg.classList.add("text-red-200");
-        return;
-      }
-
-      newsletterMsg.textContent = "Suscripción registrada correctamente.";
-      newsletterMsg.classList.add("text-green-100");
-      emailInput.value = "";
-    });
-  </script>
 </body>
 
 </html>
