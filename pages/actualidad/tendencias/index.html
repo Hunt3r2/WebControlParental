@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
+<html class="light scroll-smooth" lang="es">
 
 <head>
     <meta charset="utf-8" />
@@ -8,18 +8,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
-        rel="stylesheet" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="/assets/js/tailwind-config.js"></script>
 
-
-
     <link rel="stylesheet" href="/assets/css/styles.css" />
+
     <style>
         .glass-nav {
             backdrop-filter: blur(20px);
@@ -33,203 +32,480 @@
 </head>
 
 <body class="bg-surface text-on-surface antialiased">
-  <div id="navbar-container"></div>
-  <main class="pt-24 pb-20">
-    <!-- Hero Section: Editorial Style -->
-    <section class="relative px-8 md:px-20 py-24 overflow-hidden">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-7 z-10">
-          <span
-            class="bg-tertiary-container text-on-tertiary-fixed text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase mb-6 inline-block">
-            INFORME DE TENDENCIAS 2024
-          </span>
-          <h1
-            class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
-            El Laberinto <span class="text-primary italic">Algorítmico</span>
-          </h1>
-          <p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed text-lg mb-10">
-            Análisis técnico sobre la evolución de las plataformas sociales, la reingeniería de la atención y los nuevos
-            vectores de riesgo para menores en entornos digitales hiperconectados.
-          </p>
-          <div class="flex gap-4">
-            <button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold transition-all hover:shadow-lg">
-              Descargar Informe Completo
-            </button>
-            <button
-              class="bg-surface-container-highest text-on-primary-fixed-variant px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-high">
-              Ver Métricas
-            </button>
-          </div>
-        </div>
-        <div class="lg:col-span-5 relative">
-          <div
-            class="relative rounded-3xl overflow-hidden shadow-2xl aspect-square rotate-3 hover:rotate-0 transition-transform duration-700">
-            <img class="w-full h-full object-cover"
-              data-alt="Abstract 3D digital network of glowing nodes and blue fiber optic lines representing complex data flow in a dark void"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbQI4ezkpjlise2HfVaYlNubgzXoZSZ7jg6JMiDottjD-DguET_T2p_jY5sUH3GhkZDRW6pd9VdJusfdAgv-hkVIOKLYdKHlfUfl2iQfliCwP4Doy-IHi2uyjJNxWdOA957eSDgWVvCqgEpRIsnrVuekMzMdc2a8StucEFNXQ_BFaJGLWBAjaGMpNggDaFjL-A2v8DAKf1SH23c8RjDEJP5MlpT6IISUiPYBSZkjzzweNHPujJ4xUXeCeBf5BxJXT4ZD5qoRL_PDjm" />
-            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
-          </div>
-          <!-- Overlapping element for asymmetry -->
-          <div
-            class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/20 max-w-[200px]">
-            <p class="text-xs font-bold text-primary mb-2">DATO CLAVE</p>
-            <p class="text-sm font-medium leading-tight text-on-surface">El 84% de los algoritmos priorizan el
-              "engagement" sobre la seguridad.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Bento Grid: Platform Evolution -->
-    <section class="px-8 md:px-20 py-20 bg-surface-container-low">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col mb-16">
-          <h2 class="font-headline text-3xl font-bold text-on-surface mb-4">Evolución del Ecosistema Digital</h2>
-          <div class="w-20 h-1.5 bg-primary rounded-full"></div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
-          <!-- Large Feature -->
-          <div
-            class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-3xl p-10 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
-            <div>
-              <span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="hub">hub</span>
-              <h3 class="font-headline text-2xl font-bold mb-4">De "Redes" a "Canales de Consumo"</h3>
-              <p class="text-on-surface-variant leading-relaxed">
-                Las plataformas han transicionado de conectar personas a ser motores de recomendación de contenido
-                infinito. Esta mutación elimina la barrera del "círculo social", exponiendo a menores a flujos globales
-                de información sin filtros humanos.
-              </p>
-            </div>
-            <div class="mt-8 rounded-xl overflow-hidden h-48">
-              <img class="w-full h-full object-cover"
-                data-alt="Digital representation of earth with glowing blue global communication lines and satellite data points on a dark background"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCawjt8tFGaEFRecf41Y4Pyv5qF24Q_jdaFcn7PaZoFSN6UZitdsaMBqfq3FdtUS46EjO8ZN1dZkBteRX5QW1Z4MKtT8r4jJUK44_cWSoFSAzcarHISYy_lmZjyNYDUm4JeglEizfLHb52Cayh-FjVHbZA43Yycmj4llfUZmqavht8W4gjoeex5UtTj15P3LuyNKmQE-eJkZSH72LPhtyQ6kwGn1v3oPDNDVq3k7JUHrjEoFa2bEu5PErf3iBPb43S_Hf-q5esYEUdf" />
-            </div>
-          </div>
-          <!-- Medium Feature -->
-          <div
-            class="md:col-span-2 bg-primary-container text-on-primary-container rounded-3xl p-8 flex items-center gap-8 relative overflow-hidden">
-            <div class="z-10">
-              <h3 class="font-headline text-xl font-bold mb-2">Micro-segmentación 2.0</h3>
-              <p class="text-sm opacity-90">Los nuevos modelos de IA detectan cambios sutiles en el estado de ánimo para
-                ajustar el contenido en tiempo real.</p>
-            </div>
-            <span class="material-symbols-outlined text-8xl opacity-10 absolute -right-4 -bottom-4"
-              data-icon="psychology">psychology</span>
-          </div>
-          <!-- Small Feature 1 -->
-          <div class="bg-secondary-container text-on-secondary-container rounded-3xl p-8 flex flex-col justify-center">
-            <span class="material-symbols-outlined text-3xl mb-3" data-icon="speed">speed</span>
-            <h4 class="font-bold">Velocidad de Viralización</h4>
-            <p class="text-xs mt-2">Ciclos de vida de tendencias reducidos de semanas a horas.</p>
-          </div>
-          <!-- Small Feature 2 -->
-          <div
-            class="bg-surface-container-highest rounded-3xl p-8 flex flex-col justify-center border border-outline-variant/10">
-            <span class="material-symbols-outlined text-3xl text-on-surface-variant mb-3"
-              data-icon="visibility_off">visibility_off</span>
-            <h4 class="font-bold">Dark Patterns</h4>
-            <p class="text-xs mt-2">Arquitecturas diseñadas para dificultar el cierre de la aplicación.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Risk Matrix: No Borders, Color Shifts -->
-    <section class="px-8 md:px-20 py-24">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-          <div>
-            <h2 class="font-headline text-4xl font-extrabold mb-8">Riesgos Algorítmicos Emergentes</h2>
-            <div class="space-y-8">
-              <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-error">
-                <h4 class="font-bold text-lg mb-2">Cámaras de Eco Radicales</h4>
-                <p class="text-on-surface-variant">Algoritmos que refuerzan sesgos cognitivos, aislando a los jóvenes en
-                  burbujas informativas extremas.</p>
-              </div>
-              <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-primary">
-                <h4 class="font-bold text-lg mb-2">Hiper-recompensa Dopaminérgica</h4>
-                <p class="text-on-surface-variant">Sistemas de notificación "intermitentes" que imitan la mecánica de
-                  las máquinas tragamonedas.</p>
-              </div>
-              <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-secondary">
-                <h4 class="font-bold text-lg mb-2">Sintéticos y Deepfakes</h4>
-                <p class="text-on-surface-variant">La proliferación de contenido generado por IA que desdibuja la
-                  frontera entre realidad y ficción.</p>
-              </div>
-            </div>
-          </div>
-          <div class="relative bg-surface-container-high rounded-[2.5rem] p-4">
-            <div class="bg-surface rounded-[2rem] p-10 shadow-inner">
-              <img
-                class="rounded-2xl w-full h-64 object-cover mb-8 grayscale hover:grayscale-0 transition-all duration-500"
-                data-alt="Abstract blue and purple geometric shapes and lines representing encrypted data blocks and cybersecurity infrastructure"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZsY4D4EFgA7j8iB0dtDXviYnZY0DSUU4bwmUStM41Ks2MxfUJXroxrAbJEqZDnbDwnf6hBh-0fij7sL7_t8bbGUbspX18nLAcFsUaxaQIqOItCOnFXyASU39-iu7gBlCCjkdyTwtR2x1xY4f0WDLdwLcwTKlHHIKFhYvTQb0D4A63cIdFpQIvVqETOe0fBzwGhjExq71OOgf-mYXm8uZfnFrhiNQW9YHQBe2e2Iq3_Qa2QR8bnt3PjDID4i4C6ktUCz18KyMj0BS9" />
-              <div class="flex items-center gap-4 mb-4">
-                <div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center">
-                  <span class="material-symbols-outlined text-error" data-icon="warning">warning</span>
-                </div>
-                <h3 class="font-headline text-xl font-bold">Protocolo de Alerta</h3>
-              </div>
-              <p class="text-on-surface-variant mb-6 leading-relaxed">
-                CyberGuardian monitorea constantemente las APIs de las principales redes para identificar patrones de
-                riesgo antes de que se vuelvan virales.
-              </p>
-              <a class="text-primary font-bold inline-flex items-center gap-2 group" href="#">
-                Leer documentación técnica
-                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
-                  data-icon="arrow_forward">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Healthy Habits: Floating Glass Cards -->
-    <section class="px-8 md:px-20 py-24 bg-primary text-on-primary relative overflow-hidden">
-      <!-- Decorative background circles -->
-      <div class="absolute -top-20 -right-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-      <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-      <div class="max-w-7xl mx-auto relative z-10">
-        <div class="text-center max-w-3xl mx-auto mb-20">
-          <h2 class="font-headline text-4xl font-bold mb-6">Arquitectura de un Hábito Saludable</h2>
-          <p class="opacity-80 text-lg">La protección no es solo restricción, es el desarrollo de una conciencia técnica
-            sobre nuestras herramientas digitales.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div
-            class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 transition-all">
-            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
-              <span class="material-symbols-outlined" data-icon="timer">timer</span>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Ayuno de Notificaciones</h3>
-            <p class="opacity-70 text-sm leading-relaxed">Configuración de perfiles de enfoque que eliminan el ruido
-              visual durante las horas de descanso y estudio profundo.</p>
-          </div>
-          <div
-            class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 transition-all">
-            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
-              <span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Curación Activa</h3>
-            <p class="opacity-70 text-sm leading-relaxed">Entrenar activamente al algoritmo marcando contenido como "No
-              me interesa" para romper burbujas de ocio improductivo.</p>
-          </div>
-          <div
-            class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 transition-all">
-            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
-              <span class="material-symbols-outlined" data-icon="visibility">visibility</span>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Verificación Cruzada</h3>
-            <p class="opacity-70 text-sm leading-relaxed">Fomentar el hábito de no consumir información de una sola
-              fuente algorítmica, validando datos en bibliotecas digitales.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <div id="footer-container"></div>
+    <div id="navbar-container"></div>
 
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/navbar.js"></script>
+    <main class="pt-24 pb-20">
+        <!-- Hero Section: Editorial Style -->
+        <section class="relative px-8 md:px-20 py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 z-10">
+                    <span
+                        class="bg-tertiary-container text-on-tertiary-fixed text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase mb-6 inline-block">
+                        INFORME DE TENDENCIAS 2026
+                    </span>
+
+                    <h1
+                        class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                        El Laberinto <span class="text-primary italic">Algorítmico</span>
+                    </h1>
+
+                    <p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed text-lg mb-10">
+                        Análisis técnico sobre la evolución de las plataformas sociales, la reingeniería de la atención
+                        y los nuevos vectores de riesgo para menores en entornos digitales hiperconectados.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#metricas"
+                            class="bg-surface-container-highest text-on-primary-fixed-variant px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-high hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center gap-2">
+                            Ver Métricas
+                            <span class="material-symbols-outlined">bar_chart</span>
+                        </a>
+
+                        <a href="#recursos-oficiales"
+                            class="bg-primary text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center gap-2">
+                            Recursos oficiales
+                            <span class="material-symbols-outlined">verified</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-2xl aspect-square rotate-3 hover:rotate-0 transition-transform duration-700">
+                        <img class="w-full h-full object-cover"
+                            alt="Red digital abstracta con nodos y líneas azules"
+                            data-alt="Abstract 3D digital network of glowing nodes and blue fiber optic lines representing complex data flow in a dark void"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbQI4ezkpjlise2HfVaYlNubgzXoZSZ7jg6JMiDottjD-DguET_T2p_jY5sUH3GhkZDRW6pd9VdJusfdAgv-hkVIOKLYdKHlfUfl2iQfliCwP4Doy-IHi2uyjJNxWdOA957eSDgWVvCqgEpRIsnrVuekMzMdc2a8StucEFNXQ_BFaJGLWBAjaGMpNggDaFjL-A2v8DAKf1SH23c8RjDEJP5MlpT6IISUiPYBSZkjzzweNHPujJ4xUXeCeBf5BxJXT4ZD5qoRL_PDjm" />
+                        <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+                    </div>
+
+                    <!-- Overlapping element for asymmetry -->
+                    <div
+                        class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/20 max-w-[220px]">
+                        <p class="text-xs font-bold text-primary mb-2">DATO CLAVE</p>
+                        <p class="text-sm font-medium leading-tight text-on-surface">
+                            Las plataformas deben reforzar la protección de menores y limitar prácticas de riesgo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics Section -->
+        <section id="metricas" class="px-8 md:px-20 py-20 bg-surface-container-low scroll-mt-28">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12">
+                    <span class="text-primary font-bold text-xs uppercase tracking-widest">
+                        Métricas regulatorias
+                    </span>
+
+                    <h2 class="font-headline text-4xl font-extrabold mt-4 mb-4">
+                        Señales que explican el cambio digital
+                    </h2>
+
+                    <p class="text-on-surface-variant max-w-3xl">
+                        Las plataformas ya no pueden tratar la seguridad infantil, la publicidad dirigida y la
+                        transparencia algorítmica como elementos secundarios.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <a href="https://digital-strategy.ec.europa.eu/en/policies/digital-services-act" target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-4">shield_person</span>
+                        <p class="text-3xl font-extrabold font-headline mb-2">DSA</p>
+                        <h3 class="font-bold mb-2">Protección de menores</h3>
+                        <p class="text-sm text-on-surface-variant">
+                            El Reglamento de Servicios Digitales introduce obligaciones de seguridad, transparencia y
+                            reducción de riesgos.
+                        </p>
+                    </a>
+
+                    <a href="https://digital-strategy.ec.europa.eu/en/policies/dsa-vlops" target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-4">public</span>
+                        <p class="text-3xl font-extrabold font-headline mb-2">45M+</p>
+                        <h3 class="font-bold mb-2">Grandes plataformas</h3>
+                        <p class="text-sm text-on-surface-variant">
+                            Las plataformas con más de 45 millones de usuarios mensuales en la UE tienen obligaciones
+                            reforzadas.
+                        </p>
+                    </a>
+
+                    <a href="https://algorithmic-transparency.ec.europa.eu/index_en" target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-4">psychology</span>
+                        <p class="text-3xl font-extrabold font-headline mb-2">ECAT</p>
+                        <h3 class="font-bold mb-2">Transparencia algorítmica</h3>
+                        <p class="text-sm text-on-surface-variant">
+                            El Centro Europeo de Transparencia Algorítmica apoya la supervisión técnica de los sistemas
+                            digitales.
+                        </p>
+                    </a>
+
+                    <a href="https://www.incibe.es/menores/materiales/guia-de-seguridad-en-redes-sociales-para-familias"
+                        target="_blank" rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-4">family_restroom</span>
+                        <p class="text-3xl font-extrabold font-headline mb-2">IS4K</p>
+                        <h3 class="font-bold mb-2">Guía para familias</h3>
+                        <p class="text-sm text-on-surface-variant">
+                            INCIBE ofrece materiales para acompañar el uso seguro y equilibrado de redes sociales.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid: Platform Evolution -->
+        <section id="evolucion-ecosistema" class="px-8 md:px-20 py-20 bg-surface scroll-mt-28">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col mb-16">
+                    <h2 class="font-headline text-3xl font-bold text-on-surface mb-4">
+                        Evolución del Ecosistema Digital
+                    </h2>
+                    <div class="w-20 h-1.5 bg-primary rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
+                    <!-- Large Feature -->
+                    <div
+                        class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-3xl p-10 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <span class="material-symbols-outlined text-primary text-4xl mb-6">hub</span>
+
+                            <h3 class="font-headline text-2xl font-bold mb-4">
+                                De “Redes” a “Canales de Consumo”
+                            </h3>
+
+                            <p class="text-on-surface-variant leading-relaxed">
+                                Las plataformas han pasado de conectar personas a funcionar como motores de
+                                recomendación de contenido constante. Esta mutación reduce la barrera del círculo social
+                                y expone a menores a flujos globales de información con menos contexto.
+                            </p>
+
+                            <a href="#riesgos-algoritmicos"
+                                class="mt-6 inline-flex items-center gap-2 text-primary font-bold hover:underline">
+                                Ver riesgos asociados
+                                <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                            </a>
+                        </div>
+
+                        <div class="mt-8 rounded-xl overflow-hidden h-48">
+                            <img class="w-full h-full object-cover"
+                                alt="Planeta digital con líneas de comunicación"
+                                data-alt="Digital representation of earth with glowing blue global communication lines and satellite data points on a dark background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCawjt8tFGaEFRecf41Y4Pyv5qF24Q_jdaFcn7PaZoFSN6UZitdsaMBqfq3FdtUS46EjO8ZN1dZkBteRX5QW1Z4MKtT8r4jJUK44_cWSoFSAzcarHISYy_lmZjyNYDUm4JeglEizfLHb52Cayh-FjVHbZA43Yycmj4llfUZmqavht8W4gjoeex5UtTj15P3LuyNKmQE-eJkZSH72LPhtyQ6kwGn1v3oPDNDVq3k7JUHrjEoFa2bEu5PErf3iBPb43S_Hf-q5esYEUdf" />
+                        </div>
+                    </div>
+
+                    <!-- Medium Feature -->
+                    <a href="#metricas"
+                        class="md:col-span-2 bg-primary-container text-on-primary-container rounded-3xl p-8 flex items-center gap-8 relative overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="z-10">
+                            <h3 class="font-headline text-xl font-bold mb-2">Microsegmentación 2.0</h3>
+                            <p class="text-sm opacity-90">
+                                Los sistemas de recomendación ajustan contenido de forma continua según interacción,
+                                permanencia y señales de comportamiento.
+                            </p>
+                        </div>
+                        <span class="material-symbols-outlined text-8xl opacity-10 absolute -right-4 -bottom-4">
+                            psychology
+                        </span>
+                    </a>
+
+                    <!-- Small Feature 1 -->
+                    <a href="#habitos-saludables"
+                        class="bg-secondary-container text-on-secondary-container rounded-3xl p-8 flex flex-col justify-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <span class="material-symbols-outlined text-3xl mb-3">speed</span>
+                        <h4 class="font-bold">Velocidad de Viralización</h4>
+                        <p class="text-xs mt-2">
+                            Las tendencias cambian rápido, por eso conviene educar criterios, no solo bloquear apps.
+                        </p>
+                    </a>
+
+                    <!-- Small Feature 2 -->
+                    <a href="#habitos-saludables"
+                        class="bg-surface-container-highest rounded-3xl p-8 flex flex-col justify-center border border-outline-variant/10 hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <span class="material-symbols-outlined text-3xl text-on-surface-variant mb-3">
+                            visibility_off
+                        </span>
+                        <h4 class="font-bold">Dark Patterns</h4>
+                        <p class="text-xs mt-2">
+                            Diseños que dificultan cerrar, descansar o tomar decisiones conscientes dentro de una app.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Matrix -->
+        <section id="riesgos-algoritmicos" class="px-8 md:px-20 py-24 scroll-mt-28">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div>
+                        <span class="text-primary font-bold text-xs uppercase tracking-widest">
+                            Matriz de riesgo
+                        </span>
+
+                        <h2 class="font-headline text-4xl font-extrabold mt-4 mb-8">
+                            Riesgos Algorítmicos Emergentes
+                        </h2>
+
+                        <div class="space-y-8">
+                            <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-error">
+                                <h4 class="font-bold text-lg mb-2">Cámaras de Eco</h4>
+                                <p class="text-on-surface-variant">
+                                    Sistemas que refuerzan sesgos y muestran contenido parecido de forma repetida,
+                                    reduciendo la diversidad de perspectivas.
+                                </p>
+                            </div>
+
+                            <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-primary">
+                                <h4 class="font-bold text-lg mb-2">Recompensa Intermitente</h4>
+                                <p class="text-on-surface-variant">
+                                    Notificaciones, recompensas visuales y bucles de desplazamiento que dificultan
+                                    cortar el uso de forma consciente.
+                                </p>
+                            </div>
+
+                            <div class="p-6 rounded-2xl bg-surface-container-low border-l-4 border-secondary">
+                                <h4 class="font-bold text-lg mb-2">Contenido Sintético y Deepfakes</h4>
+                                <p class="text-on-surface-variant">
+                                    La generación automática de imágenes, vídeos y textos obliga a reforzar la
+                                    verificación de fuentes y el pensamiento crítico.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                            <a href="#habitos-saludables"
+                                class="inline-flex items-center justify-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-bold hover:scale-[1.03] active:scale-[0.98] transition-all">
+                                Ver hábitos saludables
+                                <span class="material-symbols-outlined">arrow_downward</span>
+                            </a>
+
+                            <a href="https://digital-strategy.ec.europa.eu/en/policies/digital-services-act"
+                                target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 bg-surface-container-high text-on-surface px-7 py-4 rounded-xl font-bold hover:bg-surface-variant transition-all">
+                                Leer sobre el DSA
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative bg-surface-container-high rounded-[2.5rem] p-4">
+                        <div class="bg-surface rounded-[2rem] p-10 shadow-inner">
+                            <img
+                                class="rounded-2xl w-full h-64 object-cover mb-8 grayscale hover:grayscale-0 transition-all duration-500"
+                                alt="Bloques de datos cifrados en azul y morado"
+                                data-alt="Abstract blue and purple geometric shapes and lines representing encrypted data blocks and cybersecurity infrastructure"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZsY4D4EFgA7j8iB0dtDXviYnZY0DSUU4bwmUStM41Ks2MxfUJXroxrAbJEqZDnbDwnf6hBh-0fij7sL7_t8bbGUbspX18nLAcFsUaxaQIqOItCOnFXyASU39-iu7gBlCCjkdyTwtR2x1xY4f0WDLdwLcwTKlHHIKFhYvTQb0D4A63cIdFpQIvVqETOe0fBzwGhjExq71OOgf-mYXm8uZfnFrhiNQW9YHQBe2e2Iq3_Qa2QR8bnt3PjDID4i4C6ktUCz18KyMj0BS9" />
+
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-error">warning</span>
+                                </div>
+                                <h3 class="font-headline text-xl font-bold">Protocolo de Alerta</h3>
+                            </div>
+
+                            <p class="text-on-surface-variant mb-6 leading-relaxed">
+                                CyberGuardian propone revisar fuentes fiables, señales de manipulación y ajustes de
+                                privacidad antes de reaccionar a una tendencia digital.
+                            </p>
+
+                            <a class="text-primary font-bold inline-flex items-center gap-2 group"
+                                href="https://algorithmic-transparency.ec.europa.eu/index_en" target="_blank"
+                                rel="noopener noreferrer">
+                                Leer documentación técnica
+                                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Healthy Habits -->
+        <section id="habitos-saludables"
+            class="px-8 md:px-20 py-24 bg-primary text-on-primary relative overflow-hidden scroll-mt-28">
+            <!-- Decorative background circles -->
+            <div class="absolute -top-20 -right-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <h2 class="font-headline text-4xl font-bold mb-6">
+                        Arquitectura de un Hábito Saludable
+                    </h2>
+
+                    <p class="opacity-80 text-lg">
+                        La protección no es solo restricción. También consiste en desarrollar conciencia técnica sobre
+                        cómo funcionan las herramientas digitales.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <a href="https://www.incibe.es/menores/familias" target="_blank" rel="noopener noreferrer"
+                        class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 hover:-translate-y-1 transition-all block">
+                        <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined">timer</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Ayuno de Notificaciones</h3>
+                        <p class="opacity-70 text-sm leading-relaxed">
+                            Configuración de perfiles de enfoque que reducen ruido visual durante las horas de descanso
+                            y estudio profundo.
+                        </p>
+                        <span class="mt-6 inline-flex items-center gap-1 text-sm font-bold">
+                            Ver pautas familiares
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </span>
+                    </a>
+
+                    <a href="https://www.incibe.es/menores/materiales/guia-de-seguridad-en-redes-sociales-para-familias"
+                        target="_blank" rel="noopener noreferrer"
+                        class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 hover:-translate-y-1 transition-all block">
+                        <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined">filter_list</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Curación Activa</h3>
+                        <p class="opacity-70 text-sm leading-relaxed">
+                            Revisar recomendaciones, marcar contenido irrelevante y hablar de por qué aparece cierto
+                            contenido ayuda a romper burbujas.
+                        </p>
+                        <span class="mt-6 inline-flex items-center gap-1 text-sm font-bold">
+                            Guía de redes sociales
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </span>
+                    </a>
+
+                    <a href="https://better-internet-for-kids.europa.eu/en" target="_blank" rel="noopener noreferrer"
+                        class="bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/15 hover:-translate-y-1 transition-all block">
+                        <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Verificación Cruzada</h3>
+                        <p class="opacity-70 text-sm leading-relaxed">
+                            Fomentar el hábito de contrastar información con varias fuentes y no depender de una sola
+                            recomendación algorítmica.
+                        </p>
+                        <span class="mt-6 inline-flex items-center gap-1 text-sm font-bold">
+                            Better Internet for Kids
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="mt-14 text-center">
+                    <a href="#recursos-oficiales"
+                        class="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary-fixed hover:scale-[1.03] active:scale-[0.98] transition-all">
+                        Consultar recursos oficiales
+                        <span class="material-symbols-outlined">arrow_downward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Official Resources -->
+        <section id="recursos-oficiales" class="px-8 md:px-20 py-24 bg-surface scroll-mt-28">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12">
+                    <span class="text-primary font-bold text-xs uppercase tracking-widest">
+                        Fuentes verificadas
+                    </span>
+
+                    <h2 class="font-headline text-4xl font-extrabold mt-4 mb-4">
+                        Recursos oficiales para ampliar información
+                    </h2>
+
+                    <p class="text-on-surface-variant max-w-3xl">
+                        Enlaces útiles para familias, docentes y estudiantes que quieran profundizar en seguridad,
+                        regulación digital y transparencia algorítmica.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="https://digital-strategy.ec.europa.eu/en/policies/digital-services-act" target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-4">policy</span>
+                        <h3 class="font-headline text-xl font-bold mb-3">Digital Services Act</h3>
+                        <p class="text-sm text-on-surface-variant mb-5">
+                            Marco europeo para plataformas, transparencia y protección de usuarios online.
+                        </p>
+                        <span class="text-primary text-sm font-bold inline-flex items-center gap-1">
+                            Abrir fuente
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </span>
+                    </a>
+
+                    <a href="https://algorithmic-transparency.ec.europa.eu/index_en" target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-4">memory</span>
+                        <h3 class="font-headline text-xl font-bold mb-3">Transparencia Algorítmica</h3>
+                        <p class="text-sm text-on-surface-variant mb-5">
+                            Centro europeo dedicado al análisis y supervisión de sistemas algorítmicos.
+                        </p>
+                        <span class="text-primary text-sm font-bold inline-flex items-center gap-1">
+                            Abrir fuente
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </span>
+                    </a>
+
+                    <a href="https://www.incibe.es/menores" target="_blank" rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-4">family_restroom</span>
+                        <h3 class="font-headline text-xl font-bold mb-3">INCIBE Menores</h3>
+                        <p class="text-sm text-on-surface-variant mb-5">
+                            Recursos de ciberseguridad para menores, familias y educadores.
+                        </p>
+                        <span class="text-primary text-sm font-bold inline-flex items-center gap-1">
+                            Abrir recurso
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </span>
+                    </a>
+
+                    <a href="https://better-internet-for-kids.europa.eu/en" target="_blank" rel="noopener noreferrer"
+                        class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 hover:shadow-lg hover:-translate-y-1 transition-all block">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-4">public</span>
+                        <h3 class="font-headline text-xl font-bold mb-3">Better Internet for Kids</h3>
+                        <p class="text-sm text-on-surface-variant mb-5">
+                            Portal europeo sobre seguridad, bienestar y ciudadanía digital infantil.
+                        </p>
+                        <span class="text-primary text-sm font-bold inline-flex items-center gap-1">
+                            Abrir portal
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="mt-12 flex flex-col sm:flex-row gap-4">
+                    <a href="#metricas"
+                        class="inline-flex items-center justify-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-bold hover:scale-[1.03] active:scale-[0.98] transition-all">
+                        Volver a métricas
+                        <span class="material-symbols-outlined">arrow_upward</span>
+                    </a>
+
+                    <a href="#evolucion-ecosistema"
+                        class="inline-flex items-center justify-center gap-2 bg-surface-container-high text-on-surface px-7 py-4 rounded-xl font-bold hover:bg-surface-variant transition-all">
+                        Ver evolución
+                        <span class="material-symbols-outlined">hub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/navbar.js"></script>
 
 </body>
 

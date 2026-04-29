@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
+<html class="light scroll-smooth" lang="es">
 
 <head>
     <meta charset="utf-8" />
@@ -8,18 +8,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
-        rel="stylesheet" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="/assets/js/tailwind-config.js"></script>
 
-
-
     <link rel="stylesheet" href="/assets/css/styles.css" />
+
     <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -44,30 +43,36 @@
 
 <body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
     <div id="navbar-container"></div>
+
     <main class="pt-24">
         <!-- Hero Section -->
         <section class="relative px-8 py-20 overflow-hidden">
             <div class="max-w-7xl mx-auto editorial-grid">
                 <div class="col-span-12 md:col-span-7 z-10">
                     <span
-                        class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label text-[0.75rem] uppercase tracking-widest mb-6">Informe
-                        de Seguridad Digital</span>
+                        class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label text-[0.75rem] uppercase tracking-widest mb-6">
+                        Informe de Seguridad Digital
+                    </span>
+
                     <h1
                         class="font-display text-5xl md:text-7xl font-extrabold text-on-background leading-tight tracking-tighter mb-8">
                         Deepfakes: La Frontera de la <span class="text-primary italic">Desinformación</span>
                     </h1>
+
                     <p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed mb-10">
                         En la era de la inteligencia artificial generativa, la realidad se vuelve maleable. Aprende a
                         discernir entre la verdad y la manipulación algorítmica en el ecosistema digital moderno.
                     </p>
+
                     <div class="flex gap-4">
-                        <button
-                            class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2">
+                        <a href="#guia-deteccion"
+                            class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:scale-[1.03] active:scale-[0.98] transition-transform">
                             Guía de Detección
                             <span class="material-symbols-outlined">shield</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
+
                 <div class="col-span-12 md:col-span-5 relative mt-12 md:mt-0">
                     <div
                         class="aspect-square bg-surface-container-high rounded-[2.5rem] overflow-hidden transform rotate-3 shadow-xl">
@@ -75,26 +80,32 @@
                             data-alt="Abstract digital visualization of artificial intelligence neural networks with glowing blue nodes and flowing data threads against a dark background"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl6tlA6tLuo6ER2q-k6axM1AIOgeeYqW2chNo10OfMvNC1eZ7APBp-LtGlCYCFqfbFc5INW3r-X79Kfo2DeLhPpjPCEyL9hzVs-MSefN-UpKDRr52LjTV_4Wd0yrXnywaZUpUoRmV-DjWaPdeNFOFjklr0n0SRdGOA85yA0UfjzR4aMK-hNt28B8ojTkXFVqsVCh0RUH4Tpag02q7e1f5fEGdHmBVKpw441572PW0KjVe6eIwHp5L8orEGMIpVbS9kjKGqik4nzjoD" />
                     </div>
+
                     <div
                         class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-xl shadow-[0px_12px_32px_rgba(25,27,34,0.06)] max-w-[280px] transform -rotate-2">
                         <span class="material-symbols-outlined text-primary mb-3"
                             style="font-variation-settings: 'FILL' 1;">warning</span>
                         <p class="font-headline font-bold text-lg mb-2">Alerta Crítica</p>
-                        <p class="text-sm text-on-surface-variant">El 92% de los deepfakes en línea no están etiquetados
-                            como contenido sintético.</p>
+                        <p class="text-sm text-on-surface-variant">
+                            El 92% de los deepfakes en línea no están etiquetados como contenido sintético.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Bento Grid: Anatomía de la Mentira -->
-        <section class="bg-surface-container-low py-24 px-8">
+        <section id="anatomia-manipulacion" class="bg-surface-container-low py-24 px-8 scroll-mt-28">
             <div class="max-w-7xl mx-auto">
                 <div class="mb-16">
-                    <h2 class="font-display text-3xl font-extrabold text-on-surface mb-4">Anatomía de la Manipulación
+                    <h2 class="font-display text-3xl font-extrabold text-on-surface mb-4">
+                        Anatomía de la Manipulación
                     </h2>
-                    <p class="text-on-surface-variant max-w-2xl">Cómo las Redes Generativas Antagónicas (GANs)
-                        construyen realidades alternativas.</p>
+                    <p class="text-on-surface-variant max-w-2xl">
+                        Cómo las Redes Generativas Antagónicas, conocidas como GANs, construyen realidades alternativas.
+                    </p>
                 </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
                     <!-- Large Feature Card -->
                     <div
@@ -103,15 +114,20 @@
                             <span class="material-symbols-outlined text-4xl text-primary mb-6"
                                 style="font-variation-settings: 'FILL' 1;">psychology</span>
                             <h3 class="font-display text-3xl font-bold mb-4">Ingeniería Sintética</h3>
-                            <p class="text-on-surface-variant leading-relaxed">El proceso utiliza dos IAs: una que crea
-                                y otra que juzga. Este ciclo infinito perfecciona el engaño hasta que es indistinguible
-                                para el ojo humano.</p>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                El proceso utiliza dos IAs: una que crea y otra que juzga. Este ciclo infinito
+                                perfecciona el engaño hasta que es indistinguible para el ojo humano.
+                            </p>
                         </div>
+
                         <div class="mt-8 z-10">
                             <a class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline"
-                                href="#">Explorar arquitectura <span
-                                    class="material-symbols-outlined">arrow_forward</span></a>
+                                href="#guia-deteccion">
+                                Explorar arquitectura
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
                         </div>
+
                         <div
                             class="absolute right-[-10%] bottom-[-10%] w-2/3 opacity-10 group-hover:opacity-20 transition-opacity">
                             <img class="w-full"
@@ -119,37 +135,45 @@
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv2SuF0Lt2ISyFvkqSPnCFHfuIAZYtu6C1IsBQaZyxgTK1OHnY4AJOBfsd82xy7mAeLsRZGghFreGerx_UN0ZyQ9UxZJCOjEhv2bChtolPgtjMPS7HSCxkG3c0WxJHE2Zlux-tzWXDuGJaecs_GuhhIr5sgZM_cVICsIwOf240R2XdE1s-fUU9jpBrP_V57XRohmLMWEnled-KcFpEv0LCyq1AEbHPYY441yKO9yNkxEsMUqKc9SX0TujjGa6xpbMvMI5-gKPnHc3f" />
                         </div>
                     </div>
+
                     <!-- Side Cards -->
                     <div
                         class="md:col-span-2 bg-primary-container text-on-primary-container p-8 rounded-[2rem] flex items-center gap-8 group">
                         <div class="flex-1">
                             <h4 class="font-display text-xl font-bold mb-2">Desinformación Viral</h4>
-                            <p class="text-on-primary-container/80 text-sm">Contenido diseñado para explotar sesgos
-                                cognitivos y propagarse en segundos.</p>
+                            <p class="text-on-primary-container/80 text-sm">
+                                Contenido diseñado para explotar sesgos cognitivos y propagarse en segundos.
+                            </p>
                         </div>
+
                         <div
                             class="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md">
                             <span class="material-symbols-outlined text-4xl">share_reviews</span>
                         </div>
                     </div>
+
                     <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-sm">
                         <span class="material-symbols-outlined text-secondary mb-4">verified_user</span>
                         <h4 class="font-display text-lg font-bold mb-2">Autenticación</h4>
-                        <p class="text-sm text-on-surface-variant">Protocolos C2PA para verificar el origen del
-                            contenido digital.</p>
+                        <p class="text-sm text-on-surface-variant">
+                            Protocolos C2PA para verificar el origen del contenido digital.
+                        </p>
                     </div>
+
                     <div class="bg-tertiary-container text-on-tertiary-container p-8 rounded-[2rem]">
                         <span class="material-symbols-outlined mb-4"
                             style="font-variation-settings: 'FILL' 1;">gavel</span>
                         <h4 class="font-display text-lg font-bold mb-2">Impacto Legal</h4>
-                        <p class="text-sm text-on-tertiary-container/80">Nuevas regulaciones europeas sobre el
-                            etiquetado de IA.</p>
+                        <p class="text-sm text-on-tertiary-container/80">
+                            Nuevas regulaciones europeas sobre el etiquetado de IA.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Detection Guide: Asymmetric Layout -->
-        <section class="py-32 px-8 overflow-hidden">
+        <section id="guia-deteccion" class="py-32 px-8 overflow-hidden scroll-mt-28">
             <div class="max-w-7xl mx-auto editorial-grid items-center">
                 <div class="col-span-12 md:col-span-6 relative">
                     <div class="grid grid-cols-2 gap-4">
@@ -160,18 +184,21 @@
                                     data-alt="Stylized digital glitch effect with abstract cyan and magenta data fragments and vertical lines"
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDp1b-F91_26I_yMNBfyc7ltmG_1i3MKi1pvqQ6i3AobuvL2ncJgpVZm3u9L6zBF-05fmhNucAyeOOAZLiUzKovKLEvxmdODzp8_7ge0RqunUVOxwd7ZurCNBWveuj5mhp9P2HJv5I-nf3vSGMYVnMpkTf2ub9mZc8P17vaV8LQwmcaU_WgbcGv-XsRPbjNF9L3_sk2p6CPm9omcCOh-EpKrh8_MEOGs2kJn5XgQBp_yk_UpIDNeIXc-3NWWOtA4HuzQ0PZCf3CYAz" />
                             </div>
+
                             <div class="aspect-square rounded-3xl bg-secondary-container/30 overflow-hidden shadow-lg">
                                 <img class="w-full h-full object-cover"
                                     data-alt="Golden data streams flowing through a dark blue digital space like a digital waterfall"
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk1kL8dBtphfSXyVKE0-0ePHjrM1n7g3NFwjS_WMbgjjELNYa8XYk0j35eqAnlBTpJsZwLcrZKULaSvbZJGm_G8KAMaFtm9PZ4ljIalau5F_6QvEAuR4mXMoyYrnckpeT3QsNciG9l0nETkBrE4d13B448P9ZMMdmU4dtR0Y8UTGIv2wuQb54LSbinVtk-KmzC4pBVZlro-pae5_t_Si0McnBik123_0Ru4XEMadv__cWK5nLfLNfQgvA8JAKz6WpUepFqDJBgSbc8" />
                             </div>
                         </div>
+
                         <div class="space-y-4">
                             <div class="aspect-square rounded-3xl bg-primary-container/20 overflow-hidden shadow-lg">
                                 <img class="w-full h-full object-cover"
                                     data-alt="Dense interconnected neural network nodes glowing with soft white light on a deep navy background"
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzomQxaEAcFLatCUHHypvVVKdTkbDlDyfLyAKAJZuJklx4MVfWrpy1BiSLZl7OoIlw6b1O4f-aJEdcRmlgPVAkvwVN3KsnbED9eMNsMub0c8TFAMrTdFdXs8dOnhvnT2MVRJjS830svf4x2B8oPXciR1Pbv1NXv4gIX_EOzR-03BejZvrXJjxcjVGymRHdPXgmfpaFDYnFeaMoiYWUPbigro2XONY1-YGLUdzyMOq8RJlPKSMka3ep3AM-1svORpZL6eKp2ERp_zKa" />
                             </div>
+
                             <div
                                 class="aspect-[3/4] rounded-3xl bg-surface-container-high overflow-hidden shadow-lg transform rotate-2">
                                 <img class="w-full h-full object-cover"
@@ -181,57 +208,84 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-span-12 md:col-span-5 md:col-start-8">
-                    <span class="text-tertiary font-bold tracking-widest text-[0.7rem] uppercase mb-4 block">Kit de
-                        Supervivencia Digital</span>
-                    <h2 class="font-display text-4xl font-extrabold mb-8 leading-tight">Cómo detectar un <span
-                            class="text-secondary">Deepfake</span> en 3 pasos</h2>
+                    <span class="text-tertiary font-bold tracking-widest text-[0.7rem] uppercase mb-4 block">
+                        Kit de Supervivencia Digital
+                    </span>
+
+                    <h2 class="font-display text-4xl font-extrabold mb-8 leading-tight">
+                        Cómo detectar un <span class="text-secondary">Deepfake</span> en 3 pasos
+                    </h2>
+
                     <ul class="space-y-10">
                         <li class="flex gap-6">
                             <div
                                 class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 font-bold text-primary">
-                                01</div>
+                                01
+                            </div>
                             <div>
                                 <h4 class="font-display font-bold text-xl mb-2">Anomalías Visuales</h4>
-                                <p class="text-on-surface-variant">Busca sombras inconsistentes, parpadeos inusuales o
-                                    texturas que se "funden" con el fondo.</p>
+                                <p class="text-on-surface-variant">
+                                    Busca sombras inconsistentes, parpadeos inusuales o texturas que se "funden" con el
+                                    fondo.
+                                </p>
                             </div>
                         </li>
+
                         <li class="flex gap-6">
                             <div
                                 class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 font-bold text-primary">
-                                02</div>
+                                02
+                            </div>
                             <div>
                                 <h4 class="font-display font-bold text-xl mb-2">Análisis de Audio</h4>
-                                <p class="text-on-surface-variant">Presta atención a la falta de respiración natural,
-                                    entonaciones robóticas o ruidos metálicos de fondo.</p>
+                                <p class="text-on-surface-variant">
+                                    Presta atención a la falta de respiración natural, entonaciones robóticas o ruidos
+                                    metálicos de fondo.
+                                </p>
                             </div>
                         </li>
+
                         <li class="flex gap-6">
                             <div
                                 class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 font-bold text-primary">
-                                03</div>
+                                03
+                            </div>
                             <div>
                                 <h4 class="font-display font-bold text-xl mb-2">Contraste de Fuentes</h4>
-                                <p class="text-on-surface-variant">Usa herramientas de búsqueda inversa y verifica si
-                                    otros medios de confianza han reportado la noticia.</p>
+                                <p class="text-on-surface-variant">
+                                    Usa herramientas de búsqueda inversa y verifica si otros medios de confianza han
+                                    reportado la noticia.
+                                </p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+
         <!-- Critical Thinking Banner -->
         <section class="px-8 pb-32">
             <div class="max-w-7xl mx-auto">
                 <div class="bg-on-background text-surface p-12 md:p-20 rounded-[3rem] relative overflow-hidden">
                     <div class="relative z-10 max-w-2xl">
-                        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 italic leading-tight">"La mejor
-                            defensa contra la IA es la inteligencia humana."</h2>
-                        <p class="text-lg text-surface-variant mb-10 leading-relaxed">El pensamiento crítico no es solo
-                            una habilidad, es nuestra mayor herramienta de ciberseguridad en un mundo de verdades
-                            líquidas.</p>
+                        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 italic leading-tight">
+                            "La mejor defensa contra la IA es la inteligencia humana."
+                        </h2>
+
+                        <p class="text-lg text-surface-variant mb-10 leading-relaxed">
+                            El pensamiento crítico no es solo una habilidad, es nuestra mayor herramienta de
+                            ciberseguridad en un mundo de verdades líquidas.
+                        </p>
+
+                        <a href="#anatomia-manipulacion"
+                            class="inline-flex items-center gap-2 bg-surface text-on-surface px-7 py-4 rounded-xl font-bold hover:scale-[1.03] active:scale-[0.98] transition-transform">
+                            Volver al informe
+                            <span class="material-symbols-outlined">arrow_upward</span>
+                        </a>
                     </div>
+
                     <!-- Background Decoration -->
                     <div class="absolute right-0 top-0 h-full w-1/2 opacity-20 pointer-events-none">
                         <img class="w-full h-full object-cover"

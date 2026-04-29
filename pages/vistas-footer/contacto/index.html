@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-
 <html class="light" lang="es">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Contacto | CyberGuardian - El Santuario Digital</title>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="/assets/js/tailwind-config.js"></script>
-    </script>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
     <style>
         body {
             font-family: 'Public Sans', sans-serif;
@@ -33,6 +36,7 @@
         .glass-nav {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
 
         .toc-link {
@@ -60,182 +64,228 @@
             transform: translateX(6px);
         }
     </style>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 
 <body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
     <div id="navbar-container"></div>
-    <main class="pt-32 pb-20 px-8 max-w-screen-2xl mx-auto">
-        <!-- Hero Section -->
-        <section class="mb-24 grid md:grid-cols-2 gap-12 items-end">
-            <div class="relative z-10">
-                <span
-                    class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-[0.75rem] font-bold tracking-widest uppercase mb-6">
-                    Centro de Respuesta
-                </span>
-                <h1
-                    class="font-display text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-8">
-                    Tu seguridad es nuestra <span class="text-primary-container italic">misión</span> editorial.
-                </h1>
-                <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
-                    Si te sientes inseguro en el entorno digital o necesitas asistencia técnica especializada para
-                    proteger a menores, estamos aquí para guiarte.
-                </p>
-            </div>
-            <div
-                class="relative h-64 md:h-[400px] bg-surface-container-low rounded-[2rem] overflow-hidden editorial-shadow -mb-12">
-                <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
-                <img class="w-full h-full object-cover mix-blend-overlay opacity-60"
-                    data-alt="abstract crystalline structure with deep blue gradients and soft bokeh lighting representing a digital safe haven"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvP2wrqa7MjBxaalSdtq3Shhwey8Kn5lCA7c0F4qHqiSf8M0aOBC5ZaCWzQR3XtEH2x2zRN1F18hfgRvQZ7edWoL_wxmNGX_OgmiZlGLxijmHjTw3HbyMpbcEj7aX6yr8X18X8MiyvVrT5rqdDPN5IwtxFnv7t3Cp5DwGL_bQDx198Qfjrfmz7LF2OVI8mip0S-Rle_7TPWpNkj6r18ScAHZirj7Wp7MjY9M1F35vnl2U-uPReI2eAt0nFKfTLhTeLvoEZYFwGp8EZ" />
-            </div>
-        </section>
-        <!-- Urgent Action Grid (Bento Style) -->
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-            <!-- INCIBE Card -->
-            <div
-                class="md:col-span-2 bg-surface-container-low rounded-[2.5rem] p-10 flex flex-col justify-between group hover:bg-surface-container transition-colors duration-500">
-                <div>
-                    <div class="flex items-center space-x-4 mb-8">
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-primary-container flex items-center justify-center text-white shadow-lg">
-                            <span class="material-symbols-outlined text-4xl">support_agent</span>
-                        </div>
-                        <h3 class="font-headline text-2xl font-bold tracking-tight">Atención Telefónica 017</h3>
-                    </div>
-                    <p class="text-lg text-on-surface-variant max-w-md leading-relaxed mb-8">
-                        INCIBE ofrece una línea de ayuda gratuita y confidencial para menores, padres y educadores sobre
-                        ciberseguridad y uso responsable de Internet.
+
+    <main class="pt-24 pb-20">
+        <div class="page-container">
+
+            <!-- Hero Section -->
+            <section class="mb-24 grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative z-10">
+                    <span
+                        class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-[0.75rem] font-bold tracking-widest uppercase mb-6">
+                        Centro de Respuesta
+                    </span>
+
+                    <h1
+                        class="font-display text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-8">
+                        Tu seguridad es nuestra <span class="text-primary-container italic">misión</span> editorial.
+                    </h1>
+
+                    <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Si te sientes inseguro en el entorno digital o necesitas asistencia técnica especializada para
+                        proteger a menores, estamos aquí para guiarte.
                     </p>
                 </div>
-                <div class="flex items-center justify-between">
-                    <span class="font-display text-5xl font-black text-primary tracking-tighter">017</span>
-                    <a class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold editorial-shadow hover:bg-primary hover:text-white transition-all duration-300"
-                        href="tel:017">
-                        Llamar ahora
+
+                <div
+                    class="relative h-64 md:h-[400px] bg-surface-container-low rounded-[2rem] overflow-hidden editorial-shadow">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
+                    <img class="w-full h-full object-cover mix-blend-overlay opacity-60"
+                        alt="Estructura cristalina abstracta con tonos azules"
+                        data-alt="abstract crystalline structure with deep blue gradients and soft bokeh lighting representing a digital safe haven"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvP2wrqa7MjBxaalSdtq3Shhwey8Kn5lCA7c0F4qHqiSf8M0aOBC5ZaCWzQR3XtEH2x2zRN1F18hfgRvQZ7edWoL_wxmNGX_OgmiZlGLxijmHjTw3HbyMpbcEj7aX6yr8X18X8MiyvVrT5rqdDPN5IwtxFnv7t3Cp5DwGL_bQDx198Qfjrfmz7LF2OVI8mip0S-Rle_7TPWpNkj6r18ScAHZirj7Wp7MjY9M1F35vnl2U-uPReI2eAt0nFKfTLhTeLvoEZYFwGp8EZ" />
+                </div>
+            </section>
+
+            <!-- Urgent Action Grid -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+                <!-- INCIBE Card -->
+                <div
+                    class="md:col-span-2 bg-surface-container-low rounded-[2.5rem] p-8 md:p-10 flex flex-col justify-between group hover:bg-surface-container transition-colors duration-500">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-8">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-primary-container flex items-center justify-center text-white shadow-lg">
+                                <span class="material-symbols-outlined text-4xl">support_agent</span>
+                            </div>
+
+                            <h3 class="font-headline text-2xl font-bold tracking-tight">
+                                Atención Telefónica 017
+                            </h3>
+                        </div>
+
+                        <p class="text-lg text-on-surface-variant max-w-md leading-relaxed mb-8">
+                            INCIBE ofrece una línea de ayuda gratuita y confidencial para menores, padres y educadores
+                            sobre ciberseguridad y uso responsable de Internet.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                        <span class="font-display text-5xl font-black text-primary tracking-tighter">017</span>
+
+                        <a class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold editorial-shadow hover:bg-primary hover:text-white transition-all duration-300 text-center"
+                            href="tel:017">
+                            Llamar ahora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AEPD Card -->
+                <div
+                    class="bg-tertiary-container rounded-[2.5rem] p-8 md:p-10 text-white flex flex-col justify-between shadow-2xl">
+                    <div>
+                        <div class="bg-white/20 w-14 h-14 rounded-xl flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined text-3xl"
+                                style="font-variation-settings: 'FILL' 1;">gavel</span>
+                        </div>
+
+                        <h3 class="font-headline text-2xl font-bold tracking-tight mb-4">
+                            Denuncia Urgente
+                        </h3>
+
+                        <p class="text-on-tertiary-container leading-relaxed opacity-90">
+                            El Canal Prioritario de la AEPD permite solicitar la eliminación de contenido sensible o
+                            violento publicado sin consentimiento.
+                        </p>
+                    </div>
+
+                    <a href="https://www.aepd.es/canalprioritario" target="_blank" rel="noopener noreferrer"
+                        class="mt-8 inline-flex items-center space-x-2 font-bold text-white group">
+                        <span>Acceder al canal</span>
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
                     </a>
                 </div>
-            </div>
-            <!-- AEPD Card -->
-            <div
-                class="bg-tertiary-container rounded-[2.5rem] p-10 text-white flex flex-col justify-between shadow-2xl">
-                <div>
-                    <div class="bg-white/20 w-14 h-14 rounded-xl flex items-center justify-center mb-8">
-                        <span class="material-symbols-outlined text-3xl"
-                            style="font-variation-settings: 'FILL' 1;">gavel</span>
-                    </div>
-                    <h3 class="font-headline text-2xl font-bold tracking-tight mb-4">Denuncia Urgente</h3>
-                    <p class="text-on-tertiary-container leading-relaxed opacity-90">
-                        El Canal Prioritario de la AEPD permite solicitar la eliminación de contenido sensible o
-                        violento publicado sin consentimiento.
+            </section>
+
+            <!-- Technical Form Section -->
+            <section class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                <div class="lg:col-span-5">
+                    <h2 class="font-headline text-3xl font-extrabold mb-6 tracking-tight">
+                        Formulario Técnico de Consulta
+                    </h2>
+
+                    <p class="text-on-surface-variant leading-relaxed mb-10">
+                        Utiliza este formulario para consultas técnicas sobre configuración de dispositivos, control
+                        parental o reporte de vulnerabilidades. Responderemos en un plazo máximo de 24 horas laborables.
                     </p>
-                </div>
-                <a href="https://www.aepd.es/canalprioritario" target="_blank" rel="noopener noreferrer"
-                    class="mt-8 inline-flex items-center space-x-2 font-bold text-white group">
-                    <span>Acceder al canal</span>
-                    <span
-                        class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
-                </a>
-            </div>
-        </section>
-        <!-- Technical Form Section -->
-        <section class="grid lg:grid-cols-12 gap-16 items-start">
-            <div class="lg:col-span-5">
-                <h2 class="font-headline text-3xl font-extrabold mb-6 tracking-tight">Formulario Técnico de Consulta
-                </h2>
-                <p class="text-on-surface-variant leading-relaxed mb-10">
-                    Utiliza este formulario para consultas técnicas sobre configuración de dispositivos, control
-                    parental o reporte de vulnerabilidades. Responderemos en un plazo máximo de 24 horas laborables.
-                </p>
-                <div class="space-y-6">
-                    <div class="flex items-center space-x-6 p-6 rounded-2xl bg-surface-container-low">
-                        <span class="material-symbols-outlined text-primary text-3xl">mail</span>
-                        <div>
-                            <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Email
-                            </p>
-                            <p class="font-bold text-lg">soporte@cyberguardian.es</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-6 p-6 rounded-2xl bg-surface-container-low">
+                            <span class="material-symbols-outlined text-primary text-3xl">mail</span>
+
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">
+                                    Email
+                                </p>
+                                <p class="font-bold text-lg break-all">soporte@cyberguardian.es</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex items-center space-x-6 p-6 rounded-2xl bg-surface-container-low">
-                        <span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
-                        <div>
-                            <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Cifrado
-                            </p>
-                            <p class="font-bold text-lg">AES-256 Bit SSL</p>
+
+                        <div class="flex items-center space-x-6 p-6 rounded-2xl bg-surface-container-low">
+                            <span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">
+                                    Cifrado
+                                </p>
+                                <p class="font-bold text-lg">AES-256 Bit SSL</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div
-                class="lg:col-span-7 bg-surface-container-lowest p-10 md:p-14 rounded-[3rem] editorial-shadow relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
-                <form action="https://formspree.io/f/xgorbedk" method="POST" class="space-y-8 relative z-10">
 
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <label
-                                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
-                                Nombre Completo
-                            </label>
-                            <input name="nombre" type="text" placeholder="Ej. Alex Guardian" required
-                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
+                <div
+                    class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-14 rounded-[3rem] editorial-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
+
+                    <form action="https://formspree.io/f/xgorbedk" method="POST" class="space-y-8 relative z-10">
+                        <input type="hidden" name="_subject" value="Nueva consulta técnica - CyberGuardian" />
+                        <input type="hidden" name="tipo_formulario" value="Formulario de contacto técnico" />
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-2">
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
+                                    Nombre Completo
+                                </label>
+
+                                <input name="nombre" type="text" placeholder="Ej. Alex Guardian" required
+                                    class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
+                            </div>
+
+                            <div class="space-y-2">
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
+                                    Correo Electrónico
+                                </label>
+
+                                <input name="email" type="email" placeholder="alex@guardian.com" required
+                                    class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
+                            </div>
                         </div>
 
                         <div class="space-y-2">
                             <label
                                 class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
-                                Correo Electrónico
+                                Asunto de la Consulta
                             </label>
-                            <input name="email" type="email" placeholder="alex@guardian.com" required
-                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
+
+                            <select name="asunto" required
+                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none">
+                                <option value="Control Parental Android">Control Parental Android</option>
+                                <option value="Seguridad en iOS">Seguridad en iOS</option>
+                                <option value="Configuración de Red Doméstica">Configuración de Red Doméstica</option>
+                                <option value="Vulnerabilidad Identificada">Vulnerabilidad Identificada</option>
+                                <option value="Otros Asuntos Técnicos">Otros Asuntos Técnicos</option>
+                            </select>
                         </div>
-                    </div>
 
-                    <div class="space-y-2">
-                        <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
-                            Asunto de la Consulta
-                        </label>
-                        <select name="asunto" required
-                            class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none">
-                            <option>Control Parental Android</option>
-                            <option>Seguridad en iOS</option>
-                            <option>Configuración de Red Doméstica</option>
-                            <option>Vulnerabilidad Identificada</option>
-                            <option>Otros Asuntos Técnicos</option>
-                        </select>
-                    </div>
+                        <div class="space-y-2">
+                            <label
+                                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
+                                Detalles de la Consulta
+                            </label>
 
-                    <div class="space-y-2">
-                        <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">
-                            Detalles de la Consulta
-                        </label>
-                        <textarea name="mensaje" rows="5" required
-                            placeholder="Describe tu consulta técnica con el mayor detalle posible..."
-                            class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none resize-none"></textarea>
-                    </div>
+                            <textarea name="mensaje" rows="5" required
+                                placeholder="Describe tu consulta técnica con el mayor detalle posible..."
+                                class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none resize-none"></textarea>
+                        </div>
 
-                    <div class="flex items-center space-x-3 text-sm text-on-surface-variant">
-                        <input name="privacidad" value="aceptada" type="checkbox" required
-                            class="rounded-md border-outline-variant text-primary focus:ring-primary" />
-                        <span>
-                            Acepto la <a class="text-primary underline" href="#">Política de Privacidad</a> y el
-                            tratamiento de mis datos.
-                        </span>
-                    </div>
+                        <div class="flex items-start space-x-3 text-sm text-on-surface-variant">
+                            <input name="privacidad" value="aceptada" type="checkbox" required
+                                class="mt-1 rounded-md border-outline-variant text-primary focus:ring-primary" />
 
-                    <!-- Redirección después de enviar -->
-                    <input type="hidden" name="_next" value="https://formspree.io/thanks" />
+                            <span>
+                                Acepto la
+                                <a class="text-primary underline" href="/pages/vistas-footer/privacidad/index.html">
+                                    Política de Privacidad
+                                </a>
+                                y el tratamiento de mis datos.
+                            </span>
+                        </div>
 
-                    <button type="submit"
-                        class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 rounded-2xl font-bold text-lg shadow-xl hover:shadow-primary-container/30 transition-all active:scale-[0.98]">
-                        Enviar Consulta Técnica
-                    </button>
+                        <!-- Redirección después de enviar -->
+                        <input type="hidden" name="_next" value="https://formspree.io/thanks" />
 
-                </form>
-            </div>
-        </section>
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 rounded-2xl font-bold text-lg shadow-xl hover:shadow-primary-container/30 transition-all active:scale-[0.98]">
+                            Enviar Consulta Técnica
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
     </main>
+
     <div id="footer-container"></div>
+
+    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
 </body>
 

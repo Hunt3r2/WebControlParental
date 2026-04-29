@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
+<html class="light scroll-smooth" lang="es">
 
 <head>
   <meta charset="utf-8" />
@@ -8,14 +8,18 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
+
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script src="/assets/js/tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
 
   <style>
     .material-symbols-outlined {
@@ -28,140 +32,173 @@
       -webkit-backdrop-filter: blur(20px);
     }
   </style>
-
-  <link rel="stylesheet" href="../../assets/css/styles.css" />
 </head>
 
 <body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
   <div id="navbar-container"></div>
 
   <main class="pt-24">
-    <section
-      class="page-container relative px-6 md:px-8 py-12 md:py-20 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-12 overflow-hidden">
-      <div class="flex-1 z-10 w-full">
-        <span class="uppercase tracking-widest text-primary font-bold mb-4 block text-sm md:text-base">
-          Seguridad Digital Avanzada
-        </span>
+    <!-- Hero -->
+    <section class="page-container relative py-12 md:py-16 lg:py-20 overflow-hidden">
+      <div class="w-full grid grid-cols-1 md:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-24 items-center">
+        <div class="space-y-6 max-w-2xl z-10">
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-[11px] sm:text-xs font-bold uppercase tracking-widest">
+            <span class="material-symbols-outlined text-sm">shield_with_heart</span>
+            Seguridad Digital Avanzada
+          </div>
 
-        <h1
-          class="font-headline text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6 leading-[0.95]">
-          Identifica las <span class="text-primary">Amenazas Silenciosas</span>
-        </h1>
+          <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+            Identifica las <span class="text-primary">Amenazas Silenciosas</span>
+          </h1>
 
-        <p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-xl mb-8">
-          El mundo digital es un ecosistema vasto. Protegemos a los más vulnerables analizando y exponiendo los riesgos
-          emergentes con tecnología de vanguardia.
-        </p>
+          <p class="text-base sm:text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+            El mundo digital es un ecosistema amplio y cambiante. En esta guía analizamos los principales riesgos que
+            pueden afectar a menores y explicamos cómo detectarlos, prevenirlos y pedir ayuda a tiempo.
+          </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <button id="btn-guia-preventiva"
-            class="bg-primary text-on-primary px-6 md:px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-xl transition-shadow w-full sm:w-auto">
-            <span class="material-symbols-outlined">shield_with_heart</span>
-            Guía Preventiva
-          </button>
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a href="#catalogo-riesgos"
+              class="w-full sm:w-auto bg-primary text-on-primary px-7 py-4 rounded-xl font-bold inline-flex items-center justify-center gap-2 hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all">
+              <span class="material-symbols-outlined">shield_with_heart</span>
+              Guía Preventiva
+            </a>
 
-          <button id="btn-protocolos"
-            class="bg-surface-container-high text-on-surface px-6 md:px-8 py-4 rounded-xl font-bold hover:bg-surface-container-highest transition-colors w-full sm:w-auto">
-            Protocolos
-          </button>
-
-        </div>
-      </div>
-
-      <div class="flex-1 relative w-full">
-        <div
-          class="w-full aspect-square rounded-[2rem] md:rounded-[3rem] bg-primary-container relative overflow-hidden shadow-2xl md:rotate-3">
-          <img alt="Infraestructura de seguridad digital"
-            class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL7LgaGXUb8kq044_wLaGpaB7Dl4CfJgZs5dG4tp99ktc-_beHTbdHu95uA9iPq4nTXFHbjWL3sCpglJP1C04EFLoerzJ7ZofklVmrnS1StqnjFxnrMoX__vahGyhT2HwuA65cN9EkcjAtLZvSBa9Oy66DCniqrfdy2UDAF0ep9sWRD2etM9DZr6jTH6XwZi46jfhKvcBku4qp7qAfehiyBvsKcCOkzYyu4AIDNBSVlzxzaVVCo-wFKS_oAnzx95ofMj-fjGpTsFZm" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="p-6 md:p-8 bg-surface/30 backdrop-blur-md rounded-2xl border border-white/20">
-              <span class="material-symbols-outlined text-white text-6xl md:text-8xl"
-                style="font-variation-settings: 'FILL' 1;">lock_reset</span>
-            </div>
+            <a href="#protocolos-actuacion"
+              class="w-full sm:w-auto bg-surface-container-high text-on-surface px-7 py-4 rounded-xl font-bold inline-flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+              Protocolos
+              <span class="material-symbols-outlined text-sm">arrow_downward</span>
+            </a>
           </div>
         </div>
 
-        <div
-          class="mt-6 md:mt-0 md:absolute md:-bottom-6 md:-left-6 p-6 bg-surface-container-lowest rounded-xl shadow-xl max-w-xs md:-rotate-2 border border-outline-variant/20">
-          <p class="text-sm font-bold text-primary mb-2">SISTEMA ACTIVO</p>
-          <p class="text-on-surface-variant text-sm">
-            Escaneando anomalías en redes sociales y plataformas de mensajería en tiempo real.
-          </p>
+        <div class="relative flex justify-center md:justify-end mt-8 md:mt-0">
+          <div
+            class="absolute -top-10 right-0 w-48 sm:w-64 h-48 sm:h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl">
+          </div>
+
+          <div
+            class="relative z-10 w-full max-w-[360px] sm:max-w-[420px] lg:max-w-[500px] aspect-square rounded-[2.5rem] sm:rounded-[3rem] bg-primary-container overflow-hidden shadow-2xl md:rotate-3 border border-outline-variant/20">
+            <img alt="Infraestructura de seguridad digital"
+              class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL7LgaGXUb8kq044_wLaGpaB7Dl4CfJgZs5dG4tp99ktc-_beHTbdHu95uA9iPq4nTXFHbjWL3sCpglJP1C04EFLoerzJ7ZofklVmrnS1StqnjFxnrMoX__vahGyhT2HwuA65cN9EkcjAtLZvSBa9Oy66DCniqrfdy2UDAF0ep9sWRD2etM9DZr6jTH6XwZi46jfhKvcBku4qp7qAfehiyBvsKcCOkzYyu4AIDNBSVlzxzaVVCo-wFKS_oAnzx95ofMj-fjGpTsFZm" />
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="p-6 md:p-8 bg-surface/30 backdrop-blur-md rounded-2xl border border-white/20">
+                <span class="material-symbols-outlined text-white text-6xl md:text-8xl"
+                  style="font-variation-settings: 'FILL' 1;">lock_reset</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-6 md:mt-0 md:absolute md:-bottom-6 md:-left-10 z-20 p-5 bg-surface-container-lowest rounded-2xl shadow-xl max-w-xs md:-rotate-2 border border-outline-variant/20">
+            <p class="text-sm font-bold text-primary mb-2">
+              PREVENCIÓN ACTIVA
+            </p>
+            <p class="text-on-surface-variant text-sm">
+              Identificación de señales de riesgo en redes sociales, mensajería y plataformas digitales.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-surface-container-low py-16 md:py-24 px-6 md:px-8">
-      <div class="max-w-7xl mx-auto">
-        <div class="mb-12 md:mb-16">
-          <h2 class="font-headline text-3xl font-bold text-on-surface mb-4">
+    <!-- Catálogo de riesgos -->
+    <section id="catalogo-riesgos" class="bg-surface-container-low py-24 scroll-mt-28">
+      <div class="page-container">
+        <div class="mb-16">
+          <h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4">
             Catálogo de Riesgos Críticos
           </h2>
+
           <p class="text-on-surface-variant max-w-2xl">
-            Analizamos los cuatro pilares de riesgo que afectan la integridad digital de los menores.
+            Analizamos cuatro áreas de riesgo que pueden afectar a la seguridad, privacidad y bienestar digital de los
+            menores.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <!-- Grooming -->
           <div
             class="md:col-span-8 bg-surface-container-lowest p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10">
             <div class="flex-1">
               <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                 <span class="material-symbols-outlined text-primary text-4xl">person_search</span>
               </div>
-              <h3 class="font-headline text-2xl font-bold mb-4">Grooming</h3>
+
+              <h3 class="font-headline text-2xl font-bold mb-4">
+                Grooming
+              </h3>
+
               <p class="text-on-surface-variant leading-relaxed">
-                Engaño sistemático por parte de adultos para ganar la confianza de un menor. Se manifiesta en entornos
-                aparentemente seguros mediante manipulación emocional y suplantación de identidad.
+                Proceso de manipulación en el que un adulto intenta ganarse la confianza de un menor en entornos
+                digitales. Puede aparecer en redes sociales, videojuegos, chats o plataformas aparentemente seguras.
               </p>
             </div>
 
             <div class="w-full md:w-64 h-48 bg-surface-container rounded-2xl overflow-hidden relative">
-              <img alt="Metáfora visual del grooming" class="w-full h-full object-cover"
+              <img alt="Metáfora visual del grooming"
+                class="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbVC2-oNI2cslItCIKnaGKetaqEOGhJHzDKOKfhnVRo0xL9NUlm0-f_mbwRCmJtf0Tb77dIidmVqT3KmmgPeK6P4EatVtm52BYIPhDx9_2_4Np_kHlG0zQSzrwZLBBBeA7Ihfheo5DR1TSN0pZJh2Rq1PDHv4l9sTE2smz3oPxg80WLlfAllxDjGRvJbMBmCuPuJL_7kWlUKR-FqSB7qiXURVRxy8XwcertWKJFwdBZ4iIaQ240ngQLnOemsqkz9247km5t6i30B05" />
             </div>
           </div>
 
+          <!-- Deepfakes -->
           <div
             class="md:col-span-4 bg-tertiary-fixed p-6 md:p-8 rounded-[2rem] shadow-sm border border-outline-variant/10">
             <div class="w-14 h-14 bg-on-tertiary-fixed/10 rounded-2xl flex items-center justify-center mb-6">
               <span class="material-symbols-outlined text-on-tertiary-fixed text-4xl">face_retouching_off</span>
             </div>
-            <h3 class="font-headline text-2xl font-bold text-on-tertiary-fixed mb-4">Deepfakes</h3>
+
+            <h3 class="font-headline text-2xl font-bold text-on-tertiary-fixed mb-4">
+              Deepfakes
+            </h3>
+
             <p class="text-on-tertiary-fixed-variant leading-relaxed">
-              Contenido sintético generado por IA para suplantar rostros y voces, utilizado a menudo para la extorsión o
-              el daño reputacional severo.
+              Contenido sintético generado o manipulado con IA que puede usarse para suplantar identidad, alterar la
+              reputación o confundir a otros usuarios.
             </p>
           </div>
 
+          <!-- Cyberbullying -->
           <div
             class="md:col-span-4 bg-surface-container-highest p-6 md:p-8 rounded-[2rem] shadow-sm border border-outline-variant/10">
             <div class="w-14 h-14 bg-error-container rounded-2xl flex items-center justify-center mb-6">
               <span class="material-symbols-outlined text-error text-4xl">gavel</span>
             </div>
-            <h3 class="font-headline text-2xl font-bold mb-4">Cyberbullying</h3>
+
+            <h3 class="font-headline text-2xl font-bold mb-4">
+              Cyberbullying
+            </h3>
+
             <p class="text-on-surface-variant leading-relaxed">
-              Acoso persistente a través de medios digitales. La permanencia del contenido y el alcance masivo
-              multiplican el impacto psicológico.
+              Acoso persistente mediante canales digitales. Su impacto aumenta cuando el contenido se comparte, se guarda
+              o se difunde fuera del contexto original.
             </p>
           </div>
 
+          <!-- Phishing -->
           <div
             class="md:col-span-8 bg-surface-container-lowest p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col md:flex-row-reverse gap-8 items-center border border-outline-variant/10">
             <div class="flex-1">
               <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
                 <span class="material-symbols-outlined text-secondary text-4xl">phishing</span>
               </div>
-              <h3 class="font-headline text-2xl font-bold mb-4">Phishing</h3>
+
+              <h3 class="font-headline text-2xl font-bold mb-4">
+                Phishing
+              </h3>
+
               <p class="text-on-surface-variant leading-relaxed">
-                Técnicas de ingeniería social diseñadas para robar credenciales y acceso a dispositivos. Los menores
-                suelen ser el punto de entrada para comprometer la seguridad familiar.
+                Técnicas de engaño diseñadas para obtener credenciales, datos personales o acceso a cuentas. Los menores
+                pueden ser un punto vulnerable si no reconocen señales básicas de fraude.
               </p>
             </div>
 
             <div class="w-full md:w-64 h-48 bg-surface-container rounded-2xl overflow-hidden">
-              <img alt="Visual de phishing" class="w-full h-full object-cover"
+              <img alt="Visual de phishing"
+                class="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuApmOS57ulX9DO0rQ3BsWCN_yI4-OEuneNf4_QxL14XSp_aopLmr5BfsF_v2bq9rNX4OdglEdOGHi6pTzltVRul59oGvocH7oKNjkT3K-swdECuGmbEYWJqFLrmkyj2Ti9OgYFhw3MsHLJrNpdkYpqnPn2ESFdB4t3850qXCSdEz7fTyys49Ny2bsgXgbRcO3dslfxwNZIKR7W790FyFLtZgIRdeNWshD2hDSzZ9Z5Rzh9ufEm5PFImbLJ2oSFcWvp6dJTpBFu_SqkY" />
             </div>
           </div>
@@ -169,130 +206,165 @@
       </div>
     </section>
 
-    <section class="py-16 md:py-24 px-6 md:px-8 max-w-7xl mx-auto">
-      <div class="flex flex-col lg:flex-row gap-10 md:gap-16 items-start">
-        <div class="lg:w-1/2 lg:sticky lg:top-32">
-          <span
-            class="bg-tertiary-container text-on-tertiary-fixed-variant px-4 py-1.5 rounded-full text-xs font-bold mb-6 inline-block uppercase tracking-wider">
-            Desafíos Globales
-          </span>
+    <!-- Protocolos -->
+    <section id="protocolos-actuacion" class="py-24 scroll-mt-28">
+      <div class="page-container">
+        <div class="flex flex-col lg:flex-row gap-10 md:gap-16 items-start">
+          <div class="lg:w-1/2 lg:sticky lg:top-32">
+            <span
+              class="bg-tertiary-container text-on-tertiary-fixed-variant px-4 py-1.5 rounded-full text-xs font-bold mb-6 inline-block uppercase tracking-wider">
+              Desafíos Globales
+            </span>
 
-          <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-on-surface mb-8">
-            ¿Por qué es tan complejo detener estas amenazas?
-          </h2>
+            <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-on-surface mb-8">
+              ¿Por qué es tan complejo detener estas amenazas?
+            </h2>
 
-          <p class="text-on-surface-variant text-lg mb-10 leading-relaxed">
-            La arquitectura actual de internet ofrece refugio a los actores maliciosos mediante mecanismos intrínsecos
-            de la red. Comprender estos desafíos es el primer paso para la prevención.
-          </p>
+            <p class="text-on-surface-variant text-lg mb-10 leading-relaxed">
+              Muchas amenazas digitales combinan anonimato, velocidad de difusión y falta de contexto. Comprender estos
+              factores ayuda a responder con más calma y eficacia.
+            </p>
 
-          <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <div class="mt-1 bg-secondary rounded-full p-1">
-                <span class="material-symbols-outlined text-white text-sm">check</span>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="mt-1 bg-secondary rounded-full p-1">
+                  <span class="material-symbols-outlined text-white text-sm">check</span>
+                </div>
+                <p class="text-on-surface-variant font-medium leading-relaxed">
+                  Dificultad para identificar a la persona que está detrás de una cuenta o mensaje.
+                </p>
               </div>
-              <p class="text-on-surface-variant font-medium leading-relaxed">
-                Protocolos de encriptación que ocultan el rastro criminal.
+
+              <div class="flex items-start gap-4">
+                <div class="mt-1 bg-secondary rounded-full p-1">
+                  <span class="material-symbols-outlined text-white text-sm">check</span>
+                </div>
+                <p class="text-on-surface-variant font-medium leading-relaxed">
+                  Diferencias legales y de respuesta entre plataformas, países y servicios digitales.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+              <a href="https://www.incibe.es/menores" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-7 py-4 rounded-xl font-bold hover:scale-[1.03] active:scale-[0.98] transition-all">
+                Guía preventiva INCIBE
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+              </a>
+
+              <a href="tel:017"
+                class="inline-flex items-center justify-center gap-2 bg-surface-container-high text-on-surface px-7 py-4 rounded-xl font-bold hover:bg-surface-container-highest transition-all">
+                Llamar al 017
+                <span class="material-symbols-outlined text-sm">call</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2 grid grid-cols-1 gap-6 w-full">
+            <div
+              class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
+              <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
+                <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
+                  <span class="material-symbols-outlined text-primary text-3xl">vpn_lock</span>
+                </div>
+                <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">
+                  Anonimato
+                </h4>
+              </div>
+              <p class="text-on-surface-variant leading-relaxed">
+                Muchas interacciones se producen mediante perfiles que no muestran la identidad real, por lo que conviene
+                enseñar a verificar señales de confianza.
               </p>
             </div>
 
-            <div class="flex items-start gap-4">
-              <div class="mt-1 bg-secondary rounded-full p-1">
-                <span class="material-symbols-outlined text-white text-sm">check</span>
+            <div
+              class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
+              <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
+                <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
+                  <span class="material-symbols-outlined text-primary text-3xl">public</span>
+                </div>
+                <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">
+                  Alcance Global
+                </h4>
               </div>
-              <p class="text-on-surface-variant font-medium leading-relaxed">
-                Vacíos legales en legislaciones internacionales.
+              <p class="text-on-surface-variant leading-relaxed">
+                Un contenido puede circular entre plataformas, países y grupos distintos, dificultando su control una vez
+                que se ha compartido.
               </p>
             </div>
-          </div>
-        </div>
 
-        <div class="lg:w-1/2 grid grid-cols-1 gap-6 w-full">
-          <div
-            class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
-            <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
-              <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
-                <span class="material-symbols-outlined text-primary text-3xl">vpn_lock</span>
+            <div
+              class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
+              <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
+                <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
+                  <span class="material-symbols-outlined text-primary text-3xl">bolt</span>
+                </div>
+                <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">
+                  Velocidad de Difusión
+                </h4>
               </div>
-              <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">Anonimato Extremo</h4>
+              <p class="text-on-surface-variant leading-relaxed">
+                La rapidez con la que se reenvían mensajes, capturas o vídeos exige actuar pronto, guardar evidencias
+                básicas y evitar amplificar el contenido.
+              </p>
             </div>
-            <p class="text-on-surface-variant leading-relaxed">
-              Herramientas de ofuscación de IP y redes descentralizadas permiten a los agresores operar sin revelar su
-              identidad real, dificultando la atribución forense.
-            </p>
-          </div>
 
-          <div
-            class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
-            <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
-              <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
-                <span class="material-symbols-outlined text-primary text-3xl">public</span>
+            <div
+              class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
+              <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
+                <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
+                  <span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+                </div>
+                <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">
+                  Evolución de Técnicas
+                </h4>
               </div>
-              <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">Ubicación Global</h4>
+              <p class="text-on-surface-variant leading-relaxed">
+                Las formas de engaño cambian con rapidez, por lo que la educación digital debe actualizarse y apoyarse
+                en fuentes fiables.
+              </p>
             </div>
-            <p class="text-on-surface-variant leading-relaxed">
-              Un atacante puede estar en una jurisdicción diferente a la de la víctima, explotando la falta de tratados
-              de extradición o cooperación policial ágil.
-            </p>
-          </div>
-
-          <div
-            class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
-            <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
-              <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
-                <span class="material-symbols-outlined text-primary text-3xl">bolt</span>
-              </div>
-              <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">Velocidad de Viralización</h4>
-            </div>
-            <p class="text-on-surface-variant leading-relaxed">
-              Una vez que el contenido dañino se publica, se replica en milisegundos a través de servidores globales,
-              haciendo que la eliminación total sea técnicamente imposible.
-            </p>
-          </div>
-
-          <div
-            class="bg-surface-container-low p-6 md:p-8 rounded-3xl group hover:bg-surface-container transition-colors">
-            <div class="flex items-start sm:items-center gap-4 md:gap-6 mb-4">
-              <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm shrink-0">
-                <span class="material-symbols-outlined text-primary text-3xl">psychology</span>
-              </div>
-              <h4 class="font-headline text-lg md:text-xl font-bold leading-snug">Evolución de Técnicas</h4>
-            </div>
-            <p class="text-on-surface-variant leading-relaxed">
-              Los métodos de engaño evolucionan más rápido que las herramientas de control parental tradicionales,
-              requiriendo sistemas de IA adaptativos.
-            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="px-6 md:px-8 mb-16 md:mb-24">
+    <!-- CTA -->
+    <section class="page-container mb-24">
       <div
-        class="max-w-7xl mx-auto bg-primary-container rounded-[2rem] md:rounded-[3rem] p-8 md:p-20 relative overflow-hidden text-center md:text-left">
+        class="bg-primary-container rounded-[2rem] md:rounded-[3rem] p-8 md:p-20 relative overflow-hidden text-center md:text-left">
         <div class="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="flex-1">
             <div
               class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-fixed-variant px-6 py-2 rounded-full mb-8">
               <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">report</span>
-              <span class="text-sm font-bold uppercase tracking-widest">Alerta de Seguridad</span>
+              <span class="text-sm font-bold uppercase tracking-widest">
+                Alerta de Seguridad
+              </span>
             </div>
 
-            <h2
-              class="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-primary mb-6 leading-tight">
+            <h2 class="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-primary mb-6 leading-tight">
               ¿Detectas algo inusual?
             </h2>
 
             <p class="text-on-primary-container text-lg md:text-xl max-w-2xl mb-10">
-              No esperes. Te recomendamos contactar con el equipo de expertos de INCIBE, disponible 24/7 para asesorarte
-              y mitigar cualquier riesgo digital inmediato.
+              Si tienes dudas o necesitas orientación, puedes contactar con INCIBE a través del 017 para recibir ayuda
+              sobre ciberseguridad y uso seguro de Internet.
             </p>
 
-            <a href="tel:017"
-              class="bg-on-primary text-primary px-6 md:px-10 py-4 md:py-5 rounded-2xl font-extrabold text-base md:text-lg hover:bg-surface-container-low transition-all shadow-2xl w-full sm:w-auto inline-flex items-center justify-center">
-              Solicitar Intervención
-            </a>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="tel:017"
+                class="bg-on-primary text-primary px-6 md:px-10 py-4 md:py-5 rounded-2xl font-extrabold text-base md:text-lg hover:bg-surface-container-low transition-all shadow-2xl w-full sm:w-auto inline-flex items-center justify-center gap-2">
+                Llamar al 017
+                <span class="material-symbols-outlined text-sm">call</span>
+              </a>
 
+              <a href="https://www.incibe.es/menores" target="_blank" rel="noopener noreferrer"
+                class="bg-white/10 text-white border border-white/20 px-6 md:px-10 py-4 md:py-5 rounded-2xl font-extrabold text-base md:text-lg hover:bg-white/20 transition-all w-full sm:w-auto inline-flex items-center justify-center gap-2">
+                Ver recursos
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+              </a>
+            </div>
           </div>
 
           <div class="flex-none">
@@ -317,17 +389,6 @@
 
   <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/navbar.js"></script>
-  <script>
-    // Guía preventiva para familias (INCIBE)
-    document.getElementById("btn-guia-preventiva").addEventListener("click", function () {
-      window.open("https://www.incibe.es/menores", "_blank");
-    });
-  </script>
-  <script>
-    document.getElementById("btn-protocolos").addEventListener("click", function () {
-      window.location.href = "tel:017";
-    });
-  </script>
 </body>
 
 </html>
