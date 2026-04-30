@@ -121,11 +121,13 @@
                         </div>
 
                         <div class="mt-8 z-10">
-                            <a class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline"
-                                href="#guia-deteccion">
+
+                            <button type="button" id="btn-explorar-arquitectura"
+                                class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
                                 Explorar arquitectura
                                 <span class="material-symbols-outlined">arrow_forward</span>
-                            </a>
+                            </button>
+
                         </div>
 
                     </div>
@@ -295,6 +297,20 @@
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
+    <script>
+        document.getElementById("btn-explorar-arquitectura")
+            .addEventListener("click", () => {
+
+                const target = document.getElementById("guia-deteccion");
+                const offset = 120; // altura navbar
+                const position = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: position,
+                    behavior: "smooth"
+                });
+            });
+    </script>
 
 </body>
 
