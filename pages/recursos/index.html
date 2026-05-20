@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CyberGuardian | Recursos digitales</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/tailwind-config.js"></script>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            background: rgba(250, 248, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <div id="navbar-container"></div>
+    <main class="pt-24 pb-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+        <!-- Hero Section -->
+        <header class="py-16 md:py-24 mb-20 text-left relative">
+            <div class="absolute -top-10 -left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 animate-pulse">
+            </div>
+
+            <div class="w-full">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-full mb-6 border border-outline-variant/20">
+                    <span class="material-symbols-outlined text-primary text-sm"
+                        style="font-variation-settings: 'FILL' 1;">terminal</span>
+                    <span class="text-[10px] uppercase tracking-[0.1em] font-bold text-on-surface-variant font-label">
+                        Centro de Inteligencia Técnica
+                    </span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center gap-12">
+                    <div class="flex-1">
+                        <h1
+                            class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6 max-w-3xl leading-[1.1]">
+                            Recursos de <span class="text-primary italic">Ciberdefensa</span> para el Santuario Digital.
+                        </h1>
+
+                        <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed opacity-80">
+                            Herramientas avanzadas diseñadas para evaluar, fortalecer y educar sobre la seguridad
+                            digital de
+                            los menores en entornos hiperconectados.
+                        </p>
+                    </div>
+
+                    <div class="w-full lg:w-1/3 aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
+                        <img alt="Cybersecurity hardware concept" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBICya61B7cmCiTz0u4A6GHCP24iFYVFyzWeW8-bAk4j5K4rr_r4nHx0U7eMwi5sHuyqGrgxEQlbwPS1I-JZwP3HxpGTBrE_I4TgjRSnzooBHj9o9ymzGNb1mYxJSrow6EaT89FY0Frbtm-ShQWvCkkUPxhIWxdObfTRgXmvEOXfaC1ACVGkR0Ut1PowbMCA0xwOsCR_gdVbrsZDO-AAof06in6gWvij9iGeg4HKOC1rkEQn_76S2pKjS6K9keI3Tpkk-oH5zOLT3RA" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Bento Grid: Interactive Tools -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+            <!-- Phishing Simulator -->
+            <div
+                class="md:col-span-8 bg-surface-container-low rounded-[2rem] p-8 relative overflow-hidden group border border-outline-variant/10">
+                <div class="relative z-10">
+                    <div class="flex justify-between items-start mb-12">
+                        <div>
+                            <h3 class="font-headline text-3xl font-bold mb-2">Simulador de Phishing</h3>
+                            <p class="text-on-surface-variant max-w-md">Prueba tu capacidad para detectar ataques de
+                                ingeniería social en un entorno controlado.</p>
+                        </div>
+                        <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-3xl">alternate_email</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="/pages/recursos/phishing/test-facil/index.html"
+                            class="block bg-surface-container-lowest p-6 rounded-2xl text-left hover:bg-primary hover:text-on-primary transition-all duration-300 group/btn">
+                            <span class="block font-bold mb-1">Nivel Básico</span>
+                            <span class="text-sm opacity-70">Redes sociales y correos comunes</span>
+                        </a>
+
+                        <a href="/pages/recursos/phishing/test-dificil/index.html"
+                            class="block bg-surface-container-lowest p-6 rounded-2xl text-left hover:bg-primary hover:text-on-primary transition-all duration-300 group/btn">
+                            <span class="block font-bold mb-1">Nivel Avanzado</span>
+                            <span class="text-sm opacity-70">Spear phishing y fraude técnico</span>
+                        </a>
+                    </div>
+                </div>
+                <img alt="Data hub abstract"
+                    class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLl2_oGP1oB7uEgkryuk5-HIJ4qynmPvLR2qKaGOdusx63Zv9Rja0Q38f4pzV_ZR6_62NTy7-qrP3sWiwfZgy2uqOuq-8PW_J2c0mDHHmJK4CFqM-TDM5TwwNGpmD8eEv6zLyzxBFVwfjuw68bWKy_PKnYyP-dOd8PiRhvZ8qC8FOQ7XIdtriXoKWd1itCRqIG4W5DhOzgfKHSu9IYgetuyXboai4oxauNDkVFCboZzWXAYoH4DQoqQeyp8PKvkm-CZ5Hbr0U2RX9n" />
+                <div
+                    class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors">
+                </div>
+            </div>
+            <!-- Password Calculator -->
+            <div
+                class="md:col-span-4 bg-primary-container text-on-primary-container rounded-[2rem] p-8 flex flex-col justify-between border border-primary/20 relative overflow-hidden">
+                <div class="relative z-10">
+                    <span class="material-symbols-outlined text-4xl mb-4"
+                        style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+                    <h3 class="font-headline text-2xl font-bold mb-4">Calculadora de Contraseñas</h3>
+                    <p class="text-on-primary-container/80 text-sm mb-8">Calcula el tiempo de fuerza bruta necesario
+                        para descifrar tus claves.</p>
+                    <div class="bg-primary/20 rounded-xl p-4 mb-4">
+                        <div class="flex justify-between text-xs mb-2 opacity-70">
+                            <span>Complejidad detectada</span>
+                            <span id="password-score-text">85%</span>
+                        </div>
+                        <div class="w-full bg-on-primary/10 h-1 rounded-full overflow-hidden">
+                            <div id="password-score-bar" class="bg-secondary-fixed w-[85%] h-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn-probar-fortaleza"
+                    class="w-full py-4 bg-on-primary text-primary font-bold rounded-xl hover:bg-surface transition-colors relative z-10">
+                    Probar Fortaleza
+                </button>
+
+                <div class="absolute inset-0">
+                    <img alt="Encryption abstract" class="w-full h-full object-cover opacity-10"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkgxciXnGGyN7x3K_gcT3es5gen7OJwcmk40rGJyiz_NximyYktMjZQePyovQoZHyevZxpqfqCgUlPla-nWD332veG0n4j0IJtnolXP8dPVoQeCZIXVCL-lZvL2hcrlAY7B9qgyFwQKyyuT2HG-0tCtGqIiSof5qj_cAOCg982RljDDSOQPulFfjZzakzf5kb34go3jXGsNZmHBi8HSxeRYT5BtWxWvpf-0sxKxggUpZ6hwgr_KAy4tqbLFqmoc-DOIwM9X1qImbR4" />
+                </div>
+            </div>
+            <!-- Maturity Test -->
+            <div
+                class="md:col-span-12 bg-surface-container-highest rounded-[2rem] p-10 flex flex-col md:flex-row items-center gap-12 border border-outline-variant/30">
+                <div class="flex-1">
+                    <div
+                        class="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-bold mb-4">
+                        MÉTRICA DE SEGURIDAD</div>
+                    <h3 class="font-headline text-4xl font-bold mb-6">Test de Madurez Digital</h3>
+                    <p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+                        Evaluación integral para padres y tutores sobre el nivel de protección y conciencia digital del
+                        núcleo familiar. Genera un informe técnico personalizado.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 text-sm font-medium">
+                            <span class="material-symbols-outlined text-secondary">check_circle</span>
+                            <span>Resultados inmediatos</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm font-medium">
+                            <span class="material-symbols-outlined text-secondary">check_circle</span>
+                            <span>Privacidad total</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-1/3 aspect-square bg-surface-container-lowest rounded-3xl p-8 flex flex-col items-center justify-center border border-outline-variant/20 shadow-xl shadow-on-surface/5 relative overflow-hidden">
+                    <img alt="Tech shield abstract" class="absolute inset-0 w-full h-full object-cover opacity-5"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEeDTLZbJvcfjgceqgO9tV6cMIVmHEjKVse_XeQ86KbVbAHZopNH_vndkG4Q5OVxLsDT_9smr2REHhXbVDt3xv6fTR7FJemiheq1OJtWSh1wifkVt6gTEF_NZ630JQyYtBx-zfTc7ExH9Olcc7haCIVSKqIK4A7yU4d7vnodq9s9ZD9H9odtRkVysnvq-dhakaxZXGHdDts8THxjvVsIcAGi3cwvd2tL0VTGaZz9jeE_KXOrUXpqdkNMii3ImvreLkV_WtDkQnl95D" />
+                    <div class="relative w-full aspect-square flex items-center justify-center">
+                        <svg class="w-[180px] h-[180px] -rotate-90">
+                            <circle class="text-surface-container-high" cx="50%" cy="50%" fill="transparent" r="45%"
+                                stroke="currentColor" stroke-width="8"></circle>
+                            <circle class="text-primary" cx="50%" cy="50%" fill="transparent" r="45%"
+                                stroke="currentColor" stroke-dasharray="283" stroke-dashoffset="70" stroke-width="8">
+                            </circle>
+                        </svg>
+                        <div class="absolute flex flex-col items-center">
+                            <span class="text-4xl font-bold text-on-surface">75%</span>
+                            <span
+                                class="text-[10px] font-bold text-on-surface-variant tracking-widest uppercase">Seguridad</span>
+                        </div>
+                    </div>
+                    <a href="/pages/recursos/madurez/test/index.html"
+                        class="mt-8 px-8 py-3 mb-12 bg-primary text-on-primary rounded-xl font-bold w-full relative z-10 text-center inline-block hover:opacity-90 transition">
+                        Iniciar Evaluación
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Technical Glossary -->
+        <section class="mb-24">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <h2 class="font-headline text-3xl font-bold mb-2">Glosario Técnico</h2>
+                    <p class="text-on-surface-variant">Conceptos clave explicados de forma sencilla para proteger a tu
+                        familia.</p>
+                </div>
+                <div class="hidden md:flex bg-surface-container-low p-1 rounded-xl">
+                    <button
+                        class="px-4 py-2 bg-surface-container-lowest rounded-lg shadow-sm font-bold text-sm">A-Z</button>
+                    <button class="px-4 py-2 text-on-surface-variant font-bold text-sm">Categorías</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+                <!-- Entry 1: Grooming -->
+                <div class="group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-2 h-8 bg-primary-container rounded-full group-hover:h-10 transition-all"></div>
+                        <h4 class="font-headline text-xl font-bold text-on-surface">Grooming</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-sm leading-relaxed pl-5 border-l border-outline-variant/20">
+                        Es cuando un adulto se hace pasar por un amigo en internet para ganarse la confianza de un menor
+                        y tratar de hacerle daño.</p>
+                </div>
+                <!-- Entry 2: Sharenting -->
+                <div class="group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-2 h-8 bg-secondary rounded-full group-hover:h-10 transition-all"></div>
+                        <h4 class="font-headline text-xl font-bold text-on-surface">Sharenting</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-sm leading-relaxed pl-5 border-l border-outline-variant/20">
+                        La costumbre de compartir demasiada información o fotos de los hijos en redes sociales sin
+                        pensar en su privacidad futura.</p>
+                </div>
+                <!-- Entry 3: Catfishing -->
+                <div class="group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-2 h-8 bg-tertiary-container rounded-full group-hover:h-10 transition-all"></div>
+                        <h4 class="font-headline text-xl font-bold text-on-surface">Catfishing</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-sm leading-relaxed pl-5 border-l border-outline-variant/20">
+                        Crear un perfil falso con fotos de otra persona para engañar a alguien y entablar una relación
+                        basada en mentiras.</p>
+                </div>
+                <!-- Entry 4: Ciberacoso -->
+                <div class="group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-2 h-8 bg-primary-container rounded-full group-hover:h-10 transition-all"></div>
+                        <h4 class="font-headline text-xl font-bold text-on-surface">Ciberacoso</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-sm leading-relaxed pl-5 border-l border-outline-variant/20">
+                        Usar el móvil o internet para molestar, asustar o humillar a otra persona de forma constante con
+                        mensajes o publicaciones.</p>
+                </div>
+                <!-- Entry 5: Doxing -->
+                <div class="group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-2 h-8 bg-secondary rounded-full group-hover:h-10 transition-all"></div>
+                        <h4 class="font-headline text-xl font-bold text-on-surface">Doxing</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-sm leading-relaxed pl-5 border-l border-outline-variant/20">
+                        Buscar y publicar información privada de alguien (como su dirección o teléfono) en internet sin
+                        su permiso para causarle problemas.</p>
+                </div>
+                <!-- Entry 6: Deepfakes -->
+                <div class="group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-2 h-8 bg-tertiary-container rounded-full group-hover:h-10 transition-all"></div>
+                        <h4 class="font-headline text-xl font-bold text-on-surface">Deepfakes</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-sm leading-relaxed pl-5 border-l border-outline-variant/20">
+                        Vídeos o audios creados con ordenadores que parecen reales pero son falsos, haciendo que alguien
+                        diga o haga cosas que nunca ocurrieron.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Technical Background / Visualization -->
+    </main>
+    <div id="footer-container"></div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+    <script>
+        document.getElementById("btn-probar-fortaleza").addEventListener("click", function () {
+            const password = prompt("Introduce una contraseña para analizar su fortaleza:");
+
+            if (!password) return;
+
+            let score = 0;
+
+            // Longitud
+            if (password.length >= 8) score += 25;
+            if (password.length >= 12) score += 15;
+
+            // Tipos de caracteres
+            if (/[a-z]/.test(password)) score += 15;
+            if (/[A-Z]/.test(password)) score += 15;
+            if (/[0-9]/.test(password)) score += 15;
+            if (/[^A-Za-z0-9]/.test(password)) score += 15;
+
+            if (score > 100) score = 100;
+
+            // Actualizar UI
+            document.getElementById("password-score-text").textContent = score + "%";
+            document.getElementById("password-score-bar").style.width = score + "%";
+        });
+    </script>
+    ``
+
+</body>
+
+</html>

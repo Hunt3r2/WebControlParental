@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CyberGuardian | Android/iOS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/tailwind-config.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #3729b8 0%, #4f42d6 100%);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white flex flex-col min-h-screen">
+    <div id="navbar-container"></div>
+
+    <main class="flex-grow pt-24">
+        <!-- Hero -->
+        <section class="page-container py-8 md:py-14 overflow-hidden">
+            <div class="w-full grid grid-cols-1 md:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-24 items-center">
+                <div class="space-y-6 max-w-2xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-[11px] sm:text-xs font-bold uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-sm">devices</span>
+                        Herramienta Multiplataforma
+                    </div>
+
+                    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                        Control Parental <span class="text-primary">Android/iOS</span> con OurPact
+                    </h1>
+
+                    <p class="text-base sm:text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+                        OurPact es una solución de control parental pensada para gestionar aplicaciones, horarios y
+                        tiempo de pantalla en dispositivos Android e iOS desde un panel familiar centralizado.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#configuracion"
+                            class="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-7 py-4 hero-gradient text-white rounded-xl font-bold hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all">
+                            Comenzar Guía
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+
+                        <a href="https://www.ourpact.com/" target="_blank" rel="noopener noreferrer"
+                            class="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-7 py-4 bg-surface-container-high text-on-surface rounded-xl font-bold hover:bg-surface-variant transition-all">
+                            Ver OurPact
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center md:justify-end mt-8 md:mt-0">
+                    <div
+                        class="absolute -top-10 right-0 w-48 sm:w-64 h-48 sm:h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl">
+                    </div>
+
+                    <div
+                        class="relative z-10 bg-surface-container-lowest rounded-[2.5rem] sm:rounded-[3rem] p-3 sm:p-4 shadow-2xl rotate-2 md:rotate-3 border border-outline-variant/20 w-full max-w-[360px] sm:max-w-[420px] lg:max-w-[500px]">
+                        <img alt="Seguridad Digital OurPact"
+                            class="rounded-[2rem] sm:rounded-[2.5rem] w-full aspect-[4/3] object-cover"
+                            data-alt="abstract visual of digital data security glowing blue lines and geometric patterns on a dark futuristic background representing protection"
+                            src="/assets/media/control_parental.jpg" />
+                    </div>
+
+                    <div
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 md:left-auto md:-left-10 md:translate-x-0 z-20 bg-surface-container-high/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-outline-variant/30 w-[200px]">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-symbols-outlined text-primary">devices</span>
+                            <span class="font-bold text-sm">Panel Familiar</span>
+                        </div>
+
+                        <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+                            <div class="bg-primary w-full h-full"></div>
+                        </div>
+
+                        <p class="text-[10px] mt-2 opacity-70">
+                            Gestión unificada Android/iOS
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Configuración -->
+        <section id="configuracion" class="py-24 bg-surface-container-low scroll-mt-28">
+            <div class="page-container">
+                <div class="mb-16">
+                    <h2 class="font-headline text-4xl font-extrabold tracking-tight mb-4">
+                        Configuración Técnica
+                    </h2>
+
+                    <p class="text-on-surface-variant max-w-2xl text-lg">
+                        Sigue estos cuatro pasos esenciales para configurar OurPact y establecer una supervisión digital
+                        equilibrada en el entorno familiar.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">01</span>
+                        </div>
+
+                        <div
+                            class="w-14 h-14 bg-primary-container/10 rounded-2xl flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined text-3xl">download</span>
+                        </div>
+
+                        <h3 class="font-headline text-xl font-bold mb-3">Descargar</h3>
+
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Instala OurPact en el dispositivo del adulto y sigue las instrucciones para preparar los
+                            dispositivos de los menores.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">02</span>
+                        </div>
+
+                        <div
+                            class="w-14 h-14 bg-secondary-container/10 rounded-2xl flex items-center justify-center mb-6 text-secondary">
+                            <span class="material-symbols-outlined text-3xl">person_add</span>
+                        </div>
+
+                        <h3 class="font-headline text-xl font-bold mb-3">Crear Cuenta</h3>
+
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Regístrate como administrador familiar para acceder al panel de control y gestionar perfiles
+                            de supervisión.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">03</span>
+                        </div>
+
+                        <div
+                            class="w-14 h-14 bg-tertiary-fixed/30 rounded-2xl flex items-center justify-center mb-6 text-tertiary">
+                            <span class="material-symbols-outlined text-3xl">phonelink_setup</span>
+                        </div>
+
+                        <h3 class="font-headline text-xl font-bold mb-3">Emparejar</h3>
+
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Vincula cada dispositivo mediante el proceso guiado para habilitar la gestión remota desde el
+                            panel familiar.
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary-container/20 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-6xl font-black italic">04</span>
+                        </div>
+
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined text-3xl">rule_folder</span>
+                        </div>
+
+                        <h3 class="font-headline text-xl font-bold mb-3">Establecer Reglas</h3>
+
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Define horarios, bloqueos automáticos y permisos por aplicación según las necesidades de
+                            cada menor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex flex-col sm:flex-row gap-4">
+                    <a href="https://www.ourpact.com/" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-7 py-4 rounded-xl font-bold hover:scale-[1.03] active:scale-[0.98] transition-all">
+                        Abrir OurPact
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+
+                    <a href="#ventajas-ourpact"
+                        class="inline-flex items-center justify-center gap-2 bg-surface-container-high text-on-surface px-7 py-4 rounded-xl font-bold hover:bg-surface-variant transition-all">
+                        Ver ventajas
+                        <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventajas -->
+        <section id="ventajas-ourpact" class="py-24 bg-surface scroll-mt-28">
+            <div class="page-container">
+                <div class="mb-16 text-center md:text-left">
+                    <h2 class="font-headline text-4xl font-extrabold tracking-tight mb-4">
+                        Ventajas de OurPact
+                    </h2>
+
+                    <p class="text-on-surface-variant max-w-2xl text-lg">
+                        Una solución orientada a familias que necesitan gestionar varios dispositivos y rutinas desde un
+                        único entorno de control.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto">
+                    <div
+                        class="md:col-span-8 bg-primary-container text-white p-10 rounded-[2.5rem] relative overflow-hidden shadow-2xl flex flex-col justify-between">
+                        <div class="z-10">
+                            <span
+                                class="bg-white/20 px-4 py-1 rounded-full text-xs font-bold tracking-widest mb-6 inline-block uppercase">
+                                Universal
+                            </span>
+
+                            <h3 class="text-3xl font-headline font-bold mb-4">
+                                Gestión Multiplataforma
+                            </h3>
+
+                            <p class="text-on-primary-container text-lg max-w-md">
+                                Controla dispositivos iOS y Android desde un único panel centralizado, facilitando la
+                                supervisión familiar en hogares con varios sistemas operativos.
+                            </p>
+                        </div>
+
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md">
+                                <span class="material-symbols-outlined text-sm">check_circle</span>
+                                <span class="text-sm font-bold">Unificado</span>
+                            </div>
+
+                            <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md">
+                                <span class="material-symbols-outlined text-sm">check_circle</span>
+                                <span class="text-sm font-bold">Remoto</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+                    </div>
+
+                    <div
+                        class="md:col-span-4 bg-surface-container-high p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-center items-center text-center group border border-transparent hover:border-primary/10 transition-all">
+                        <div
+                            class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-primary text-4xl">block</span>
+                        </div>
+
+                        <h3 class="text-2xl font-headline font-bold mb-4">
+                            Bloqueo Instantáneo
+                        </h3>
+
+                        <p class="text-on-surface-variant">
+                            Detén el uso de aplicaciones o dispositivos en momentos concretos con una gestión rápida
+                            desde el móvil del adulto.
+                        </p>
+                    </div>
+
+                    <div
+                        class="md:col-span-4 bg-surface-container-high p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-center items-center text-center group border border-transparent hover:border-primary/10 transition-all">
+                        <div
+                            class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-secondary text-4xl">calendar_today</span>
+                        </div>
+
+                        <h3 class="text-2xl font-headline font-bold mb-4">
+                            Horarios Flexibles
+                        </h3>
+
+                        <p class="text-on-surface-variant">
+                            Automatiza rutinas de sueño, estudio y descanso digital adaptadas a cada día de la semana.
+                        </p>
+                    </div>
+
+                    <div
+                        class="md:col-span-8 bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-lg border border-outline-variant/10 flex flex-col md:flex-row gap-8 items-center overflow-hidden">
+                        <div class="flex-1">
+                            <h3 class="text-3xl font-headline font-bold mb-4">
+                                Reglas de Aplicaciones
+                            </h3>
+
+                            <p class="text-on-surface-variant text-lg">
+                                Bloquea aplicaciones específicas, limita categorías y permite apps educativas o de
+                                comunicación esencial cuando sea necesario.
+                            </p>
+
+                            <div class="mt-6 flex flex-wrap gap-2">
+                                <span class="bg-surface-container px-3 py-1 rounded-lg text-xs font-bold">
+                                    REDES SOCIALES
+                                </span>
+                                <span class="bg-surface-container px-3 py-1 rounded-lg text-xs font-bold">
+                                    JUEGOS
+                                </span>
+                                <span class="bg-surface-container px-3 py-1 rounded-lg text-xs font-bold">
+                                    VÍDEO
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-1/3 aspect-square rounded-3xl overflow-hidden shadow-inner">
+                            <img alt="Gestión de aplicaciones"
+                                class="w-full h-full object-cover"
+                                data-alt="stylized 3D abstract digital render of floating colorful app icons and network connections representing mobile software ecosystem"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOSTH2ZQcfU8zsi6jhwsNbL_QWM2Jb9BJw1GKK0VjXdrFY3xrmOC11kZX4N8oX2d1WsipEmW6r_GBY51OFCcM_COtPwA_GZrLORkTvLvcJJ83g_Jbp1b2lzemqcy9UpO7Xje5Acaw8e5HZNy0fCt40HSuvD6Y4S8x47n4WgNql4xHPMqWXceuGpMdhGw_k2HzBVVLcJiA87-2oTRrgS9ns55DkDTkP0ISQvKi_9Nfi8NTfrmkuMokDKXcZm8Fuowoau9IZph0v73ZA" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="page-container mb-24">
+            <div
+                class="bg-[#191b22] rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+                <div class="absolute -top-24 -left-24 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
+                <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[100px]"></div>
+
+                <div class="relative z-10">
+                    <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+                        Comienza a proteger su futuro digital hoy
+                    </h2>
+
+                    <p class="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body">
+                        Gestiona de forma proactiva y saludable el tiempo de pantalla, las aplicaciones y las rutinas
+                        digitales de tu familia.
+                    </p>
+
+                    <div class="flex flex-col items-center gap-6">
+                        <a href="https://www.ourpact.com/" target="_blank" rel="noopener noreferrer"
+                            class="bg-primary-container hover:bg-primary text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all hover:scale-105 flex items-center gap-2 shadow-lg shadow-primary/20">
+                            Descargar OurPact
+                            <span class="material-symbols-outlined">open_in_new</span>
+                        </a>
+
+                        <div class="flex flex-wrap justify-center gap-8 mt-4">
+                            <div class="flex items-center gap-2 text-white/50 text-sm font-medium">
+                                <span class="material-symbols-outlined text-sm">verified_user</span>
+                                Supervisión familiar
+                            </div>
+
+                            <div class="flex items-center gap-2 text-white/50 text-sm font-medium">
+                                <span class="material-symbols-outlined text-sm">devices</span>
+                                Compatible Android/iOS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+</body>
+
+</html>

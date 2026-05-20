@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Términos de Servicio | CyberGuardian</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/tailwind-config.js"></script>
+
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #faf8ff;
+            color: #191b22;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-shadow {
+            box-shadow: 0px 12px 32px rgba(25, 27, 34, 0.05);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0.75rem 0.5rem 1rem;
+            border-left: 4px solid transparent;
+            border-radius: 0 12px 12px 0;
+            color: #5f6673;
+            font-weight: 500;
+            transition: all 0.28s ease;
+            transform: translateX(0);
+        }
+
+        .toc-link:hover {
+            color: #0b57d0;
+            background: rgba(11, 87, 208, 0.06);
+            transform: translateX(4px);
+        }
+
+        .toc-link.active {
+            color: #0b57d0;
+            font-weight: 700;
+            border-left-color: #0b57d0;
+            background: rgba(11, 87, 208, 0.08);
+            transform: translateX(6px);
+        }
+    </style>
+        <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <div id="navbar-container"></div>
+
+    <main class="pt-32 pb-24 px-6 md:px-12">
+        <!-- Hero Section -->
+        <section class="max-w-4xl mx-auto mb-20">
+            <span class="label-md uppercase tracking-[0.1em] text-primary font-bold mb-4 block">
+                Actualizado: Octubre 2026
+            </span>
+            <h1 class="font-display text-5xl md:text-6xl font-extrabold text-on-surface tracking-tight mb-8">
+                Términos de Servicio
+            </h1>
+            <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+                Nuestra misión es crear un Santuario Digital. Al utilizar nuestra plataforma, aceptas las directrices
+                diseñadas para la protección mutua y el crecimiento educativo de los menores.
+            </p>
+        </section>
+
+        <!-- Main Content -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
+            <!-- Side Navigation -->
+            <aside class="md:col-span-3 hidden md:block">
+                <div class="sticky top-32 space-y-4">
+                    <h4 class="font-display font-bold text-lg mb-6">Contenido</h4>
+                    <nav class="flex flex-col gap-3" id="toc-nav">
+                        <a class="toc-link active" href="#intro">Introducción</a>
+                        <a class="toc-link" href="#uso">Uso de la Plataforma</a>
+                        <a class="toc-link" href="#menores">Protección del Menor</a>
+                        <a class="toc-link" href="#responsabilidad">Responsabilidad Educativa</a>
+                        <a class="toc-link" href="#limites">Límites de Responsabilidad</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Text Content -->
+            <div class="md:col-span-9 space-y-16">
+                <!-- Section 1 -->
+                <article id="intro" class="bg-surface-container-low p-8 md:p-12 rounded-xl scroll-mt-32">
+                    <h2 class="font-display text-3xl font-bold mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">gavel</span>
+                        1. Aceptación del Acuerdo
+                    </h2>
+                    <div class="font-body text-lg text-on-surface-variant space-y-4 leading-relaxed">
+                        <p>
+                            Bienvenido a CyberGuardian. Al acceder a nuestro sitio web y utilizar nuestras herramientas,
+                            certificas que has leído y comprendido estos términos. Este documento rige la relación
+                            técnica y ética entre el usuario y la plataforma CyberGuardian.
+                        </p>
+                        <p>
+                            Nos reservamos el derecho de modificar estos términos para reflejar cambios legales o
+                            ajustes en nuestras funciones de seguridad digital. Se notificará cualquier cambio
+                            significativo a través de nuestros canales oficiales.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="uso" class="bg-surface-container-low p-8 md:p-12 rounded-xl scroll-mt-32">
+                    <h2 class="font-display text-3xl font-bold mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">shield_person</span>
+                        2. Uso de la Plataforma
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8 font-body text-on-surface-variant">
+                        <div>
+                            <h4 class="font-bold text-on-surface mb-2">Acceso Autorizado</h4>
+                            <p>
+                                El uso de herramientas de diagnóstico de vulnerabilidades en Android e iOS debe
+                                realizarse exclusivamente sobre dispositivos de propiedad propia o con consentimiento
+                                explícito del tutor legal.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-on-surface mb-2">Restricciones</h4>
+                            <p>
+                                Queda estrictamente prohibido el uso de la información proporcionada para actividades de
+                                ingeniería social, acceso no autorizado o cualquier forma de ciberacoso.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="menores" class="bg-surface-container-low p-8 md:p-12 rounded-xl scroll-mt-32">
+                    <div class="flex items-start gap-6">
+                        <div class="bg-tertiary-container p-3 rounded-full hidden sm:block">
+                            <span class="material-symbols-outlined text-white">child_care</span>
+                        </div>
+                        <div>
+                            <h2 class="font-display text-3xl font-bold mb-4 text-on-tertiary-fixed-variant">
+                                3. Protección Integral del Menor
+                            </h2>
+                            <div class="font-body text-lg text-on-surface-variant space-y-4 leading-relaxed">
+                                <p class="font-semibold text-tertiary">Compromiso Innegociable</p>
+                                <p>
+                                    CyberGuardian no almacena información de identificación personal de menores. Todas
+                                    nuestras guías educativas están diseñadas para fomentar la autonomía digital segura,
+                                    priorizando siempre la integridad emocional y física del menor en el entorno web.
+                                </p>
+                                <p>
+                                    En caso de detectar contenido que ponga en riesgo inminente a un menor,
+                                    CyberGuardian facilitará el enlace directo con las autoridades competentes a través
+                                    del <strong>Botón de Pánico</strong>, operando bajo los protocolos de seguridad
+                                    internacional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 4 -->
+                <article id="responsabilidad" class="bg-surface-container-low p-8 md:p-12 rounded-xl scroll-mt-32 relative overflow-hidden">
+                    <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+
+                    <div class="relative z-10">
+                        <h2 class="font-display text-3xl font-bold mb-6 flex items-center gap-3">
+                            <span class="material-symbols-outlined">menu_book</span>
+                            4. Responsabilidad Educativa
+                        </h2>
+                        <p class="font-body text-xl leading-relaxed opacity-90 mb-8">
+                            Nuestra plataforma es una herramienta de consulta y educación. CyberGuardian no sustituye el
+                            acompañamiento parental activo ni la supervisión técnica profesional en infraestructuras
+                            corporativas.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-lg">
+                                <span class="block text-2xl font-black mb-1">Guía</span>
+                                <span class="text-sm opacity-80">Manuales técnicos actualizados para padres.</span>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-lg">
+                                <span class="block text-2xl font-black mb-1">Alerta</span>
+                                <span class="text-sm opacity-80">Sistemas de aviso preventivo de amenazas.</span>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-lg">
+                                <span class="block text-2xl font-black mb-1">Ética</span>
+                                <span class="text-sm opacity-80">Marco de conducta para el joven digital.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 5 -->
+                <article id="limites" class="bg-surface-container-low p-8 md:p-12 rounded-xl scroll-mt-32">
+                    <h2 class="font-display text-3xl font-bold mb-6">
+                        5. Límites de Responsabilidad
+                    </h2>
+                    <div class="font-body text-lg text-on-surface-variant space-y-6 leading-relaxed">
+                        <p>
+                            CyberGuardian ofrece información "tal cual". No garantizamos que los métodos de seguridad
+                            expuestos sean infalibles ante ataques de día cero o técnicas de hacking avanzadas no
+                            documentadas.
+                        </p>
+                        <ul class="list-none space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+                                <span>
+                                    No somos responsables de la pérdida de datos resultante de configuraciones
+                                    manuales fallidas en dispositivos móviles.
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+                                <span>
+                                    El usuario asume el riesgo total por el uso de scripts o recomendaciones de
+                                    terceros citadas en el blog.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll(".toc-link");
+            const sections = document.querySelectorAll("article[id]");
+
+            function setActiveLink(targetId) {
+                links.forEach(link => {
+                    const href = link.getAttribute("href");
+                    link.classList.toggle("active", href === `#${targetId}`);
+                });
+            }
+
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    const targetId = link.getAttribute("href").replace("#", "");
+                    setActiveLink(targetId);
+                });
+            });
+
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setActiveLink(entry.target.id);
+                        }
+                    });
+                },
+                {
+                    root: null,
+                    rootMargin: "-35% 0px -50% 0px",
+                    threshold: 0.1
+                }
+            );
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+
+</html>

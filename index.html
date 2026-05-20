@@ -1,62 +1,275 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
+<html class="light scroll-smooth" lang="es">
+
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>CyberGuardian | Educar es más eficaz que prohibir</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CyberGuardian | Educar es más eficaz que prohibir</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/tailwind-config.js"></script>
 
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#0040a1",
-            "primary-container": "#0056d2",
-            secondary: "#006a6a",
-            tertiary: "#882200",
-            surface: "#faf8ff",
-            "surface-container-low": "#f2f3fd",
-            "surface-container-lowest": "#ffffff",
-            "surface-container-high": "#e7e7f1",
-            "surface-container-highest": "#e1e2ec",
-            "on-surface": "#191b22",
-            "on-surface-variant": "#424654",
-            "secondary-container": "#8cf3f3",
-            "on-secondary-container": "#007070",
-            "tertiary-container": "#b12f00",
-            "on-tertiary-fixed": "#3b0900",
-            "on-primary-fixed-variant": "#0040a1"
-          },
-          fontFamily: {
-            headline: ["Manrope"],
-            body: ["Public Sans"],
-            label: ["Public Sans"]
-          }
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-      }
-    };
-  </script>
 
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .asymmetric-offset {
+            transform: translateY(-40px);
+        }
+
+        .tonal-transition {
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
+
 <body class="bg-surface font-body text-on-surface">
-  <div id="navbar-container"></div>
+    <div id="navbar-container"></div>
 
-  <main class="pt-24">
-    <!-- aquí dejas tu contenido actual -->
-  </main>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="page-container py-8 md:py-14 overflow-hidden">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <span
+                        class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-[0.75rem] font-bold uppercase tracking-[0.05em] mb-6 inline-block">
+                        Misión Digital
+                    </span>
 
-  <div id="footer-container"></div>
+                    <h1
+                        class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-8">
+                        Educar es más eficaz <br />
+                        <span class="text-primary">que prohibir</span>
+                    </h1>
 
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/navbar.js"></script>
+                    <p class="text-base sm:text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-10">
+                        Convertimos el entorno digital en un santuario para menores. No levantamos muros; construimos
+                        brújulas para que naveguen con autonomía y seguridad.
+                    </p>
+
+                    <div class="flex gap-4 flex-wrap">
+                        <a href="#tres-pilares"
+                            class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-xl transition-all hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center">
+                            Comenzar ahora
+                        </a>
+
+                        <a href="https://www.incibe.es/menores" target="_blank" rel="noopener noreferrer"
+                            class="bg-surface-container-highest text-on-primary-fixed-variant px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-high inline-flex items-center justify-center">
+                            Guía para padres
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div
+                        class="bg-primary-container/10 rounded-[2rem] p-6 md:p-8 relative overflow-hidden max-w-[540px] ml-auto">
+                        <img alt="Visualización técnica profesional de ciberseguridad"
+                            class="rounded-xl shadow-2xl relative z-10 w-full h-[420px] object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcgW6bbxo3SU1Y8ztD8a2u2OPjYC3h4-Vo8i_rlPSU4qpcZFR2sfgRy9q6HNdRU4AkDDuQoJO0htFZvW20tdgh5WnTgUNNM4J-vrhiG9eIXloIgAUUZQ5H21D2oqmF36L6po7Qx4C4SWJ6P7RQQobKSgeemC5WNJnl8G5oPLymWn5LruxUb4uKK39mDxN4Fpqja8W_WgyoPRGV1Hhbh-KwSqMt7-awEk58LPW2NhwP3RusQUnp-rYtRCU2AKhflah9fk-VEs803F6W" />
+
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-fixed/30 blur-3xl rounded-full">
+                        </div>
+                        <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/20 blur-3xl rounded-full"></div>
+                    </div>
+
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(25,27,34,0.06)] z-20 max-w-[240px]">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                            <span class="font-bold text-sm">Protección Activa</span>
+                        </div>
+                        <p class="text-xs text-on-surface-variant">
+                            Acompañamiento digital sin invadir la privacidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ayuda inmediata -->
+        <section class="bg-tertiary-container/5 py-12">
+            <div class="page-container">
+                <div
+                    class="bg-surface-container-lowest border-l-4 border-tertiary-container p-8 rounded-xl flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm">
+                    <div class="flex items-center gap-6">
+                        <div class="bg-tertiary-container p-4 rounded-full text-white">
+                            <span class="material-symbols-outlined text-3xl">emergency</span>
+                        </div>
+
+                        <div>
+                            <h3 class="font-headline text-xl font-bold text-on-tertiary-fixed">
+                                ¿Necesitas ayuda inmediata?
+                            </h3>
+                            <p class="text-on-surface-variant">
+                                Llama gratis al 017, la línea de ayuda de INCIBE para resolver cualquier duda o problema
+                                de seguridad en internet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a class="bg-tertiary-container text-white px-10 py-3 rounded-full font-extrabold text-2xl tracking-tighter transition-transform hover:scale-105 active:scale-95"
+                        href="tel:017">
+                        017
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Santuario digital -->
+        <section class="bg-surface-container-low py-24">
+            <div class="page-container">
+                <div class="text-center max-w-2xl mx-auto mb-20">
+                    <h2 class="font-headline text-3xl font-bold mb-4">
+                        El santuario digital
+                    </h2>
+                    <p class="text-on-surface-variant">
+                        Nuestra misión es empoderar a la próxima generación con las herramientas técnicas y éticas
+                        necesarias para habitar internet de forma saludable.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="md:col-span-2 bg-surface-container-lowest p-10 rounded-[2rem] shadow-sm relative overflow-hidden group">
+                        <div class="relative z-10 flex flex-col justify-between h-full">
+                            <div>
+                                <span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+                                <h3 class="font-headline text-2xl font-bold mb-4">
+                                    Educación Técnica
+                                </h3>
+                                <p class="text-on-surface-variant max-w-md">
+                                    No solo configuramos dispositivos; explicamos cómo funcionan los algoritmos, la
+                                    ingeniería social y los hábitos digitales para crear conciencia crítica.
+                                </p>
+                            </div>
+
+                            <div class="mt-8">
+                                <a href="https://www.unicef.es/publicacion/infancia-adolescencia-y-bienestar-digital"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                                    Ver metodologías
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="absolute right-0 bottom-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[12rem]">code_blocks</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-primary-container text-white p-10 rounded-[2rem] shadow-lg flex flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined text-4xl mb-6"
+                                style="font-variation-settings: 'FILL' 1;">encrypted</span>
+                            <h3 class="font-headline text-2xl font-bold mb-4">
+                                Privacidad por Diseño
+                            </h3>
+                            <p class="opacity-80">
+                                Aplicamos criterios de seguridad que respetan el espacio personal de los menores
+                                mientras
+                                ayudan a las familias a detectar riesgos importantes.
+                            </p>
+                        </div>
+
+                        <img alt="Sala de servidores moderna" class="rounded-xl mt-6 opacity-60 mix-blend-overlay"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6HEyDFyx1gFvfVZhUS9abBsT8rNqaIvRoOS_zVsTscyB3XZ1h8nGy7ejMA4gtTDTVBTxr6LrohVDIm2aLJKWF40Ehf_KqO_tFi1M00GdlaH8QN1vdEkIHCrncdPWx4AZPyhMC4klztGLviH3zNa0FnOvapfiefqgoTkNP0ozvoY3BQkI7-7ZxCp4UPALXuo_zuldgQyAry3XpIvLBXPenBAbHOxsnZXGUV60xZg3NIjm4kXNsgcOjRjS5BQCdLiZe1m662jIAKVbq" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tres pilares -->
+        <section id="tres-pilares" class="py-24 page-container scroll-mt-28">
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-4 lg:sticky lg:top-32">
+                    <h2 class="font-headline text-4xl font-extrabold tracking-tight mb-6">
+                        Los Tres Pilares
+                    </h2>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Nuestro enfoque de protección se basa en equilibrar supervisión técnica, educación digital y
+                        autonomía progresiva.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-8 space-y-12">
+                    <div
+                        class="group bg-surface-container-low hover:bg-surface-container-high p-8 rounded-2xl tonal-transition flex gap-8 items-start">
+                        <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-primary">
+                            <span class="material-symbols-outlined text-3xl">policy</span>
+                        </div>
+
+                        <div>
+                            <h4 class="font-headline text-xl font-bold mb-2">
+                                Seguridad Preventiva
+                            </h4>
+                            <p class="text-on-surface-variant">
+                                Configuraciones, filtros y pautas familiares que reducen la exposición a contenido
+                                inadecuado antes de que se convierta en un problema.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-surface-container-low hover:bg-surface-container-high p-8 rounded-2xl tonal-transition flex gap-8 items-start">
+                        <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-secondary">
+                            <span class="material-symbols-outlined text-3xl">visibility_off</span>
+                        </div>
+
+                        <div>
+                            <h4 class="font-headline text-xl font-bold mb-2">
+                                Privacidad Íntegra
+                            </h4>
+                            <p class="text-on-surface-variant">
+                                Reducimos la huella digital innecesaria y promovemos el uso responsable de datos,
+                                permisos, perfiles y plataformas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-surface-container-low hover:bg-surface-container-high p-8 rounded-2xl tonal-transition flex gap-8 items-start">
+                        <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-tertiary">
+                            <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                        </div>
+
+                        <div>
+                            <h4 class="font-headline text-xl font-bold mb-2">
+                                Libertad Guiada
+                            </h4>
+                            <p class="text-on-surface-variant">
+                                Fomentamos la exploración con límites claros, acompañamiento adulto y conversación, en
+                                lugar de una prohibición ciega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 </body>
+
 </html>

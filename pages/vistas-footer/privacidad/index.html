@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Política de Privacidad | CyberGuardian</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/tailwind-config.js"></script>
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #faf8ff;
+            color: #191b22;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-shadow {
+            box-shadow: 0px 12px 32px rgba(25, 27, 34, 0.05);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0.75rem 0.5rem 1rem;
+            border-left: 4px solid transparent;
+            border-radius: 0 12px 12px 0;
+            color: #5f6673;
+            font-weight: 500;
+            transition: all 0.28s ease;
+            transform: translateX(0);
+        }
+
+        .toc-link:hover {
+            color: #0b57d0;
+            background: rgba(11, 87, 208, 0.06);
+            transform: translateX(4px);
+        }
+
+        .toc-link.active {
+            color: #0b57d0;
+            font-weight: 700;
+            border-left-color: #0b57d0;
+            background: rgba(11, 87, 208, 0.08);
+            transform: translateX(6px);
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <div id="navbar-container"></div>
+    <main class="pt-32 pb-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+        <!-- Hero Header -->
+        <header class="mb-20">
+            <span class="label-md uppercase tracking-[0.05em] text-primary font-bold mb-4 block">Documentación
+                Legal</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-8">
+                Política de <br />Privacidad
+            </h1>
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    En CyberGuardian, la protección de la identidad digital de los menores no es solo una obligación
+                    legal, es nuestro propósito fundamental. Este documento detalla cómo resguardamos el santuario
+                    digital de tu familia.
+                </p>
+                <div class="bg-surface-container-low p-6 rounded-xl flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                        <span class="material-symbols-outlined">verified_user</span>
+                    </div>
+                    <div>
+                        <p class="font-bold text-sm">Última actualización</p>
+                        <p class="text-on-surface-variant text-sm">24 de Mayo, 2026</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Asymmetric Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Recolección de Datos Section -->
+            <section
+                class="lg:col-span-7 bg-surface-container-lowest p-10 rounded-xl shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <span class="material-symbols-outlined text-9xl">database</span>
+                </div>
+                <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">data_usage</span>
+                    Recolección de Datos
+                </h2>
+                <div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+                    <p>
+                        Nuestra infraestructura está diseñada bajo el principio de **Privacidad por Defecto**. Solo
+                        recopilamos los datos estrictamente necesarios para garantizar la seguridad del usuario.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 p-4 rounded-lg bg-surface-container-low">
+                            <span class="material-symbols-outlined text-primary">analytics</span>
+                            <span><strong>Telemetría Anónima:</strong> Datos técnicos sobre el dispositivo y versión del
+                                SO para optimizar la protección.</span>
+                        </li>
+                        <li class="flex gap-4 p-4 rounded-lg bg-surface-container-low">
+                            <span class="material-symbols-outlined text-primary">lock</span>
+                            <span><strong>Identificadores Encriptados:</strong> No almacenamos nombres reales, solo
+                                hashes únicos que no permiten la reidentificación.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Sidebar / Badge Section -->
+            <section class="lg:col-span-5 flex flex-col gap-8">
+                <div class="bg-tertiary-container p-8 rounded-xl text-on-tertiary-fixed shadow-xl">
+                    <span
+                        class="bg-white/20 px-3 py-1 rounded-full text-[10px] uppercase font-black tracking-widest mb-4 inline-block">Prioridad
+                        Máxima</span>
+                    <h3 class="text-2xl font-black mb-4">Derechos de los Menores</h3>
+                    <p class="leading-relaxed mb-6 opacity-90">
+                        Cumplimos estrictamente con el GDPR-K y la COPPA. Los menores de 16 años cuentan con un nivel de
+                        protección reforzado que impide cualquier tipo de rastreo publicitario o perfilado de
+                        comportamiento.
+                    </p>
+                    <div class="h-1 bg-on-tertiary-fixed/20 w-full rounded-full"></div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden group aspect-video lg:aspect-auto lg:flex-grow">
+
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2spJliFzFL11sUBx4wsAci0u6NB_j4XO83rzemu_ls4jNBMqgdl5V3G-REYe6jTh76_iO6C7QiT8R0uZhl3sFhTTrjSDnsxcGmenWcTqIKu9Qbc7n96tjCTQ915X5aNFvoae5IcRVfez9gilYNgl_NjP0ASUtVsEl14x6aAd6N2r-7sf1ZsAEWjol09LPwYmH7ddIv405gmzNGnr1Jzi7pXruExfhHIr1Od14n9RZv1eU5yUwOtbw4qPAK3Id4rG1zVRyov-zd2_H"
+                        alt="Caja fuerte digital representando protección de datos" />
+                </div>
+            </section>
+            <!-- Cookies Section (Full width tonal shift) -->
+            <section class="lg:col-span-12 bg-surface-container-low p-12 rounded-xl mt-8">
+                <div class="max-w-4xl">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">cookie</span>
+                        Política de Cookies
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <p class="text-on-surface-variant leading-relaxed text-lg mb-4">
+                                No utilizamos cookies de terceros para publicidad. Nuestras cookies son puramente
+                                funcionales y se autodestruyen al finalizar la sesión.
+                            </p>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                Estas nos permiten recordar tus preferencias de seguridad y asegurar que el "Botón de
+                                Pánico" esté siempre disponible cuando lo necesites.
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-4 bg-surface-container-lowest rounded-lg">
+                                <span class="font-bold">Cookies Técnicas</span>
+                                <span class="text-secondary font-bold flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-sm"
+                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    Activas
+                                </span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-surface-container-lowest rounded-lg opacity-50">
+                                <span class="font-bold">Cookies Marketing</span>
+                                <span class="text-on-surface-variant flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-sm">cancel</span>
+                                    Deshabilitadas
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Legal Contact Section -->
+            <section
+                class="lg:col-span-12 flex flex-col md:flex-row items-center gap-12 bg-primary-container text-white p-12 rounded-xl mt-8 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 flex-1">
+                    <h2 class="text-4xl font-black mb-4 tracking-tight">Contacto Legal</h2>
+                    <p class="text-on-primary-container text-lg mb-8 max-w-xl">
+                        ¿Tienes dudas sobre cómo gestionamos tus datos? Nuestro equipo de protección de datos (DPO) está
+                        a tu disposición para cualquier consulta regulatoria.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a class="bg-surface text-primary px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg transition-all"
+                            href="mailto:cyberguardianlinkiafp@gmail.com">
+                            <span class="material-symbols-outlined">mail</span>
+                            cyberguardianlinkiafp@gmail.com
+                        </a>
+                        <a href="https://www.aepd.es/derechos-y-deberes/ejerce-tus-derechos" target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-transparent border-2 border-white/30 text-white px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-all">
+                            Formulario de Derechos ARCO
+                        </a>
+
+                    </div>
+                </div>
+                <div class="relative z-10 w-full md:w-1/3">
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/10">
+                        <span class="material-symbols-outlined text-4xl mb-4">gavel</span>
+                        <p class="text-sm italic opacity-80">
+                            "La privacidad no es una opción, es un derecho fundamental que escalamos a través de la
+                            tecnología."
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="footer-container"></div>
+    <script src="/assets/js/navbar.js"></script>
+</body>
+
+</html>
