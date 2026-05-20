@@ -203,10 +203,7 @@
                     class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-14 rounded-[3rem] editorial-shadow relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
 
-                    <form action="https://formspree.io/f/xgorbedk" method="POST" class="space-y-8 relative z-10">
-                        <input type="hidden" name="_subject" value="Nueva consulta técnica - CyberGuardian" />
-                        <input type="hidden" name="tipo_formulario" value="Formulario de contacto técnico" />
-
+                    <form id="contactForm" action="#" method="post" autocomplete="on" class="space-y-8 relative z-10">
                         <div class="grid md:grid-cols-2 gap-8">
                             <div class="space-y-2">
                                 <label
@@ -214,7 +211,7 @@
                                     Nombre Completo
                                 </label>
 
-                                <input name="nombre" type="text" placeholder="Ej. Alex Guardian" required
+                                <input id="nombre" name="nombre" type="text" placeholder="Ej. Alex Guardian" required
                                     class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
                             </div>
 
@@ -224,7 +221,7 @@
                                     Correo Electrónico
                                 </label>
 
-                                <input name="email" type="email" placeholder="alex@guardian.com" required
+                                <input id="email" name="email" type="email" placeholder="alex@guardian.com" required
                                     class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none" />
                             </div>
                         </div>
@@ -235,7 +232,7 @@
                                 Asunto de la Consulta
                             </label>
 
-                            <select name="asunto" required
+                            <select id="asunto" name="asunto" required
                                 class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none">
                                 <option value="Control Parental Android">Control Parental Android</option>
                                 <option value="Seguridad en iOS">Seguridad en iOS</option>
@@ -251,13 +248,13 @@
                                 Detalles de la Consulta
                             </label>
 
-                            <textarea name="mensaje" rows="5" required
+                            <textarea id="mensaje" name="mensaje" rows="5" required
                                 placeholder="Describe tu consulta técnica con el mayor detalle posible..."
                                 class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 focus:bg-surface-container-lowest p-4 rounded-t-xl transition-all outline-none resize-none"></textarea>
                         </div>
 
                         <div class="flex items-start space-x-3 text-sm text-on-surface-variant">
-                            <input name="privacidad" value="aceptada" type="checkbox" required
+                            <input id="privacidad" name="privacidad" value="aceptada" type="checkbox" required
                                 class="mt-1 rounded-md border-outline-variant text-primary focus:ring-primary" />
 
                             <span>
@@ -269,10 +266,9 @@
                             </span>
                         </div>
 
-                        <!-- Redirección después de enviar -->
-                        <input type="hidden" name="_next" value="https://formspree.io/thanks" />
+                        <p id="contactStatus" class="text-sm font-bold"></p>
 
-                        <button type="submit"
+                        <button id="contactButton" type="submit"
                             class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 rounded-2xl font-bold text-lg shadow-xl hover:shadow-primary-container/30 transition-all active:scale-[0.98]">
                             Enviar Consulta Técnica
                         </button>
@@ -287,6 +283,9 @@
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="/assets/js/contacto.js"></script>
 </body>
 
 </html>

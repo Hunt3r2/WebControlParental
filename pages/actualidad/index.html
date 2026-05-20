@@ -286,22 +286,18 @@
                         mitigarlos desde el hogar. Sin ruido, solo seguridad.
                     </p>
 
-                    <form action="https://formspree.io/f/xgorbedk" method="POST"
-                        class="flex flex-col md:flex-row gap-4">
+                    <form id="newsletterForm" action="#" method="post" class="flex flex-col md:flex-row gap-4">
                         <input id="newsletter-email" name="email" required
                             class="flex-grow px-6 py-4 rounded-2xl bg-surface-container-lowest border-none ring-1 ring-outline-variant/20 focus:ring-2 focus:ring-primary outline-none text-on-surface font-medium transition-all"
                             placeholder="Tu correo electrónico institucional o personal" type="email" />
 
-                        <input type="hidden" name="tipo" value="Newsletter" />
-                        <input type="hidden" name="origen" value="Página Actualidad - CyberGuardian" />
-
                         <button id="btn-suscribirme" type="submit"
-                            class="bg-primary text-white px-10 py-4 rounded-2xl font-bold hover:shadow-lg transition-all active:scale-95 whitespace-nowrap">
+                            class="bg-primary text-white px-10 py-4 rounded-2xl font-bold hover:shadow-lg transition-all active:scale-95 whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed">
                             Suscribirme Ahora
                         </button>
                     </form>
 
-                    <p id="newsletter-message" class="mt-4 text-sm font-medium hidden"></p>
+                    <p id="newsletter-message" class="mt-4 text-sm font-bold hidden"></p>
                     <p class="mt-6 text-xs text-on-surface-variant opacity-70">
                         Respetamos tu privacidad. Sin spam, solo actualizaciones críticas de seguridad.
                     </p>
@@ -311,9 +307,11 @@
     </main>
 
     <div id="footer-container"></div>
-
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="../../assets/js/newsletter.js"></script>
 
 
 </body>
